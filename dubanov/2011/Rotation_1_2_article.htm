@@ -1,0 +1,1387 @@
+<html xmlns:mcd="urn:schemas-mathsoft-com:mathcad"
+ xmlns:m="http://www.w3.org/1998/Math/MathML">
+<head>
+<meta http-equiv="Content-Type" content="text/html"></meta>
+<meta name=Generator content="Mathcad Professional"></meta>
+<meta name=ProgID content="Mathcad"></meta>
+<meta name=Version content="11.0"></meta>
+<meta name=MathML content="true"></meta>
+<title>
+Rotation_1_2_article</title>
+<style type="text/css">
+body { background : #ffffff }
+.equation { margin-top: 0.5em; margin-bottom: 1em }
+.Normal { font-family:Arial,sans-serif; color:#000000; font-size:10pt }
+.equation { font-family:Arial,sans-serif; color:#000000; font-size:10pt }
+.Heading_1 { font-family:Arial,sans-serif; color:#000000; font-size:14pt; font-weight:bold }
+.Heading_2 { font-family:Arial,sans-serif; color:#000000; font-size:12pt; font-weight:bold; font-style:italic }
+.Heading_3 { font-family:Arial,sans-serif; color:#000000; font-size:12pt }
+.Paragraph { font-family:Arial,sans-serif; color:#000000; font-size:10pt; text-indent:28px }
+.List { font-family:Arial,sans-serif; color:#000000; font-size:10pt; margin-left:19px; text-indent:-19px }
+.Indent { font-family:Arial,sans-serif; color:#000000; font-size:10pt; margin-left:144px }
+.Title { font-family:Times New Roman,sans-serif; color:#000000; font-size:24pt; font-weight:bold; text-align:center }
+.Subtitle { font-family:Times New Roman,sans-serif; color:#000000; font-size:18pt; text-align:center }
+</style>
+<script id="clientEventHandlersJS" language="javascript">
+<!--
+//-->
+</script>
+</head>
+<body 
+mcd:mathfonts="id:0;name:Variables;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:1;name:Constants;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:2;name:Text;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:4;name:User 1;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:5;name:User 2;face:Courier New;size:10;bold:0;ital:0;ul:0;cid:-1
+id:6;name:User 3;face:Arial;size:10;bold:1;ital:0;ul:0;cid:-1
+id:7;name:User 4;face:Times New Roman;size:10;bold:0;ital:1;ul:0;cid:-1
+id:8;name:User 5;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:9;name:User 6;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:10;name:User 7;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1"
+mcd:numberformat=""
+mcd:displayoptions=""
+mcd:unitformat="format:true;simplify:true"
+mcd:tolerance=""
+mcd:builtinvars="origin:0;tol:0.000000;ctol:0.000000;prnprecision:8"
+mcd:calcoptions="auto:true;optimize:true;strict:true"
+mcd:mathdisplay="mult:7;deriv:deriv;litsub:large;define:colon;globeq:triple;local:arrow;equal:bold"
+mcd:unitsystem="default:4"
+mcd:dimnames="display:false;mass:mass;length:length;time:time;current:charge;temp:temperature;lum:luminosity;subst:substance"
+mcd:docprops="lrtag:219;lhbtag:219;status:8265;delorig:1;deluser:1;cp:1;cc:1;cs:1"
+mcd:ruler="visible:0;units:1"
+mcd:derivopts="ip:0;sc:0;dv:1;os:1"
+mcd:doccolors="eq:#000000;bg:#ffffff;rg:#ffff80"
+mcd:grfxy="0 1 1 21 15 0 0 3 0 "
+mcd:xaxisxy="0 0 1 1 1 0 0 1 1 "
+mcd:yaxisxy="0 0 1 1 1 0 0 1 1 "
+mcd:tracesxy="0 1 0 0 1 1 
+0 2 1 0 1 1 
+0 3 2 0 1 1 
+0 4 3 0 1 1 
+0 1 4 0 1 1 
+0 2 5 0 1 1 
+0 3 6 0 1 1 
+0 4 0 0 1 1 
+0 1 1 0 1 1 
+0 2 2 0 1 1 
+0 3 3 0 1 1 
+0 4 4 0 1 1 
+0 1 5 0 1 1 
+0 2 6 0 1 1 
+0 3 0 0 1 1 
+0 4 1 0 1 1 "
+mcd:grfpolar="0 1 0 0 1 1 0 2 1 0 1 1 
+0 3 2 0 1 1 
+0 4 3 0 1 1 
+0 1 "
+mcd:xaxispolar="0 1 0 0 1 1 0 2 1 0"
+mcd:yaxispolar="0 1 0 0 1 1 0 2 1 0"
+mcd:tracespolar="0 1 0 0 1 1 
+0 2 1 0 1 1 
+0 3 2 0 1 1 
+0 4 3 0 1 1 
+0 1 4 0 1 1 
+0 2 5 0 1 1 
+0 3 6 0 1 1 
+0 4 0 0 1 1 
+0 1 1 0 1 1 
+0 2 2 0 1 1 
+0 3 3 0 1 1 
+0 4 4 0 1 1 
+0 1 5 0 1 1 
+0 2 6 0 1 1 
+0 3 0 0 1 1 
+0 4 1 0 1 1 "
+>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="57" mcd:aligny="56" 
+ style="position:absolute;top:1;left:24;width:114">
+<layer width=114>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>Q</ci>
+    <lambda>
+      <bvar>
+        <ci>&amp;tgr;</ci>
+      </bvar>
+      <vector>
+        <apply>
+          <ci>cos</ci>
+          <apply>
+            <divide/>
+            <ci>&amp;tgr;</ci>
+            <cn>2</cn>
+          </apply>
+        </apply>
+        <apply>
+          <ci>cos</ci>
+          <apply>
+            <divide/>
+            <ci>&amp;tgr;</ci>
+            <cn>3</cn>
+          </apply>
+        </apply>
+        <ci>&amp;tgr;</ci>
+      </vector>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0187.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="166" mcd:aligny="56" 
+ style="position:absolute;top:22;left:136;width:128">
+<layer width=128>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>R</ci>
+    <lambda>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <vector>
+        <cn>0</cn>
+        <apply>
+          <plus/>
+          <apply>
+            <ci>sin</ci>
+            <apply>
+              <ci>-mult-times-in</ci>
+              <cn>2</cn>
+              <ci>t</ci>
+            </apply>
+          </apply>
+          <cn>3</cn>
+        </apply>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <cn>3</cn>
+          <apply>
+            <ci>cos</ci>
+            <ci>t</ci>
+          </apply>
+        </apply>
+      </vector>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0188.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="328" mcd:aligny="80" 
+ style="position:absolute;top:12;left:288;width:235">
+<layer width=235>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>dQ</ci>
+    <lambda>
+      <bvar>
+        <ci>&amp;tgr;</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <vector>
+          <apply>
+            <ci>-DERIVATIVE</ci>
+            <lambda>
+              <bvar>
+                <ci>&amp;tgr;</ci>
+              </bvar>
+              <apply>
+                <selector/>
+                <apply>
+                  <ci>Q</ci>
+                  <ci>&amp;tgr;</ci>
+                </apply>
+                <cn>0</cn>
+              </apply>
+            </lambda>
+            <ci>&amp;tgr;</ci>
+          </apply>
+          <apply>
+            <ci>-DERIVATIVE</ci>
+            <lambda>
+              <bvar>
+                <ci>&amp;tgr;</ci>
+              </bvar>
+              <apply>
+                <selector/>
+                <apply>
+                  <ci>Q</ci>
+                  <ci>&amp;tgr;</ci>
+                </apply>
+                <cn>1</cn>
+              </apply>
+            </lambda>
+            <ci>&amp;tgr;</ci>
+          </apply>
+          <apply>
+            <ci>-DERIVATIVE</ci>
+            <lambda>
+              <bvar>
+                <ci>&amp;tgr;</ci>
+              </bvar>
+              <apply>
+                <selector/>
+                <apply>
+                  <ci>Q</ci>
+                  <ci>&amp;tgr;</ci>
+                </apply>
+                <cn>2</cn>
+              </apply>
+            </lambda>
+            <ci>&amp;tgr;</ci>
+          </apply>
+        </vector>
+        <vector>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <apply>
+              <divide/>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+              </apply>
+              <cn>2</cn>
+            </apply>
+            <apply>
+              <ci>sin</ci>
+              <apply>
+                <ci>-mult-times-in</ci>
+                <apply>
+                  <divide/>
+                  <cn>1</cn>
+                  <cn>2</cn>
+                </apply>
+                <ci>&amp;tgr;</ci>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <apply>
+              <divide/>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+              </apply>
+              <cn>3</cn>
+            </apply>
+            <apply>
+              <ci>sin</ci>
+              <apply>
+                <ci>-mult-times-in</ci>
+                <apply>
+                  <divide/>
+                  <cn>1</cn>
+                  <cn>3</cn>
+                </apply>
+                <ci>&amp;tgr;</ci>
+              </apply>
+            </apply>
+          </apply>
+          <cn>1</cn>
+        </vector>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0189.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="49" mcd:aligny="168" 
+ style="position:absolute;top:155;left:8;width:166">
+<layer width=166>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>F</ci>
+    <lambda>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <bvar>
+        <ci>&amp;tgr;</ci>
+      </bvar>
+      <apply>
+        <ci>-mult-times-in</ci>
+        <apply>
+          <ci>-PARENS</ci>
+          <apply>
+            <minus/>
+            <apply>
+              <ci>Q</ci>
+              <ci>&amp;tgr;</ci>
+            </apply>
+            <apply>
+              <ci>R</ci>
+              <ci>t</ci>
+            </apply>
+          </apply>
+        </apply>
+        <apply>
+          <ci>dQ</ci>
+          <ci>&amp;tgr;</ci>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0190.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="35" mcd:aligny="208" 
+ style="position:absolute;top:195;left:16;width:42">
+<layer width=42>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>&amp;tgr;&amp;tgr;</ci>
+    <cn>0</cn>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0191.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="96" mcd:aligny="208" 
+ style="position:absolute;top:196;left:80;width:39">
+<layer width=39>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>tt</ci>
+    <cn>0</cn>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0192.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="23" mcd:aligny="240" 
+ style="position:absolute;top:228;left:8;width:39">
+<layer width=39>
+<comment mcd:mmldata="<math>
+  <ci>Given</ci>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0193.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="105" mcd:aligny="240" 
+ style="position:absolute;top:227;left:56;width:71">
+<layer width=71>
+<comment mcd:mmldata="<math>
+  <apply>
+    <ci>-EQUALS</ci>
+    <apply>
+      <ci>F</ci>
+      <ci>tt</ci>
+      <ci>&amp;tgr;&amp;tgr;</ci>
+    </apply>
+    <cn>0</cn>
+  </apply>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0194.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+ style="position:absolute;top:227;left:144">
+<layer >
+<img src="./Rotation_1_2_article_images/IMG0141.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+AJAAAADjAAAA5wAAAPUAAACpAAAA8AAAAAAAAACNAAAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEALwQAAgAUHQEACDwAAZAYAAAQDdGF1AAhAQBLOAACABglAQAIPAABkCAAABQRGaW5k
+BAAAAHi9AQoACkBAjnAAAIAIAAtAQAIPAACkCgAABQRcdFx0AAAAAAAAAAAAAAAAAA=="
+ border=0>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="48" mcd:aligny="304" 
+ style="position:absolute;top:261;left:8;width:129">
+<layer width=129>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>f</ci>
+    <lambda>
+      <bvar>
+        <ci>x</ci>
+      </bvar>
+      <bvar>
+        <ci>y</ci>
+      </bvar>
+      <apply>
+        <minus/>
+        <apply>
+          <divide/>
+          <apply>
+            <ci>-DERIVATIVE</ci>
+            <lambda>
+              <bvar>
+                <ci>x</ci>
+              </bvar>
+              <apply>
+                <ci>F</ci>
+                <ci>x</ci>
+                <ci>y</ci>
+              </apply>
+            </lambda>
+            <ci>x</ci>
+          </apply>
+          <apply>
+            <ci>-DERIVATIVE</ci>
+            <lambda>
+              <bvar>
+                <ci>y</ci>
+              </bvar>
+              <apply>
+                <ci>F</ci>
+                <ci>x</ci>
+                <ci>y</ci>
+              </apply>
+            </lambda>
+            <ci>y</ci>
+          </apply>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0195.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="26" mcd:aligny="368" 
+ style="position:absolute;top:356;left:8;width:41">
+<layer width=41>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>t.0</ci>
+    <cn>0</cn>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0196.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="92" mcd:aligny="368" 
+ style="position:absolute;top:355;left:72;width:54">
+<layer width=54>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>&amp;tgr;.0</ci>
+    <ci>tau</ci>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0197.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="162" mcd:aligny="368" 
+ style="position:absolute;top:355;left:144;width:52">
+<layer width=52>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>t.1</ci>
+    <apply>
+      <ci>-mult-times-in</ci>
+      <cn>2</cn>
+      <ci>&amp;pgr;</ci>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0198.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="23" mcd:aligny="408" 
+ style="position:absolute;top:396;left:8;width:39">
+<layer width=39>
+<comment mcd:mmldata="<math>
+  <ci>Given</ci>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0199.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="93" mcd:aligny="408" 
+ style="position:absolute;top:395;left:64;width:89">
+<layer width=89>
+<comment mcd:mmldata="<math>
+  <apply>
+    <ci>-EQUALS</ci>
+    <apply>
+      <ci>&amp;tgr;'</ci>
+      <ci>t</ci>
+    </apply>
+    <apply>
+      <ci>f</ci>
+      <ci>t</ci>
+      <apply>
+        <ci>&amp;tgr;</ci>
+        <ci>t</ci>
+      </apply>
+    </apply>
+  </apply>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0200.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="209" mcd:aligny="408" 
+ style="position:absolute;top:395;left:176;width:61">
+<layer width=61>
+<comment mcd:mmldata="<math>
+  <apply>
+    <ci>-EQUALS</ci>
+    <apply>
+      <ci>&amp;tgr;</ci>
+      <ci>t.0</ci>
+    </apply>
+    <ci>&amp;tgr;.0</ci>
+  </apply>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0201.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="270" mcd:aligny="408" 
+ style="position:absolute;top:395;left:256;width:112">
+<layer width=112>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>&amp;tgr;</ci>
+    <apply>
+      <ci>Odesolve</ci>
+      <ci>t</ci>
+      <ci>t.1</ci>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0202.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+ style="position:absolute;top:440;left:8">
+<layer >
+<img src="./Rotation_1_2_article_images/IMG0150.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+AAgAAAC4AQAAnAIAAGQCAAAIAAAAuAEAAAAAAACWAAAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEAZwQAAgAUHQECfwQAAQAYIQECfwQAAQAcJQECfwQAAQAgKQEACDwAAdgkAAAYBBTIu
+NTgxAAtAQJVLAACCCQAMQEACDwAAtAsAAAYBBTIuNTgxAAAADUBAn8EAAIAIDkBAAA8AAEANAAAAD0BA
+AA8AAIANAAAAAAAQQEASzgAAgAcRQEACDwAAZBAAAAMCXHQAEkBAjnAAAIAQABNAQAIPAACkEgAAAgF0
+AAAAABRAQJ/BAACABhVAQJ/BAABAFBZAQJ/BAABAFRdAQAIPAAB2FgAABQEENi4yOAAYQEACDwAAthYA
+AAIBATAAABlAQJ/BAACAFRpAQAAPAABAGQAAABtAQAAPAACAGQAAAAAAHEBAAg8AAKQUAAACAXQAAB0A
+AgAAAA9kMl9ncmFwaF9mb3JtYXQAAAAAAAAgAAAACWdyYXBoRGF0YQAAAAAAACUAAAAAAAAAAgMAAAAB
+AAAARwAAAA8AAAAKAAAAAQABAAAACmF4aXNGb3JtYXQBAAAAAAApAAAATAEAAAABAAAAAAAAAAAA/wAB
+KUwBAAAAAQAAAAAAAAAAAP8AAAEAAQAAAAd0cmFjZTJEAAAAAAAAJgAAAAEAHw8BASYCAR8CASYDAh8D
+ASYEAx8EASYBBB8FASYCBR8GASYDBh8HASYEAB8IASYBAR8JASYCAh8KASYDAx8LASYEBB8MASYBBR8N
+ASYCBh8OASYDAB8PASYEAR8AAAAAAAAAAAAA"
+ border=0>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="24" mcd:aligny="656" 
+ style="position:absolute;top:644;left:8;width:39">
+<layer width=39>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>T</ci>
+    <cn>0</cn>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0203.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="96" mcd:aligny="664" 
+ style="position:absolute;top:651;left:64;width:187">
+<layer width=187>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>L</ci>
+    <lambda>
+      <bvar>
+        <ci>h</ci>
+      </bvar>
+      <apply>
+        <plus/>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <ci>h</ci>
+          <apply>
+            <ci>Q</ci>
+            <apply>
+              <ci>&amp;tgr;</ci>
+              <ci>T</ci>
+            </apply>
+          </apply>
+        </apply>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <apply>
+            <ci>-PARENS</ci>
+            <apply>
+              <minus/>
+              <cn>1</cn>
+              <ci>h</ci>
+            </apply>
+          </apply>
+          <apply>
+            <ci>R</ci>
+            <ci>T</ci>
+          </apply>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0204.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="419" mcd:aligny="664" 
+ style="position:absolute;top:651;left:264;width:185">
+<layer width=185>
+<comment mcd:mmldata="<math>
+  <apply>
+    <ci>-EVAL</ci>
+    <apply>
+      <ci>-mult-times-in</ci>
+      <apply>
+        <ci>-PARENS</ci>
+        <apply>
+          <minus/>
+          <apply>
+            <ci>Q</ci>
+            <apply>
+              <ci>&amp;tgr;</ci>
+              <ci>T</ci>
+            </apply>
+          </apply>
+          <apply>
+            <ci>R</ci>
+            <ci>T</ci>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <ci>dQ</ci>
+        <apply>
+          <ci>&amp;tgr;</ci>
+          <ci>T</ci>
+        </apply>
+      </apply>
+    </apply>
+    <cn>0</cn>
+  </apply>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0205.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="59" mcd:aligny="720" 
+ style="position:absolute;top:698;left:24;width:144">
+<layer width=144>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>h.1</ci>
+    <lambda>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <apply>
+        <divide/>
+        <apply>
+          <minus/>
+          <apply>
+            <ci>R</ci>
+            <ci>t</ci>
+          </apply>
+          <apply>
+            <ci>Q</ci>
+            <apply>
+              <ci>&amp;tgr;</ci>
+              <ci>t</ci>
+            </apply>
+          </apply>
+        </apply>
+        <apply>
+          <ci>-abs</ci>
+          <apply>
+            <minus/>
+            <apply>
+              <ci>R</ci>
+              <ci>t</ci>
+            </apply>
+            <apply>
+              <ci>Q</ci>
+              <apply>
+                <ci>&amp;tgr;</ci>
+                <ci>t</ci>
+              </apply>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0206.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="219" mcd:aligny="720" 
+ style="position:absolute;top:698;left:184;width:114">
+<layer width=114>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>h.3</ci>
+    <lambda>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <apply>
+        <divide/>
+        <apply>
+          <ci>dQ</ci>
+          <apply>
+            <ci>&amp;tgr;</ci>
+            <ci>t</ci>
+          </apply>
+        </apply>
+        <apply>
+          <ci>-abs</ci>
+          <apply>
+            <ci>dQ</ci>
+            <apply>
+              <ci>&amp;tgr;</ci>
+              <ci>t</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0207.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="403" mcd:aligny="720" 
+ style="position:absolute;top:708;left:368;width:121">
+<layer width=121>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>h.2</ci>
+    <lambda>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <apply>
+        <ci>-CROSSPROD</ci>
+        <apply>
+          <ci>h.3</ci>
+          <ci>t</ci>
+        </apply>
+        <apply>
+          <ci>h.1</ci>
+          <ci>t</ci>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0208.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="36" mcd:aligny="776" 
+ style="position:absolute;top:742;left:16;width:62">
+<layer width=62>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>e.1</ci>
+    <vector>
+      <cn>1</cn>
+      <cn>0</cn>
+      <cn>0</cn>
+    </vector>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0209.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="108" mcd:aligny="776" 
+ style="position:absolute;top:742;left:88;width:62">
+<layer width=62>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>e.2</ci>
+    <vector>
+      <cn>0</cn>
+      <cn>1</cn>
+      <cn>0</cn>
+    </vector>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0210.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="188" mcd:aligny="776" 
+ style="position:absolute;top:742;left:168;width:62">
+<layer width=62>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>e.3</ci>
+    <vector>
+      <cn>0</cn>
+      <cn>0</cn>
+      <cn>1</cn>
+    </vector>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0211.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="64" mcd:aligny="856" 
+ style="position:absolute;top:815;left:24;width:119">
+<layer width=119>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>e.1s</ci>
+    <lambda>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <vector>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <ci>e.1</ci>
+          <apply>
+            <ci>h.1</ci>
+            <ci>t</ci>
+          </apply>
+        </apply>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <ci>e.1</ci>
+          <apply>
+            <ci>h.2</ci>
+            <ci>t</ci>
+          </apply>
+        </apply>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <ci>e.1</ci>
+          <apply>
+            <ci>h.3</ci>
+            <ci>t</ci>
+          </apply>
+        </apply>
+      </vector>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0212.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="184" mcd:aligny="856" 
+ style="position:absolute;top:815;left:144;width:119">
+<layer width=119>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>e.2s</ci>
+    <lambda>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <vector>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <ci>e.2</ci>
+          <apply>
+            <ci>h.1</ci>
+            <ci>t</ci>
+          </apply>
+        </apply>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <ci>e.2</ci>
+          <apply>
+            <ci>h.2</ci>
+            <ci>t</ci>
+          </apply>
+        </apply>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <ci>e.2</ci>
+          <apply>
+            <ci>h.3</ci>
+            <ci>t</ci>
+          </apply>
+        </apply>
+      </vector>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0213.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="304" mcd:aligny="856" 
+ style="position:absolute;top:815;left:264;width:119">
+<layer width=119>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>e.3s</ci>
+    <lambda>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <vector>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <ci>e.3</ci>
+          <apply>
+            <ci>h.1</ci>
+            <ci>t</ci>
+          </apply>
+        </apply>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <ci>e.3</ci>
+          <apply>
+            <ci>h.2</ci>
+            <ci>t</ci>
+          </apply>
+        </apply>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <ci>e.3</ci>
+          <apply>
+            <ci>h.3</ci>
+            <ci>t</ci>
+          </apply>
+        </apply>
+      </vector>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0214.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="60" mcd:aligny="968" 
+ style="position:absolute;top:934;left:16;width:211">
+<layer width=211>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>s</ci>
+    <lambda>
+      <bvar>
+        <ci>w</ci>
+      </bvar>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <apply>
+        <ci>-mult-times-in</ci>
+        <apply>
+          <ci>-abs</ci>
+          <apply>
+            <minus/>
+            <apply>
+              <ci>R</ci>
+              <ci>t</ci>
+            </apply>
+            <apply>
+              <ci>Q</ci>
+              <apply>
+                <ci>&amp;tgr;</ci>
+                <ci>t</ci>
+              </apply>
+            </apply>
+          </apply>
+        </apply>
+        <vector>
+          <apply>
+            <ci>cos</ci>
+            <ci>w</ci>
+          </apply>
+          <apply>
+            <ci>sin</ci>
+            <ci>w</ci>
+          </apply>
+          <cn>0</cn>
+        </vector>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0215.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="317" mcd:aligny="968" 
+ style="position:absolute;top:927;left:272;width:208">
+<layer width=208>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>S</ci>
+    <lambda>
+      <bvar>
+        <ci>w</ci>
+      </bvar>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <apply>
+        <plus/>
+        <vector>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <apply>
+              <ci>e.1s</ci>
+              <ci>t</ci>
+            </apply>
+            <apply>
+              <ci>s</ci>
+              <ci>w</ci>
+              <ci>t</ci>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <apply>
+              <ci>e.2s</ci>
+              <ci>t</ci>
+            </apply>
+            <apply>
+              <ci>s</ci>
+              <ci>w</ci>
+              <ci>t</ci>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <apply>
+              <ci>e.3s</ci>
+              <ci>t</ci>
+            </apply>
+            <apply>
+              <ci>s</ci>
+              <ci>w</ci>
+              <ci>t</ci>
+            </apply>
+          </apply>
+        </vector>
+        <apply>
+          <ci>Q</ci>
+          <apply>
+            <ci>&amp;tgr;</ci>
+            <ci>t</ci>
+          </apply>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0216.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+mcd:alignx="119" mcd:aligny="1040" 
+ style="position:absolute;top:1027;left:88;width:236">
+<layer width=236>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>Surf</ci>
+    <apply>
+      <ci>CreateMesh</ci>
+      <ci>S</ci>
+      <cn>0</cn>
+      <apply>
+        <ci>-mult-times-in</ci>
+        <cn>1</cn>
+        <ci>&amp;pgr;</ci>
+      </apply>
+      <cn>0</cn>
+      <apply>
+        <ci>-mult-times-in</ci>
+        <cn>2</cn>
+        <ci>&amp;pgr;</ci>
+      </apply>
+      <cn>50</cn>
+      <cn>50</cn>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Rotation_1_2_article_images/IMG0217.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+ style="position:absolute;top:1080;left:24">
+<layer >
+<img src="./Rotation_1_2_article_images/IMG0186.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+ABgAAAA4BAAArQEAAJ0FAADeAAAAOAQAAAAAAAC6AAAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEBe8QAAgAUHQEAADwAAQAYAAAAIQECfwQAAgAYJQEA8AQAAQAgAAAoAAgAAAAlDVlNF
+cUl0ZW0BAAAAAAAMAAAABkVxSXRlbQEAAAAAAA0AAAAECQsAAgAAAAxDVlNDb21ib0l0ZW0AAAAAAAAQ
+AAAAB0NWU0l0ZW0AAAAAAAAPAAAAPA4AABoAAAA5BAAAjAEAAEUBAAD//wAAEABDVlNPbGVDbGllbnRJ
+dGVtAAEAAAIAAAABAAAAAAABAAAAAA4AANDPEeChsRrhAAAAAAAAAAAAAAAAAAAAAD4AAwD+/wkABgAA
+AAAAAAAAAAAAAQAAAAEAAAAAAAAAABAAAAIAAAABAAAA/v///wAAAAAAAAAA////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////f//
+//7////+////BAAAAAUAAAD+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////9SAG8AbwB0ACAARQBuAHQAcgB5AAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFgAFAP//////////AgAAAKVJPifeAtERmukA
+AMAIcgsAAAAAAAAAAAAAAABwe8qE+HvMAQMAAABABQAAAAAAAEMAbwBuAHQAZQBuAHQAcwAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAIA////////////////AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANgEAAAAAAAAAgBPAGwAZQBQAHIAZQBz
+ADAAMAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAgEBAAAA////
+//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AP///////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADQAAAP7///8OAAAADwAA
+ABAAAAARAAAAEgAAABMAAAAUAAAA/v//////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////AQAJAO4oAACXIQAAAAAAAAoAAAAAAAAAAAAB
+AAAAAAAAAAAAAADTC4C1oGLPP1iq/XEo4RZAC3sBmWsP5T/6x2E+/2JQQMEcpCOUn+M/AQEA/////zMz
+M/8AAAIAAWQAEgAAAAAAAAAAAAEACQABAAAAAP8AAAEACQABAQEBAQABWQUAAQAFAAoACgAAAAAAAAIA
+AAAAAAAUwAAAAAAAABRAAAAAwOQtA8AAAAAA2/8PQAABAAkAAQEBAQEAAVoFAAEABQAKAAoAAQAAAAAC
+AAAAAAAAFMAAAAAAAAAUQAAAAAAAABDAAAAAAAAAEEAAAQAJAAEBAQEBAAFYBQABAAUACgAKAAIAAAAA
+AgAAAAAAABTAAAAAAAAAFEAAAAAgn6ADwAAAAMAj9v8/AAEACQAAAAoACgAFAAUACgAKAAoACgAA/wAA
+AP8AAP//AAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAQAJAAAACgAKAAUABQAKAAoA
+CgAKAAD/AAAA/wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA////AAAAAAABAAkAAAAKAAoA
+BQAFAAoACgAKAAoAAP8AAAD/AAD//wAA//8AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAD///8AAAAAAAEA
+AAAA/wAAAAAAgD8AAIA/AAAAAAAAAAAAQAEAAQAAAAAA/wAAAACAPwAAgD8AAIA/AAAAAAFAAQABAAAA
+AAAA/wAAAIA/AAAAAAAAgD8AAAAAAkABAAAAAAAEAAAAAQAJAAAAAAAA/wAA/wAA/wAA/////wAAgD8A
+AIA/AACAPwIAAQBEIyA++AEAAAAAgEAAAIBAHuJwPjMR1b4AAIDAAACAPwAAgD8AAAAAAAAAAAAAgD8D
+AAQAAAAAABQAAAAPAA8ADwAPAA8ADwAAARUAFQABAAAAAAAAEMAAAAAAAAAQQAAAAAAAABTAAAAAAAAA
+FEAzABUAAAAERmlyZQEACQAAAAAAAAAAAAQAAAABAAAA/////wIAAABOQU5JAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAD/AAD/////AACAPwAAgD8AAIA/AgABAEQjID74
+AQAAAACAQAAAQEC6AgBAAAAAALPpP8DY/n9AAAAAAAAAAAAAAAAAAACAPwMABAAAAAAAFAAAAA8ADwAP
+AA8ADwAPAAABFQAVAAEAAAAAAAAAAB+F61G4HhlAAAAAAAAAFMAAAAAAAAAUQGQAFQAAAARGaXJlAQAJ
+AAAAAAAA/wAA/wAA/wAA/////wAAgD8AAIA/AACAPwIAAQBEIyA++AEAAAAAgEAAAEBAvc0oPwAAAAAJ
+WiNAAABAQBarlD4AAAAAAAAAAAAAgD8DAAQAAAAAABQAAAAPAA8ADwAPAA8ADwAAARUAFQABAAAAAAAA
+AAAAAAAAAADwPwAAAAAAABTAAAAAAAAAFEAVABUAAAAERmlyZQEACQABAAAAAP8AAAAAAP8BAP////8A
+AIA/AACAPwAAgD8AAAEAQSEgPvgBAAAAAIBAAABAQCZvGcD5BB3AA5s/wJX3f0Aesf8/AAAAAAAAAAAA
+AIA/AwAEAAAAAAAUAAAADwAPAA8ADwAPAA8AAAEVABUAAQAAAAAAABTAAAAAAAAAFEAAAAAAAAAUwAAA
+AAAAABRAFQAVAAAABEZpcmUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAMQEAKwwAAgAgNQEAKwwAAQAwOQEAKwwAAQA0PQEACDwAAZA4AAAIBUQAQQEAC
+DwAApA4AAAIBUgAAEUBAAg8AAKQNAAACAUwAABJAQAIPAACkDAAABQRTdXJmAAAAAAIAAAAAAAAAAAA=
+"
+ border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties="optimize:true"
+ style="position:absolute;top:1080;left:488">
+<layer >
+<img src="./Rotation_1_2_article_images/IMG0219.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+AOgBAAA4BAAAVAMAAKoFAACZAgAAOAQAAAAAAADbAAAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEBe8QAAgAUHQEAADwAAQAYAAAAIQECfwQAAgAYJQEA8AQAAQAgAAAoAAgAAAAlDVlNF
+cUl0ZW0BAAAAAAAMAAAABkVxSXRlbQEAAAAAAA0AAAAECQsAAgAAAAxDVlNDb21ib0l0ZW0AAAAAAAAQ
+AAAAB0NWU0l0ZW0AAAAAAAAPAAAAPA4AAOoBAAA5BAAAYwEAAFIBAAD//wAAEABDVlNPbGVDbGllbnRJ
+dGVtAAEAAAMAAAABAAAAAAABAAAAAA4AANDPEeChsRrhAAAAAAAAAAAAAAAAAAAAAD4AAwD+/wkABgAA
+AAAAAAAAAAAAAQAAAAEAAAAAAAAAABAAAAIAAAABAAAA/v///wAAAAAAAAAA////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////f//
+//7////+////BAAAAAUAAAD+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////9SAG8AbwB0ACAARQBuAHQAcgB5AAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFgAFAP//////////AgAAAKVJPifeAtERmukA
+AMAIcgsAAAAAAAAAAAAAAADgswOF+HvMAQMAAABABQAAAAAAAEMAbwBuAHQAZQBuAHQAcwAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAIA////////////////AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPQEAAAAAAAAAgBPAGwAZQBQAHIAZQBz
+ADAAMAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAgEBAAAA////
+//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AP///////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADQAAAP7///8OAAAADwAA
+ABAAAAARAAAAEgAAABMAAAAUAAAA/v//////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////AQAJALEkAADvIgAAAAAAAAoAAAAAAAAAAAAB
+AAAAAAAAAAAAAAAui/5+x034P9sHL9VRh6A/Ha/T5uFPpT9LKRdumElTQOAGRs1L8Oc/AQEA/////zMz
+M/8AAAIAAGQAEgAAAAAAAAAAAAEACQABAAAAAP8AAAEACQABAQEBAQABWQUAAQAFAAoACgAAAAAAAAIA
+AAAAAAAUwAAAAAAAABRAAAAAwOQtA8AAAAAA2/8PQAABAAkAAQEBAQEAAVoFAAEABQAKAAoAAQAAAAAC
+AAAAAAAAFMAAAAAAAAAUQAAAAAAAABTAAAAAAAAAFEAAAQAJAAEBAQEBAAFYBQABAAUACgAKAAIAAAAA
+AgAAAAAAABTAAAAAAAAAFEAAAAAgn6ADwAAAAMAj9v8/AAEACQAAAAoACgAFAAUACgAKAAoACgAA/wAA
+AP8AAP//AAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAQAJAAAACgAKAAUABQAKAAoA
+CgAKAAD/AAAA/wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA////AAAAAAABAAkAAAAKAAoA
+BQAFAAoACgAKAAoAAP8AAAD/AAD//wAA//8AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAD///8AAAAAAAEA
+AAAA/wAAAAAAgD8AAIA/AAAAAAAAAAAAQAEAAQAAAAAA/wAAAACAPwAAgD8AAIA/AAAAAAFAAQABAAAA
+AAAA/wAAAIA/AAAAAAAAgD8AAAAAAkABAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQAEAAAAABAAA
+AAEACQAAAAAAAP8AAAAAAP8BAACAQP8AAEBAAACAPwAA4EAAAAEAQSEgPvgBAAAAAOBAAABAQCZvGcD5
+BB3AA5s/wJX3f0Aesf8/AAAAAAAAAAAAAIA/AwAHAAAAAAAUAAAADwAPAA8ADwAPAA8AAAEVABUAAQAA
+AAAAABTAAAAAAAAAFEAAAAAAAAAUAAAAAAQAAAABAAAA/////wIAAABOQU5JAAAAAJhdPxsAAAAAqEzb
+PwAAAABQm80/AAAAAAAAAAAYxMkbKGTjGcAAAAAAAAAUQBUAFQAAAARGaXJlAQAJAAAAAAAA/wAA/wAA
+/wAA/////wAAgD8AAIA/AACAPwIAAQBEIyA++AEAAAAAgEAAAKBAtQrEvb8XTb8AAKDAt/Z/Pxvrfz8A
+AAAAAAAAAAAAgD8DAAcAAAAAABQAAAAPAA8ADwAPAA8ADwAAARUAFQABAAAAAAAAFMAAAAAAAAAUQAAA
+AAAAABTAAAAAAAAAFEBkABUAAAAERmlyZQEACQAAAAAAAP8AAP8AAP8AAP////8AAIA/AAAAQAAAgD8C
+AAEARCMgPvgBAAAAAIBAAABAQLoCAEAAAAAAs+k/wNj+f0AAAAAAAAAAAAAAAAAAAIA/AwAHAAAAAAAU
+AAAADwAPAA8ADwAPAA8AAAEVABUAAQAAAAAAAAAAH4XrUbgeGUAAAAAAAAAUwAAAAAAAABRAZAAVAAAA
+BEZpcmUBAAkAAAAAAAD/AAAAAAD/AAD/////AACAPwAAgD8AAIA/AgABAEQjID74AQAAAACAQAAAQEC9
+zSg/AAAAAAlaI0AAAEBAFquUPgAAAAAAAAAAAACAPwMABwAAAAAAFAAAAA8ADwAPAA8ADwAPAAABFQAV
+AAEAAAAAAAAAAAAAAAAAAPA/AAAAAAAAFMAAAAAAAAAUQGQAFQAAAARGaXJlAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAMQEAKwwAAgAgNQEAKwwAAQAwOQEAKwwAAQA0PQEACDwAAZA4AAAUEU3VyZgAQ
+QEACDwAApA4AAAIBUQAAEUBAAg8AAKQNAAACAVIAABJAQAIPAACkDAAAAgFMAAAAAAIAAAAAAAAAAAA=
+"
+ border=0>
+</layer>
+</div>
+<div style="position: absolute; width: 100px; height: 100px; z-index: 1; left: 599px; top: 92px" id="layer1">
+	<b><i><font color="#FF0000" size="4">Описание <a href="article_1_1.htm">
+	здесь</a></font></i></b></div>
+</body>
+</html>

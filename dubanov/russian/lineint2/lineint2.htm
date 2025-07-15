@@ -1,0 +1,784 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="lineint2.files/filelist.xml">
+<link rel=Edit-Time-Data href="lineint2.files/editdata.mso">
+<link rel=OLE-Object-Data href="lineint2.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Пересечение линейчатой поверхности и прямой</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="City"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>1</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>1</o:LastAuthor>
+  <o:Revision>8</o:Revision>
+  <o:TotalTime>1092</o:TotalTime>
+  <o:Created>2005-07-17T08:23:00Z</o:Created>
+  <o:LastSaved>2005-07-17T09:28:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>465</o:Words>
+  <o:Characters>2655</o:Characters>
+  <o:Company>1</o:Company>
+  <o:Lines>22</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3114</o:CharactersWithSpaces>
+  <o:Version>11.6360</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>9.05 пт</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>9.05 пт</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DrawingGridHorizontalOrigin>56.7 пт</w:DrawingGridHorizontalOrigin>
+  <w:DrawingGridVerticalOrigin>56.7 пт</w:DrawingGridVerticalOrigin>
+  <w:Compatibility>
+   <w:SelectEntireFieldWithStartOrEnd/>
+   <w:UseWord2002TableStyleRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.45pt;
+	mso-footer-margin:35.45pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableGrid
+	{mso-style-name:"Сетка таблицы";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="4098"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-ansi-language:EN-US'>3</span>.</b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-ansi-language:
+EN-US'>2</span> Пересечение линейчатой поверхности и <o:p></o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'>однопараметрического множества <span class=GramE>прямых</span><o:p></o:p></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><span
+class=GramE>Рассмотрим линейчатую поверхность, заданную в виде <sub><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:180pt;
+ height:38.25pt' o:ole="">
+ <v:imagedata src="lineint2.files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=240 height=51
+src="lineint2.files/image002.gif" v:shapes="_x0000_i1025"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1183130099">
+ </o:OLEObject>
+</xml><![endif]-->, и поверхность <sub><!--[if gte vml 1]><v:shape id="_x0000_i1026"
+ type="#_x0000_t75" style='width:113.25pt;height:17.25pt' o:ole="">
+ <v:imagedata src="lineint2.files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=151 height=23
+src="lineint2.files/image004.gif" v:shapes="_x0000_i1026"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1183130100">
+ </o:OLEObject>
+</xml><![endif]-->. Требуется найти их линию пересечения, что соответствует
+решению системы уравнений <sub><!--[if gte vml 1]><v:shape id="_x0000_i1027"
+ type="#_x0000_t75" style='width:3in;height:38.25pt' o:ole="">
+ <v:imagedata src="lineint2.files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=288 height=51
+src="lineint2.files/image006.gif" v:shapes="_x0000_i1027"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1183130101">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>для каждого значения
+параметра <sub><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75"
+ style='width:50.25pt;height:14.25pt' o:ole="">
+ <v:imagedata src="lineint2.files/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=67 height=19
+src="lineint2.files/image008.gif" v:shapes="_x0000_i1028"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1183130102">
+ </o:OLEObject>
+</xml><![endif]-->. Для этой цели была составлена процедура <b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+mso-ansi-language:EN-US'>function</span><span lang=EN-US style='color:#339966'>
+</span></b><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='color:#339966;mso-ansi-language:EN-US'>F</span><span style='color:#339966'>=</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+mso-ansi-language:EN-US'>F</span><span style='color:#339966'>3(</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+mso-ansi-language:EN-US'>X</span><span style='color:#339966'>,</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+mso-ansi-language:EN-US'>a</span><span style='color:#339966'>,</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+mso-ansi-language:EN-US'>b</span><span style='color:#339966'>,</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+mso-ansi-language:EN-US'>c</span><span style='color:#339966'>,</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+mso-ansi-language:EN-US'>D</span><span style='color:#339966'>,</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+mso-ansi-language:EN-US'>E</span><span style='color:#339966'>)</span></b>, для
+решения системы уравнений <sub><!--[if gte vml 1]><v:shape id="_x0000_i1029"
+ type="#_x0000_t75" style='width:63pt;height:17.25pt' o:ole="">
+ <v:imagedata src="lineint2.files/image009.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=84 height=23
+src="lineint2.files/image010.gif" v:shapes="_x0000_i1029"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1183130103">
+ </o:OLEObject>
+</xml><![endif]-->. Сама система уравнений <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1030" type="#_x0000_t75" style='width:63pt;height:17.25pt' o:ole="">
+ <v:imagedata src="lineint2.files/image011.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=84 height=23
+src="lineint2.files/image010.gif" v:shapes="_x0000_i1030"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1183130104">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>имеет вид <sub><span
+style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1050" type="#_x0000_t75" style='width:368.25pt;height:18pt' o:ole="">
+ <v:imagedata src="lineint2.files/image012.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=491 height=24
+src="lineint2.files/image013.gif" v:shapes="_x0000_i1050"><![endif]></span></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1050"
+  DrawAspect="Content" ObjectID="_1183130105">
+ </o:OLEObject>
+</xml><![endif]-->, при каждом <sub><!--[if gte vml 1]><v:shape id="_x0000_i1031"
+ type="#_x0000_t75" style='width:50.25pt;height:14.25pt' o:ole="">
+ <v:imagedata src="lineint2.files/image014.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=67 height=19
+src="lineint2.files/image008.gif" v:shapes="_x0000_i1031"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1183130106">
+ </o:OLEObject>
+</xml><![endif]-->. При решении данной задачи мы имели в виду, что для каждого <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:50.25pt;height:14.25pt'
+ o:ole="">
+ <v:imagedata src="lineint2.files/image014.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=67 height=19
+src="lineint2.files/image008.gif" v:shapes="_x0000_i1032"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1183130107">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>существуют</span>
+решения <sub><!--[if gte vml 1]><v:shape id="_x0000_i1033" type="#_x0000_t75"
+ style='width:23.25pt;height:17.25pt' o:ole="">
+ <v:imagedata src="lineint2.files/image015.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=31 height=23
+src="lineint2.files/image016.gif" v:shapes="_x0000_i1033"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1183130108">
+ </o:OLEObject>
+</xml><![endif]-->, <sub><span style='position:relative;top:5.0pt;mso-text-raise:
+-5.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1034" type="#_x0000_t75"
+ style='width:20.25pt;height:17.25pt' o:ole="">
+ <v:imagedata src="lineint2.files/image017.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=23
+src="lineint2.files/image018.gif" v:shapes="_x0000_i1034"><![endif]></span></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1183130109">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>и <sub><span
+style='position:relative;top:5.0pt;mso-text-raise:-5.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" style='width:23.25pt;height:17.25pt'
+ o:ole="">
+ <v:imagedata src="lineint2.files/image019.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=31 height=23
+src="lineint2.files/image020.gif" v:shapes="_x0000_i1035"><![endif]></span></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1183130110">
+ </o:OLEObject>
+</xml><![endif]-->.</p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=36 style='width:26.7pt;border:solid windowtext 1.0pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>1</p>
+  </td>
+  <td width=331 style='width:248.05pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>function TestFsolve1()<o:p></o:p></span></b></p>
+  <p class=MsoNormal><span class=SpellE><b style='mso-bidi-font-weight:normal'><span
+  lang=EN-US style='color:#339966;mso-ansi-language:EN-US'>clc</span></b></span><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+  mso-ansi-language:EN-US'>, clear</span><span style='color:#339966'><o:p></o:p></span></b></p>
+  </td>
+  <td width=291 style='width:217.95pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>Заголовок функции</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=36 style='width:26.7pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>2</p>
+  </td>
+  <td width=331 style='width:248.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>r1=[0 <span class=SpellE>0</span>
+  3]; r2=[0 5 0]; r3=[5 0 <span class=SpellE>0</span>]; r4=[5 <span
+  class=SpellE>5</span> 3];</span><span style='color:#339966'><o:p></o:p></span></b></p>
+  </td>
+  <td width=291 style='width:217.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>Задание векторов <sub><!--[if gte vml 1]><v:shape
+   id="_x0000_i1036" type="#_x0000_t75" style='width:14.25pt;height:17.25pt'
+   o:ole="">
+   <v:imagedata src="lineint2.files/image021.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=19 height=23
+  src="lineint2.files/image022.gif" v:shapes="_x0000_i1036"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1036"
+    DrawAspect="Content" ObjectID="_1183130111">
+   </o:OLEObject>
+  </xml><![endif]-->, <sub><!--[if gte vml 1]><v:shape id="_x0000_i1037"
+   type="#_x0000_t75" style='width:15pt;height:17.25pt' o:ole="">
+   <v:imagedata src="lineint2.files/image023.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=20 height=23
+  src="lineint2.files/image024.gif" v:shapes="_x0000_i1037"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1037"
+    DrawAspect="Content" ObjectID="_1183130112">
+   </o:OLEObject>
+  </xml><![endif]-->, <sub><!--[if gte vml 1]><v:shape id="_x0000_i1038"
+   type="#_x0000_t75" style='width:15pt;height:18pt' o:ole="">
+   <v:imagedata src="lineint2.files/image025.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=20 height=24
+  src="lineint2.files/image026.gif" v:shapes="_x0000_i1038"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1038"
+    DrawAspect="Content" ObjectID="_1183130113">
+   </o:OLEObject>
+  </xml><![endif]-->, <sub><!--[if gte vml 1]><v:shape id="_x0000_i1039"
+   type="#_x0000_t75" style='width:15pt;height:17.25pt' o:ole="">
+   <v:imagedata src="lineint2.files/image027.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=20 height=23
+  src="lineint2.files/image028.gif" v:shapes="_x0000_i1039"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1039"
+    DrawAspect="Content" ObjectID="_1183130114">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'> </span>для определения
+  линейчатой поверхности</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:103.4pt'>
+  <td width=36 style='width:26.7pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:103.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>3</p>
+  </td>
+  <td width=331 style='width:248.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:103.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>h1=-2:0.1:2;t1=-2:0.1:10;<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>[h,t,R1]=<span class=SpellE>meshgrid</span>(h1,t1,r1);
+  [h,t,R2]=<span class=SpellE>meshgrid</span>(h1,t1,r2);<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>[h,t,R3]=<span class=SpellE>meshgrid</span>(h1,t1,r3);
+  [h,t,R4]=<span class=SpellE>meshgrid</span>(h1,t1,r4);<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>R=h.*(R3-R1<span class=GramE>)+</span>t.*(R2-R1)+...<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'><span
+  style='mso-spacerun:yes'>  </span>t.*h.*(-R3+R1+R4-R2)+R1;<o:p></o:p></span></b></p>
+  </td>
+  <td width=291 style='width:217.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:103.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>Данный блок
+  операторов необходим для визуализации линейчатой поверхности</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=36 style='width:26.7pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>4</p>
+  </td>
+  <td width=331 style='width:248.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>up=-20:20; <span class=SpellE>vp</span>=0:50;
+  [<span class=SpellE>u,v</span>]=<span class=SpellE>meshgrid</span>(<span
+  class=SpellE>up,vp</span>);<o:p></o:p></span></b></p>
+  </td>
+  <td width=291 style='width:217.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>Задание области
+  определения параметров <sub><!--[if gte vml 1]><v:shape id="_x0000_i1040"
+   type="#_x0000_t75" style='width:9.75pt;height:11.25pt' o:ole="">
+   <v:imagedata src="lineint2.files/image029.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=13 height=15
+  src="lineint2.files/image030.gif" v:shapes="_x0000_i1040"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1040"
+    DrawAspect="Content" ObjectID="_1183130115">
+   </o:OLEObject>
+  </xml><![endif]-->, <sub><!--[if gte vml 1]><v:shape id="_x0000_i1041"
+   type="#_x0000_t75" style='width:9pt;height:11.25pt' o:ole="">
+   <v:imagedata src="lineint2.files/image031.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=12 height=15
+  src="lineint2.files/image032.gif" v:shapes="_x0000_i1041"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1041"
+    DrawAspect="Content" ObjectID="_1183130116">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=36 style='width:26.7pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>5</p>
+  </td>
+  <td width=331 style='width:248.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>C(:,:,1)=<span class=SpellE>fx</span>(v);
+  C(:,:,2)=<span class=SpellE>fy</span>(v); C(:,:,3)=<span class=SpellE>fz</span>(v);<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>l=[0 <span class=SpellE>0</span>
+  2]; L=ones(size(C));<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>L(:,:,1)=l(1); L(:,:,2)=l(2);
+  L(:,:,3)=l(3);<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>U(:,:,1)=u;<span
+  style='mso-spacerun:yes'>    </span>U(:,:,2)=u;<span
+  style='mso-spacerun:yes'>    </span>U(:,:,3)=u;<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>S=C+U.*L; f=size(C); <o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>X=[zeros(f(1),1),zeros(f(1),1),zeros(f(1),1)];<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>E=[r1(1)-<span class=SpellE>fx</span>(<span
+  class=SpellE>vp</span>)' r1(2)-<span class=SpellE>fy</span>(<span
+  class=SpellE>vp</span>)' r1(3)-<span class=SpellE>fz</span>(<span
+  class=SpellE>vp</span>)'];<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>D=ones(length(<span
+  class=SpellE>vp</span>),3);<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>D(:,1)=l(1); D(:,2)=l(2);
+  D(:,3)=l(3);<o:p></o:p></span></b></p>
+  </td>
+  <td width=291 style='width:217.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>Задание вектора <sub><!--[if gte vml 1]><v:shape
+   id="_x0000_i1042" type="#_x0000_t75" style='width:90.75pt;height:99.75pt'
+   o:ole="">
+   <v:imagedata src="lineint2.files/image033.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=121 height=133
+  src="lineint2.files/image034.gif" v:shapes="_x0000_i1042"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1042"
+    DrawAspect="Content" ObjectID="_1183130117">
+   </o:OLEObject>
+  </xml><![endif]-->(для примера) и вектора <sub><!--[if gte vml 1]><v:shape
+   id="_x0000_i1043" type="#_x0000_t75" style='width:48.75pt;height:56.25pt'
+   o:ole="">
+   <v:imagedata src="lineint2.files/image035.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=65 height=75
+  src="lineint2.files/image036.gif" v:shapes="_x0000_i1043"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1043"
+    DrawAspect="Content" ObjectID="_1183130118">
+   </o:OLEObject>
+  </xml><![endif]-->.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=36 style='width:26.7pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>6</p>
+  </td>
+  <td width=331 style='width:248.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span class=SpellE><span class=GramE><b style='mso-bidi-font-weight:
+  normal'><span lang=EN-US style='color:#339966;mso-ansi-language:EN-US'>tt</span></b></span></span><span
+  class=GramE><b style='mso-bidi-font-weight:normal'><span style='color:#339966'>=</span></b></span><span
+  class=SpellE><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>fsolve</span></b></span><b
+  style='mso-bidi-font-weight:normal'><span style='color:#339966'>(@</span></b><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+  mso-ansi-language:EN-US'>F</span><span style='color:#339966'>3,</span></b><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+  mso-ansi-language:EN-US'>X</span><span style='color:#339966'>,</span></b><span
+  class=SpellE><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>optimset</span></b></span><b
+  style='mso-bidi-font-weight:normal'><span style='color:#339966'>('</span></b><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+  mso-ansi-language:EN-US'>Display</span><span style='color:#339966'>','</span></b><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+  mso-ansi-language:EN-US'>off</span><span style='color:#339966'>'),...<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='color:#339966'><span style='mso-spacerun:yes'>           </span></span></b><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+  mso-ansi-language:EN-US'>r3-r1,r2-r1,-r3+r1+r4-r2,-D,E);<o:p></o:p></span></b></p>
+  <p class=MsoNormal><st1:City w:st="on"><st1:place w:st="on"><span
+    class=SpellE><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+    style='color:#339966;mso-ansi-language:EN-US'>ur</span></b></span></st1:place></st1:City><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+  mso-ansi-language:EN-US'>=<span class=SpellE>tt</span>(:,3);</span><span
+  style='color:#339966'><o:p></o:p></span></b></p>
+  </td>
+  <td width=291 style='width:217.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>Непосредственное
+  обращение к процедуре <span class=SpellE><b style='mso-bidi-font-weight:normal'><span
+  lang=EN-US style='color:#339966;mso-ansi-language:EN-US'>fsolve</span></b></span>,
+  где столбец <span class=SpellE><b style='mso-bidi-font-weight:normal'><span
+  lang=EN-US style='color:#339966;mso-ansi-language:EN-US'>tt</span></b></span><b
+  style='mso-bidi-font-weight:normal'><span style='color:#339966'>(:,1)</span></b>
+  соответствует переменной <sub><!--[if gte vml 1]><v:shape id="_x0000_i1044"
+   type="#_x0000_t75" style='width:9.75pt;height:14.25pt' o:ole="">
+   <v:imagedata src="lineint2.files/image037.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=13 height=19
+  src="lineint2.files/image038.gif" v:shapes="_x0000_i1044"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1044"
+    DrawAspect="Content" ObjectID="_1183130119">
+   </o:OLEObject>
+  </xml><![endif]-->, столбец <span class=SpellE><b style='mso-bidi-font-weight:
+  normal'><span lang=EN-US style='color:#339966;mso-ansi-language:EN-US'>tt</span></b></span><b
+  style='mso-bidi-font-weight:normal'><span style='color:#339966'>(:,2)</span></b><span
+  style='mso-spacerun:yes'>  </span>- переменной <sub><!--[if gte vml 1]><v:shape
+   id="_x0000_i1045" type="#_x0000_t75" style='width:6.75pt;height:12pt' o:ole="">
+   <v:imagedata src="lineint2.files/image039.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=9 height=16
+  src="lineint2.files/image040.gif" v:shapes="_x0000_i1045"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1045"
+    DrawAspect="Content" ObjectID="_1183130120">
+   </o:OLEObject>
+  </xml><![endif]-->, а столбец <span class=SpellE><b style='mso-bidi-font-weight:
+  normal'><span lang=EN-US style='color:#339966;mso-ansi-language:EN-US'>tt</span></b></span><b
+  style='mso-bidi-font-weight:normal'><span style='color:#339966'>(:,3)</span></b>
+  – переменной <sub><!--[if gte vml 1]><v:shape id="_x0000_i1046" type="#_x0000_t75"
+   style='width:9.75pt;height:11.25pt' o:ole="">
+   <v:imagedata src="lineint2.files/image029.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=13 height=15
+  src="lineint2.files/image030.gif" v:shapes="_x0000_i1046"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1046"
+    DrawAspect="Content" ObjectID="_1183130121">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=36 style='width:26.7pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>7</p>
+  </td>
+  <td width=331 style='width:248.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>s(:,1)=<span class=SpellE>fx</span>(<span
+  class=SpellE>vp</span>)'+<st1:place w:st="on"><st1:City w:st="on"><span
+    class=SpellE>ur</span></st1:City></st1:place>*l(1); <o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>s(:,2)=<span class=SpellE>fy</span>(<span
+  class=SpellE>vp</span>)'+<span class=SpellE>ur</span>*l(2); <o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>s(:,3)=<span class=SpellE>fz</span>(<span
+  class=SpellE>vp</span>)'+<st1:City w:st="on"><st1:place w:st="on"><span
+    class=SpellE>ur</span></st1:place></st1:City>*l(3);</span><span
+  style='color:#339966'><o:p></o:p></span></b></p>
+  </td>
+  <td width=291 style='width:217.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>Расчет линии
+  пересечения <sub><!--[if gte vml 1]><v:shape id="_x0000_i1047" type="#_x0000_t75"
+   style='width:114.75pt;height:17.25pt' o:ole="">
+   <v:imagedata src="lineint2.files/image041.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=153 height=23
+  src="lineint2.files/image042.gif" v:shapes="_x0000_i1047"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1047"
+    DrawAspect="Content" ObjectID="_1183130122">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=36 style='width:26.7pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>8</p>
+  </td>
+  <td width=331 style='width:248.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>mesh(R(:,:,1),R(:,:,2),R(:,:,3))<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>hold on,
+  mesh(S(:,:,1),S(:,:,2),S(:,:,3))<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>hold on, plot3(s(:,1),s(:,2),s(:,3),'-b')<o:p></o:p></span></b></p>
+  </td>
+  <td width=291 style='width:217.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>Визуализация
+  линейчатой поверхности, однопараметрического множества прямых и линии их
+  пересечения</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes'>
+  <td width=36 style='width:26.7pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>9</p>
+  </td>
+  <td width=331 style='width:248.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>%-------------------------<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>function F=F3(<span
+  class=SpellE>X,a,b,c,D,E</span>)<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>F(:,1)=a(1)*X(:,1)+b(1)*X(:,2)+...<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'><span
+  style='mso-spacerun:yes'>       </span><span class=GramE>c(</span>1)*X(:,1).*X(:,2)+...<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'><span
+  style='mso-spacerun:yes'>       </span>D(:,1).*X(:,3)+E(:,1);<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>F(:,2)=a(2)*X(:,1)+b(2)*X(:,2)+...<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'><span
+  style='mso-spacerun:yes'>       </span><span class=GramE>c(</span>2)*X(:,1).*X(:,2)+...<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'><span
+  style='mso-spacerun:yes'>       </span>D(:,2).*X(:,3)+E(:,2);<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>F(:,3)=a(3)*X(:,1)+b(3)*X(:,2)+...<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'><span
+  style='mso-spacerun:yes'>       </span><span class=GramE>c(</span>3)*X(:,1).*X(:,2)+...<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'><span
+  style='mso-spacerun:yes'>       </span>D(:,3).*X(:,3)+E(:,3);<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>%-------------------------<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>function f=<span class=SpellE>fx</span>(t)<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>f=3*<span class=SpellE>cos</span>(t/4);<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>function f=<span class=SpellE>fy</span>(t)<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>f=sin(t/6)+t-3;<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>function f=<span class=SpellE>fz</span>(t)<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+  style='color:#339966;mso-ansi-language:EN-US'>f=-2*ones(size(t));<o:p></o:p></span></b></p>
+  </td>
+  <td width=291 style='width:217.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>Создание функций
+  для <b style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:
+  #339966;mso-ansi-language:EN-US'>F</span><span style='color:#339966'>=</span></b><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+  mso-ansi-language:EN-US'>F</span><span style='color:#339966'>3(</span></b><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+  mso-ansi-language:EN-US'>X</span><span style='color:#339966'>,</span></b><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+  mso-ansi-language:EN-US'>a</span><span style='color:#339966'>,</span></b><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+  mso-ansi-language:EN-US'>b</span><span style='color:#339966'>,</span></b><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+  mso-ansi-language:EN-US'>c</span><span style='color:#339966'>,</span></b><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+  mso-ansi-language:EN-US'>D</span><span style='color:#339966'>,</span></b><b
+  style='mso-bidi-font-weight:normal'><span lang=EN-US style='color:#339966;
+  mso-ansi-language:EN-US'>E</span><span style='color:#339966'>)</span></b> ее
+  передачи в <span class=SpellE><b style='mso-bidi-font-weight:normal'><span
+  lang=EN-US style='color:#339966;mso-ansi-language:EN-US'>fsolve</span></b></span>.
+  Создание координатных функций <sub><!--[if gte vml 1]><v:shape id="_x0000_i1048"
+   type="#_x0000_t75" style='width:90.75pt;height:99.75pt' o:ole="">
+   <v:imagedata src="lineint2.files/image033.wmz" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=121 height=133
+  src="lineint2.files/image034.gif" v:shapes="_x0000_i1048"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1048"
+    DrawAspect="Content" ObjectID="_1183130123">
+   </o:OLEObject>
+  </xml><![endif]-->.</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='color:#339966'><!--[if gte vml 1]><v:shape id="_x0000_i1049" type="#_x0000_t75"
+ style='width:481.5pt;height:328.5pt'>
+ <v:imagedata src="lineint2.files/image043.jpg" o:title="F6"/>
+</v:shape><![endif]--><![if !vml]><img width=642 height=438
+src="lineint2.files/image044.jpg" v:shapes="_x0000_i1049"><![endif]><o:p></o:p></span></b></p>
+
+</div>
+
+</body>
+
+</html>

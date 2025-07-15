@@ -1,0 +1,2689 @@
+<html xmlns:mcd="urn:schemas-mathsoft-com:mathcad"
+ xmlns:m="http://www.w3.org/1998/Math/MathML">
+<head>
+<meta http-equiv="Content-Type" content="text/html"></meta>
+<meta name=Generator content="Mathcad Professional"></meta>
+<meta name=ProgID content="Mathcad"></meta>
+<meta name=Version content="11.0"></meta>
+<meta name=MathML content="true"></meta>
+<title>
+Вилларсо</title>
+<style type="text/css">
+body { background : #ffffff }
+.equation { margin-top: 0.5em; margin-bottom: 1em }
+.Normal { font-family:Arial,sans-serif; font-size:10pt }
+.Heading_1 { font-family:Arial,sans-serif; font-size:14pt; font-weight:bold }
+.Heading_2 { font-family:Arial,sans-serif; font-size:12pt; font-weight:bold; font-style:italic }
+.Heading_3 { font-family:Arial,sans-serif; font-size:12pt }
+.Paragraph { font-family:Arial,sans-serif; font-size:10pt; text-indent:28px }
+.List { font-family:Arial,sans-serif; font-size:10pt; margin-left:19px; text-indent:-19px }
+.Indent { font-family:Arial,sans-serif; font-size:10pt; margin-left:144px }
+.Title { font-family:Times New Roman,sans-serif; font-size:24pt; font-weight:bold; text-align:center }
+.Subtitle { font-family:Times New Roman,sans-serif; font-size:18pt; text-align:center }
+</style>
+<script id="clientEventHandlersJS" language="javascript">
+<!--
+//-->
+</script>
+</head>
+<body 
+mcd:mathfonts="id:0;name:Variables;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:1;name:Constants;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:2;name:Text;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:4;name:User 1;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:5;name:User 2;face:Courier New;size:10;bold:0;ital:0;ul:0;cid:-1
+id:6;name:User 3;face:Arial;size:10;bold:1;ital:0;ul:0;cid:-1
+id:7;name:User 4;face:Times New Roman;size:10;bold:0;ital:1;ul:0;cid:-1
+id:8;name:User 5;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:9;name:User 6;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:10;name:User 7;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1"
+mcd:numberformat=""
+mcd:displayoptions=""
+mcd:unitformat="format:true;simplify:true"
+mcd:tolerance=""
+mcd:builtinvars="origin:0"
+mcd:calcoptions="auto:true;optimize:false;strict:true"
+mcd:mathdisplay="mult:7;deriv:deriv;litsub:large;define:colon;globeq:triple;local:arrow;equal:bold"
+mcd:unitsystem="default:4"
+mcd:dimnames="display:false;mass:mass;length:length;time:time;current:charge;temp:temperature;lum:luminosity;subst:substance"
+mcd:docprops="lrtag:398;lhbtag:398;status:8201;delorig:1;deluser:1;cp:1;cc:1;cs:1"
+mcd:ruler="visible:0;units:1"
+mcd:derivopts="ip:0;sc:0;dv:1;os:1"
+mcd:doccolors="eq:#000000;bg:#ffffff;rg:#ffff80"
+mcd:grfxy="0 1 1 21 15 0 0 3 0 "
+mcd:xaxisxy="0 0 1 1 1 0 0 1 1 "
+mcd:yaxisxy="0 0 1 1 1 0 0 1 1 "
+mcd:tracesxy="0 1 0 0 1 1 
+0 2 1 0 1 1 
+0 3 2 0 1 1 
+0 4 3 0 1 1 
+0 1 4 0 1 1 
+0 2 5 0 1 1 
+0 3 6 0 1 1 
+0 4 0 0 1 1 
+0 1 1 0 1 1 
+0 2 2 0 1 1 
+0 3 3 0 1 1 
+0 4 4 0 1 1 
+0 1 5 0 1 1 
+0 2 6 0 1 1 
+0 3 0 0 1 1 
+0 4 1 0 1 1 "
+>
+<div mcd:region="TXT" 
+mcd:properties=""
+mcd:textproperties=""
+mcd:alignx="280" mcd:aligny="48" 
+ style="position:absolute;top:35;left:280;width:302">
+<layer width=302>
+<comment mcd:parprop="style:Normal"></comment>
+<span class="Normal">
+<comment mcd:chrprop="face:Arial Cyr,sans-serif;bold:1;ital:1"></comment><font face="Arial Cyr,sans-serif" ><b><i>Параметрическое уравнение тора, R=2, r=1<comment mcd:chrprop="face:Arial,sans-serif;bold:0;ital:0"></comment></i></b></font></span>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="89" mcd:aligny="56" 
+ style="position:absolute;top:22;left:32;width:192">
+<layer width=192>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>Tor</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <vector>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <apply>
+            <ci>-PARENS</ci>
+            <apply>
+              <plus/>
+              <cn>2</cn>
+              <apply>
+                <ci>cos</ci>
+                <ci>u</ci>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <ci>cos</ci>
+            <ci>v</ci>
+          </apply>
+        </apply>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <apply>
+            <ci>-PARENS</ci>
+            <apply>
+              <plus/>
+              <cn>2</cn>
+              <apply>
+                <ci>cos</ci>
+                <ci>u</ci>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <ci>sin</ci>
+            <ci>v</ci>
+          </apply>
+        </apply>
+        <apply>
+          <ci>sin</ci>
+          <ci>u</ci>
+        </apply>
+      </vector>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0370.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="84" mcd:aligny="176" 
+ style="position:absolute;top:137;left:48;width:147">
+<layer width=147>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>Vil</ci>
+    <lambda>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <vector>
+        <apply>
+          <plus/>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <cn>2</cn>
+            <apply>
+              <ci>cos</ci>
+              <ci>t</ci>
+            </apply>
+          </apply>
+          <cn>1</cn>
+        </apply>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <apply>
+            <ci>-sqrt</ci>
+            <apply>
+              <minus/>
+              <apply>
+                <ci>-better_POWER</ci>
+                <cn>2</cn>
+                <cn>2</cn>
+              </apply>
+              <apply>
+                <ci>-better_POWER</ci>
+                <cn>1</cn>
+                <cn>2</cn>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <ci>sin</ci>
+            <ci>t</ci>
+          </apply>
+        </apply>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <cn>1</cn>
+          <apply>
+            <ci>sin</ci>
+            <ci>t</ci>
+          </apply>
+        </apply>
+      </vector>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0372.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="TXT" 
+mcd:properties=""
+mcd:textproperties=""
+mcd:alignx="248" mcd:aligny="176" 
+ style="position:absolute;top:163;left:248;width:346">
+<layer width=346>
+<comment mcd:parprop="style:Normal"></comment>
+<span class="Normal">
+<comment mcd:chrprop="face:Arial Cyr,sans-serif;bold:1;ital:1"></comment><font face="Arial Cyr,sans-serif" ><b><i>Параметрическое уравнение окружности Вилларсо<comment mcd:chrprop="face:Arial,sans-serif;bold:0;ital:0"></comment></i></b></font></span>
+</layer>
+</div>
+<div mcd:region="TXT" 
+mcd:properties=""
+mcd:textproperties=""
+mcd:alignx="336" mcd:aligny="256" 
+ style="position:absolute;top:243;left:336;width:381">
+<layer width=381>
+<comment mcd:parprop="style:Normal"></comment>
+<span class="Normal">
+<comment mcd:chrprop="face:Arial Cyr,sans-serif;bold:1;ital:1"></comment><font face="Arial Cyr,sans-serif" ><b><i>Параметрическое Частные производные точек на торе<comment mcd:chrprop="face:Arial,sans-serif;bold:0;ital:0"></comment></i></b></font></span>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="80" mcd:aligny="376" 
+ style="position:absolute;top:309;left:16;width:164">
+<layer width=164>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>Tor.u</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <vector>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>u</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>Tor</ci>
+                <ci>u</ci>
+                <ci>v</ci>
+              </apply>
+              <cn>0</cn>
+            </apply>
+          </lambda>
+          <ci>u</ci>
+        </apply>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>u</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>Tor</ci>
+                <ci>u</ci>
+                <ci>v</ci>
+              </apply>
+              <cn>1</cn>
+            </apply>
+          </lambda>
+          <ci>u</ci>
+        </apply>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>u</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>Tor</ci>
+                <ci>u</ci>
+                <ci>v</ci>
+              </apply>
+              <cn>2</cn>
+            </apply>
+          </lambda>
+          <ci>u</ci>
+        </apply>
+      </vector>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0374.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="296" mcd:aligny="376" 
+ style="position:absolute;top:309;left:232;width:164">
+<layer width=164>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>Tor.v</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <vector>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>v</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>Tor</ci>
+                <ci>u</ci>
+                <ci>v</ci>
+              </apply>
+              <cn>0</cn>
+            </apply>
+          </lambda>
+          <ci>v</ci>
+        </apply>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>v</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>Tor</ci>
+                <ci>u</ci>
+                <ci>v</ci>
+              </apply>
+              <cn>1</cn>
+            </apply>
+          </lambda>
+          <ci>v</ci>
+        </apply>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>v</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>Tor</ci>
+                <ci>u</ci>
+                <ci>v</ci>
+              </apply>
+              <cn>2</cn>
+            </apply>
+          </lambda>
+          <ci>v</ci>
+        </apply>
+      </vector>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0375.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="503" mcd:aligny="376" 
+ style="position:absolute;top:309;left:432;width:178">
+<layer width=178>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>Tor.uu</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <vector>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>u</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>Tor.u</ci>
+                <ci>u</ci>
+                <ci>v</ci>
+              </apply>
+              <cn>0</cn>
+            </apply>
+          </lambda>
+          <ci>u</ci>
+        </apply>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>u</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>Tor.u</ci>
+                <ci>u</ci>
+                <ci>v</ci>
+              </apply>
+              <cn>1</cn>
+            </apply>
+          </lambda>
+          <ci>u</ci>
+        </apply>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>u</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>Tor.u</ci>
+                <ci>u</ci>
+                <ci>v</ci>
+              </apply>
+              <cn>2</cn>
+            </apply>
+          </lambda>
+          <ci>u</ci>
+        </apply>
+      </vector>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0376.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="711" mcd:aligny="376" 
+ style="position:absolute;top:309;left:640;width:178">
+<layer width=178>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>Tor.uv</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <vector>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>v</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>Tor.u</ci>
+                <ci>u</ci>
+                <ci>v</ci>
+              </apply>
+              <cn>0</cn>
+            </apply>
+          </lambda>
+          <ci>v</ci>
+        </apply>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>v</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>Tor.u</ci>
+                <ci>u</ci>
+                <ci>v</ci>
+              </apply>
+              <cn>1</cn>
+            </apply>
+          </lambda>
+          <ci>v</ci>
+        </apply>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>v</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>Tor.u</ci>
+                <ci>u</ci>
+                <ci>v</ci>
+              </apply>
+              <cn>2</cn>
+            </apply>
+          </lambda>
+          <ci>v</ci>
+        </apply>
+      </vector>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0377.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="927" mcd:aligny="376" 
+ style="position:absolute;top:309;left:856;width:178">
+<layer width=178>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>Tor.vv</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <vector>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>v</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>Tor.v</ci>
+                <ci>u</ci>
+                <ci>v</ci>
+              </apply>
+              <cn>0</cn>
+            </apply>
+          </lambda>
+          <ci>v</ci>
+        </apply>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>v</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>Tor.v</ci>
+                <ci>u</ci>
+                <ci>v</ci>
+              </apply>
+              <cn>1</cn>
+            </apply>
+          </lambda>
+          <ci>v</ci>
+        </apply>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>v</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>Tor.v</ci>
+                <ci>u</ci>
+                <ci>v</ci>
+              </apply>
+              <cn>2</cn>
+            </apply>
+          </lambda>
+          <ci>v</ci>
+        </apply>
+      </vector>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0378.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="TXT" 
+mcd:properties=""
+mcd:textproperties=""
+mcd:alignx="184" mcd:aligny="504" 
+ style="position:absolute;top:491;left:184;width:319">
+<layer width=319>
+<comment mcd:parprop="style:Normal"></comment>
+<span class="Normal">
+<comment mcd:chrprop="face:Arial Cyr,sans-serif;bold:1;ital:1"></comment><font face="Arial Cyr,sans-serif" ><b><i>Коэффициенты первой квадратичной формы<comment mcd:chrprop="face:Arial,sans-serif;bold:0;ital:0"></comment></i></b></font></span>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="93" mcd:aligny="544" 
+ style="position:absolute;top:532;left:48;width:171">
+<layer width=171>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>E</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>-mult-times-in</ci>
+        <apply>
+          <ci>Tor.u</ci>
+          <ci>u</ci>
+          <ci>v</ci>
+        </apply>
+        <apply>
+          <ci>Tor.u</ci>
+          <ci>u</ci>
+          <ci>v</ci>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0383.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="293" mcd:aligny="544" 
+ style="position:absolute;top:532;left:248;width:171">
+<layer width=171>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>F</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>-mult-times-in</ci>
+        <apply>
+          <ci>Tor.v</ci>
+          <ci>u</ci>
+          <ci>v</ci>
+        </apply>
+        <apply>
+          <ci>Tor.u</ci>
+          <ci>u</ci>
+          <ci>v</ci>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0384.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="494" mcd:aligny="544" 
+ style="position:absolute;top:532;left:448;width:172">
+<layer width=172>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>G</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>-mult-times-in</ci>
+        <apply>
+          <ci>Tor.v</ci>
+          <ci>u</ci>
+          <ci>v</ci>
+        </apply>
+        <apply>
+          <ci>Tor.v</ci>
+          <ci>u</ci>
+          <ci>v</ci>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0385.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="TXT" 
+mcd:properties=""
+mcd:textproperties=""
+mcd:alignx="176" mcd:aligny="592" 
+ style="position:absolute;top:579;left:176;width:324">
+<layer width=324>
+<comment mcd:parprop="style:Normal"></comment>
+<span class="Normal">
+<comment mcd:chrprop="face:Arial Cyr,sans-serif;bold:1;ital:1"></comment><font face="Arial Cyr,sans-serif" ><b><i>Символы Кристоффеля для поверхности тора<comment mcd:chrprop="face:Arial,sans-serif;bold:0;ital:0"></comment></i></b></font></span>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="72" mcd:aligny="672" 
+ style="position:absolute;top:629;left:8;width:480">
+<layer width=480>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>&amp;Ggr;1.11</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <apply>
+          <ci>KEYWORD_EXPR</ci>
+          <apply>
+            <ci>-SYMBOLIC_EVAL</ci>
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <minus/>
+                  <apply>
+                    <ci>-mult-times-in</ci>
+                    <apply>
+                      <ci>G</ci>
+                      <ci>u</ci>
+                      <ci>v</ci>
+                    </apply>
+                    <apply>
+                      <ci>-DERIVATIVE</ci>
+                      <lambda>
+                        <bvar>
+                          <ci>u</ci>
+                        </bvar>
+                        <apply>
+                          <ci>E</ci>
+                          <ci>u</ci>
+                          <ci>v</ci>
+                        </apply>
+                      </lambda>
+                      <ci>u</ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <ci>-mult-times-in</ci>
+                    <apply>
+                      <ci>-mult-times-in</ci>
+                      <cn>2</cn>
+                      <apply>
+                        <ci>F</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <ci>-DERIVATIVE</ci>
+                      <lambda>
+                        <bvar>
+                          <ci>u</ci>
+                        </bvar>
+                        <apply>
+                          <ci>F</ci>
+                          <ci>u</ci>
+                          <ci>v</ci>
+                        </apply>
+                      </lambda>
+                      <ci>u</ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <ci>F</ci>
+                    <ci>u</ci>
+                    <ci>v</ci>
+                  </apply>
+                  <apply>
+                    <ci>-DERIVATIVE</ci>
+                    <lambda>
+                      <bvar>
+                        <ci>v</ci>
+                      </bvar>
+                      <apply>
+                        <ci>E</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </lambda>
+                    <ci>v</ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <ci>-mult-times-in</ci>
+                <cn>2</cn>
+                <apply>
+                  <ci>-PARENS</ci>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <ci>-mult-times-in</ci>
+                      <apply>
+                        <ci>E</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                      <apply>
+                        <ci>G</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <ci>-better_POWER</ci>
+                      <apply>
+                        <ci>F</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                      <cn>2</cn>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-NUMERIC_EVAL</ci>
+            <apply>
+              <ci>simplify</ci>
+            </apply>
+          </apply>
+        </apply>
+        <cn>0</cn>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0389.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="584" mcd:aligny="672" 
+ style="position:absolute;top:629;left:520;width:361">
+<layer width=361>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>&amp;Ggr;1.12</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <apply>
+          <ci>KEYWORD_EXPR</ci>
+          <apply>
+            <ci>-SYMBOLIC_EVAL</ci>
+            <apply>
+              <divide/>
+              <apply>
+                <minus/>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <ci>G</ci>
+                    <ci>u</ci>
+                    <ci>v</ci>
+                  </apply>
+                  <apply>
+                    <ci>-DERIVATIVE</ci>
+                    <lambda>
+                      <bvar>
+                        <ci>v</ci>
+                      </bvar>
+                      <apply>
+                        <ci>E</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </lambda>
+                    <ci>v</ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <ci>F</ci>
+                    <ci>u</ci>
+                    <ci>v</ci>
+                  </apply>
+                  <apply>
+                    <ci>-DERIVATIVE</ci>
+                    <lambda>
+                      <bvar>
+                        <ci>u</ci>
+                      </bvar>
+                      <apply>
+                        <ci>G</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </lambda>
+                    <ci>u</ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <ci>-mult-times-in</ci>
+                <cn>2</cn>
+                <apply>
+                  <ci>-PARENS</ci>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <ci>-mult-times-in</ci>
+                      <apply>
+                        <ci>E</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                      <apply>
+                        <ci>G</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <ci>-better_POWER</ci>
+                      <apply>
+                        <ci>F</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                      <cn>2</cn>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-NUMERIC_EVAL</ci>
+            <apply>
+              <ci>simplify</ci>
+            </apply>
+          </apply>
+        </apply>
+        <cn>0</cn>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0390.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="1024" mcd:aligny="672" 
+ style="position:absolute;top:629;left:960;width:616">
+<layer width=616>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>&amp;Ggr;1.22</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <apply>
+          <ci>KEYWORD_EXPR</ci>
+          <apply>
+            <ci>-SYMBOLIC_EVAL</ci>
+            <apply>
+              <divide/>
+              <apply>
+                <minus/>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <ci>-mult-times-in</ci>
+                    <apply>
+                      <minus/>
+                      <apply>
+                        <ci>F</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <ci>-DERIVATIVE</ci>
+                      <lambda>
+                        <bvar>
+                          <ci>v</ci>
+                        </bvar>
+                        <apply>
+                          <ci>G</ci>
+                          <ci>u</ci>
+                          <ci>v</ci>
+                        </apply>
+                      </lambda>
+                      <ci>v</ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <ci>-mult-times-in</ci>
+                    <apply>
+                      <ci>-mult-times-in</ci>
+                      <cn>2</cn>
+                      <apply>
+                        <ci>G</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <ci>-DERIVATIVE</ci>
+                      <lambda>
+                        <bvar>
+                          <ci>v</ci>
+                        </bvar>
+                        <apply>
+                          <ci>F</ci>
+                          <ci>u</ci>
+                          <ci>v</ci>
+                        </apply>
+                      </lambda>
+                      <ci>v</ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <ci>G</ci>
+                    <ci>u</ci>
+                    <ci>v</ci>
+                  </apply>
+                  <apply>
+                    <ci>-DERIVATIVE</ci>
+                    <lambda>
+                      <bvar>
+                        <ci>u</ci>
+                      </bvar>
+                      <apply>
+                        <ci>G</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </lambda>
+                    <ci>u</ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <ci>-mult-times-in</ci>
+                <cn>2</cn>
+                <apply>
+                  <ci>-PARENS</ci>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <ci>-mult-times-in</ci>
+                      <apply>
+                        <ci>E</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                      <apply>
+                        <ci>G</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <ci>-better_POWER</ci>
+                      <apply>
+                        <ci>F</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                      <cn>2</cn>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-NUMERIC_EVAL</ci>
+            <apply>
+              <ci>simplify</ci>
+            </apply>
+          </apply>
+        </apply>
+        <apply>
+          <plus/>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <cn>2</cn>
+            <apply>
+              <ci>sin</ci>
+              <ci>u</ci>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <apply>
+              <ci>cos</ci>
+              <ci>u</ci>
+            </apply>
+            <apply>
+              <ci>sin</ci>
+              <ci>u</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0391.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="72" mcd:aligny="752" 
+ style="position:absolute;top:709;left:8;width:486">
+<layer width=486>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>&amp;Ggr;2.11</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <apply>
+          <ci>KEYWORD_EXPR</ci>
+          <apply>
+            <ci>-SYMBOLIC_EVAL</ci>
+            <apply>
+              <divide/>
+              <apply>
+                <minus/>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <ci>-mult-times-in</ci>
+                    <apply>
+                      <minus/>
+                      <apply>
+                        <ci>F</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <ci>-DERIVATIVE</ci>
+                      <lambda>
+                        <bvar>
+                          <ci>u</ci>
+                        </bvar>
+                        <apply>
+                          <ci>E</ci>
+                          <ci>u</ci>
+                          <ci>v</ci>
+                        </apply>
+                      </lambda>
+                      <ci>u</ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <ci>-mult-times-in</ci>
+                    <apply>
+                      <ci>-mult-times-in</ci>
+                      <cn>2</cn>
+                      <apply>
+                        <ci>E</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <ci>-DERIVATIVE</ci>
+                      <lambda>
+                        <bvar>
+                          <ci>u</ci>
+                        </bvar>
+                        <apply>
+                          <ci>F</ci>
+                          <ci>u</ci>
+                          <ci>v</ci>
+                        </apply>
+                      </lambda>
+                      <ci>u</ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <ci>E</ci>
+                    <ci>u</ci>
+                    <ci>v</ci>
+                  </apply>
+                  <apply>
+                    <ci>-DERIVATIVE</ci>
+                    <lambda>
+                      <bvar>
+                        <ci>v</ci>
+                      </bvar>
+                      <apply>
+                        <ci>E</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </lambda>
+                    <ci>v</ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <ci>-mult-times-in</ci>
+                <cn>2</cn>
+                <apply>
+                  <ci>-PARENS</ci>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <ci>-mult-times-in</ci>
+                      <apply>
+                        <ci>E</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                      <apply>
+                        <ci>G</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <ci>-better_POWER</ci>
+                      <apply>
+                        <ci>F</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                      <cn>2</cn>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-NUMERIC_EVAL</ci>
+            <apply>
+              <ci>simplify</ci>
+            </apply>
+          </apply>
+        </apply>
+        <cn>0</cn>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0392.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="584" mcd:aligny="752" 
+ style="position:absolute;top:709;left:520;width:416">
+<layer width=416>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>&amp;Ggr;2.12</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <apply>
+          <ci>KEYWORD_EXPR</ci>
+          <apply>
+            <ci>-SYMBOLIC_EVAL</ci>
+            <apply>
+              <divide/>
+              <apply>
+                <minus/>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <ci>E</ci>
+                    <ci>u</ci>
+                    <ci>v</ci>
+                  </apply>
+                  <apply>
+                    <ci>-DERIVATIVE</ci>
+                    <lambda>
+                      <bvar>
+                        <ci>u</ci>
+                      </bvar>
+                      <apply>
+                        <ci>G</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </lambda>
+                    <ci>u</ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <ci>F</ci>
+                    <ci>u</ci>
+                    <ci>v</ci>
+                  </apply>
+                  <apply>
+                    <ci>-DERIVATIVE</ci>
+                    <lambda>
+                      <bvar>
+                        <ci>v</ci>
+                      </bvar>
+                      <apply>
+                        <ci>E</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </lambda>
+                    <ci>v</ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <ci>-mult-times-in</ci>
+                <cn>2</cn>
+                <apply>
+                  <ci>-PARENS</ci>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <ci>-mult-times-in</ci>
+                      <apply>
+                        <ci>E</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                      <apply>
+                        <ci>G</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <ci>-better_POWER</ci>
+                      <apply>
+                        <ci>F</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                      <cn>2</cn>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-NUMERIC_EVAL</ci>
+            <apply>
+              <ci>simplify</ci>
+            </apply>
+          </apply>
+        </apply>
+        <apply>
+          <divide/>
+          <apply>
+            <minus/>
+            <apply>
+              <ci>sin</ci>
+              <ci>u</ci>
+            </apply>
+          </apply>
+          <apply>
+            <plus/>
+            <cn>2</cn>
+            <apply>
+              <ci>cos</ci>
+              <ci>u</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0393.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="1024" mcd:aligny="752" 
+ style="position:absolute;top:709;left:960;width:481">
+<layer width=481>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>&amp;Ggr;2.22</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <apply>
+          <ci>KEYWORD_EXPR</ci>
+          <apply>
+            <ci>-SYMBOLIC_EVAL</ci>
+            <apply>
+              <divide/>
+              <apply>
+                <minus/>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <ci>-mult-times-in</ci>
+                    <apply>
+                      <ci>E</ci>
+                      <ci>u</ci>
+                      <ci>v</ci>
+                    </apply>
+                    <apply>
+                      <ci>-DERIVATIVE</ci>
+                      <lambda>
+                        <bvar>
+                          <ci>v</ci>
+                        </bvar>
+                        <apply>
+                          <ci>G</ci>
+                          <ci>u</ci>
+                          <ci>v</ci>
+                        </apply>
+                      </lambda>
+                      <ci>v</ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <ci>-mult-times-in</ci>
+                    <apply>
+                      <ci>-mult-times-in</ci>
+                      <cn>2</cn>
+                      <apply>
+                        <ci>F</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <ci>-DERIVATIVE</ci>
+                      <lambda>
+                        <bvar>
+                          <ci>v</ci>
+                        </bvar>
+                        <apply>
+                          <ci>F</ci>
+                          <ci>u</ci>
+                          <ci>v</ci>
+                        </apply>
+                      </lambda>
+                      <ci>v</ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <ci>F</ci>
+                    <ci>u</ci>
+                    <ci>v</ci>
+                  </apply>
+                  <apply>
+                    <ci>-DERIVATIVE</ci>
+                    <lambda>
+                      <bvar>
+                        <ci>u</ci>
+                      </bvar>
+                      <apply>
+                        <ci>G</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </lambda>
+                    <ci>u</ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <ci>-mult-times-in</ci>
+                <cn>2</cn>
+                <apply>
+                  <ci>-PARENS</ci>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <ci>-mult-times-in</ci>
+                      <apply>
+                        <ci>E</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                      <apply>
+                        <ci>G</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <ci>-better_POWER</ci>
+                      <apply>
+                        <ci>F</ci>
+                        <ci>u</ci>
+                        <ci>v</ci>
+                      </apply>
+                      <cn>2</cn>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-NUMERIC_EVAL</ci>
+            <apply>
+              <ci>simplify</ci>
+            </apply>
+          </apply>
+        </apply>
+        <cn>0</cn>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0394.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="TXT" 
+mcd:properties=""
+mcd:textproperties=""
+mcd:alignx="16" mcd:aligny="848" 
+ style="position:absolute;top:835;left:16;width:595">
+<layer width=595>
+<comment mcd:parprop="style:Normal"></comment>
+<span class="Normal">
+<comment mcd:chrprop="face:Arial Cyr,sans-serif;bold:1;ital:1"></comment><font face="Arial Cyr,sans-serif" ><b><i>Окружность Вилларсо принадлежит поверхности тора, значит параметру t окружности можно поставить в соответствие параметры (u, v) поверхности тора<comment mcd:chrprop="face:Arial,sans-serif;bold:0;ital:0"></comment></i></b></font></span>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="23" mcd:aligny="936" 
+ style="position:absolute;top:924;left:8;width:32">
+<layer width=32>
+<comment mcd:mmldata="<math>
+  <ci>Given</ci>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0354.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="187" mcd:aligny="936" 
+ style="position:absolute;top:924;left:72;width:189">
+<layer width=189>
+<comment mcd:mmldata="<math>
+  <apply>
+    <ci>-EQUALS</ci>
+    <apply>
+      <ci>-mult-times-in</ci>
+      <apply>
+        <ci>-PARENS</ci>
+        <apply>
+          <plus/>
+          <cn>2</cn>
+          <apply>
+            <ci>cos</ci>
+            <ci>u</ci>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <ci>cos</ci>
+        <ci>v</ci>
+      </apply>
+    </apply>
+    <apply>
+      <plus/>
+      <apply>
+        <ci>-mult-times-in</ci>
+        <cn>2</cn>
+        <apply>
+          <ci>cos</ci>
+          <ci>t</ci>
+        </apply>
+      </apply>
+      <cn>1</cn>
+    </apply>
+  </apply>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0355.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="400" mcd:aligny="936" 
+ style="position:absolute;top:896;left:288;width:171">
+<layer width=171>
+<comment mcd:mmldata="<math>
+  <apply>
+    <ci>-EQUALS</ci>
+    <apply>
+      <ci>-mult-times-in</ci>
+      <apply>
+        <ci>-PARENS</ci>
+        <apply>
+          <plus/>
+          <cn>2</cn>
+          <apply>
+            <ci>cos</ci>
+            <ci>u</ci>
+          </apply>
+        </apply>
+      </apply>
+      <apply>
+        <ci>sin</ci>
+        <ci>v</ci>
+      </apply>
+    </apply>
+    <apply>
+      <ci>-mult-times-in</ci>
+      <apply>
+        <ci>-better_POWER</ci>
+        <cn>3</cn>
+        <apply>
+          <divide/>
+          <cn>1</cn>
+          <cn>2</cn>
+        </apply>
+      </apply>
+      <apply>
+        <ci>sin</ci>
+        <ci>t</ci>
+      </apply>
+    </apply>
+  </apply>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0356.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="528" mcd:aligny="936" 
+ style="position:absolute;top:924;left:488;width:79">
+<layer width=79>
+<comment mcd:mmldata="<math>
+  <apply>
+    <ci>-EQUALS</ci>
+    <apply>
+      <ci>sin</ci>
+      <ci>u</ci>
+    </apply>
+    <apply>
+      <ci>sin</ci>
+      <ci>t</ci>
+    </apply>
+  </apply>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0357.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="637" mcd:aligny="936" 
+ style="position:absolute;top:894;left:608;width:383">
+<layer width=383>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>P</ci>
+    <lambda>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <apply>
+          <ci>KEYWORD_EXPR</ci>
+          <apply>
+            <ci>-SYMBOLIC_EVAL</ci>
+            <apply>
+              <ci>Find</ci>
+              <ci>u</ci>
+              <ci>v</ci>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-NUMERIC_EVAL</ci>
+            <apply>
+              <ci>simplify</ci>
+            </apply>
+          </apply>
+        </apply>
+        <vector>
+          <ci>t</ci>
+          <apply>
+            <ci>atan2</ci>
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <cn>2</cn>
+                  <apply>
+                    <ci>cos</ci>
+                    <ci>t</ci>
+                  </apply>
+                </apply>
+                <cn>1</cn>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <ci>cos</ci>
+                  <ci>t</ci>
+                </apply>
+                <cn>2</cn>
+              </apply>
+            </apply>
+            <apply>
+              <ci>-mult-times-in</ci>
+              <apply>
+                <ci>-better_POWER</ci>
+                <cn>3</cn>
+                <apply>
+                  <divide/>
+                  <cn>1</cn>
+                  <cn>2</cn>
+                </apply>
+              </apply>
+              <apply>
+                <divide/>
+                <apply>
+                  <ci>sin</ci>
+                  <ci>t</ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <ci>cos</ci>
+                    <ci>t</ci>
+                  </apply>
+                  <cn>2</cn>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </vector>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0358.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="TXT" 
+mcd:properties=""
+mcd:textproperties=""
+mcd:alignx="8" mcd:aligny="1032" 
+ style="position:absolute;top:1019;left:8;width:617">
+<layer width=617>
+<comment mcd:parprop="style:Normal"></comment>
+<span class="Normal">
+<comment mcd:chrprop="face:Arial Cyr,sans-serif;bold:1;ital:1"></comment><font face="Arial Cyr,sans-serif" ><b><i>Окружность позволяет произвести простую перепараметризацию от длины дуги, s<comment mcd:chrprop="face:Arial,sans-serif;bold:0;ital:0"></comment></i></b></font></span>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="47" mcd:aligny="1128" 
+ style="position:absolute;top:1065;left:16;width:443">
+<layer width=443>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>P</ci>
+    <lambda>
+      <bvar>
+        <ci>s</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <apply>
+          <ci>KEYWORD_EXPR</ci>
+          <apply>
+            <ci>-SYMBOLIC_EVAL</ci>
+            <apply>
+              <ci>P</ci>
+              <ci>t</ci>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-NUMERIC_EVAL</ci>
+            <apply>
+              <ci>-TREE_SEQUENCE_OP</ci>
+              <ci>substitute</ci>
+              <apply>
+                <ci>-EQUALS</ci>
+                <ci>t</ci>
+                <apply>
+                  <divide/>
+                  <ci>s</ci>
+                  <cn>2</cn>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </apply>
+        <vector>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <apply>
+              <divide/>
+              <cn>1</cn>
+              <cn>2</cn>
+            </apply>
+            <ci>s</ci>
+          </apply>
+          <apply>
+            <ci>atan2</ci>
+            <apply>
+              <divide/>
+              <apply>
+                <plus/>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <cn>2</cn>
+                  <apply>
+                    <ci>cos</ci>
+                    <apply>
+                      <ci>-mult-times-in</ci>
+                      <apply>
+                        <divide/>
+                        <cn>1</cn>
+                        <cn>2</cn>
+                      </apply>
+                      <ci>s</ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <cn>1</cn>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <ci>cos</ci>
+                  <apply>
+                    <ci>-mult-times-in</ci>
+                    <apply>
+                      <divide/>
+                      <cn>1</cn>
+                      <cn>2</cn>
+                    </apply>
+                    <ci>s</ci>
+                  </apply>
+                </apply>
+                <cn>2</cn>
+              </apply>
+            </apply>
+            <apply>
+              <ci>-mult-times-in</ci>
+              <apply>
+                <ci>-better_POWER</ci>
+                <cn>3</cn>
+                <apply>
+                  <divide/>
+                  <cn>1</cn>
+                  <cn>2</cn>
+                </apply>
+              </apply>
+              <apply>
+                <divide/>
+                <apply>
+                  <ci>sin</ci>
+                  <apply>
+                    <ci>-mult-times-in</ci>
+                    <apply>
+                      <divide/>
+                      <cn>1</cn>
+                      <cn>2</cn>
+                    </apply>
+                    <ci>s</ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <ci>cos</ci>
+                    <apply>
+                      <ci>-mult-times-in</ci>
+                      <apply>
+                        <divide/>
+                        <cn>1</cn>
+                        <cn>2</cn>
+                      </apply>
+                      <ci>s</ci>
+                    </apply>
+                  </apply>
+                  <cn>2</cn>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </vector>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0359.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="77" mcd:aligny="1248" 
+ style="position:absolute;top:1226;left:40;width:122">
+<layer width=122>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>u.s</ci>
+    <lambda>
+      <bvar>
+        <ci>s</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>s</ci>
+            </bvar>
+            <apply>
+              <selector/>
+              <apply>
+                <ci>P</ci>
+                <ci>s</ci>
+              </apply>
+              <cn>0</cn>
+            </apply>
+          </lambda>
+          <ci>s</ci>
+        </apply>
+        <apply>
+          <divide/>
+          <cn>1</cn>
+          <cn>2</cn>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0278.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="237" mcd:aligny="1248" 
+ style="position:absolute;top:1199;left:200;width:258">
+<layer width=258>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>v.s</ci>
+    <lambda>
+      <bvar>
+        <ci>s</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <apply>
+          <ci>KEYWORD_EXPR</ci>
+          <apply>
+            <ci>-SYMBOLIC_EVAL</ci>
+            <apply>
+              <ci>-DERIVATIVE</ci>
+              <lambda>
+                <bvar>
+                  <ci>s</ci>
+                </bvar>
+                <apply>
+                  <selector/>
+                  <apply>
+                    <ci>P</ci>
+                    <ci>s</ci>
+                  </apply>
+                  <cn>1</cn>
+                </apply>
+              </lambda>
+              <ci>s</ci>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-NUMERIC_EVAL</ci>
+            <apply>
+              <ci>simplify</ci>
+            </apply>
+          </apply>
+        </apply>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <apply>
+            <divide/>
+            <cn>1</cn>
+            <cn>2</cn>
+          </apply>
+          <apply>
+            <divide/>
+            <apply>
+              <ci>-better_POWER</ci>
+              <cn>3</cn>
+              <apply>
+                <divide/>
+                <cn>1</cn>
+                <cn>2</cn>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <apply>
+                <ci>cos</ci>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <divide/>
+                    <cn>1</cn>
+                    <cn>2</cn>
+                  </apply>
+                  <ci>s</ci>
+                </apply>
+              </apply>
+              <cn>2</cn>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0279.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="TXT" 
+mcd:properties=""
+mcd:textproperties=""
+mcd:alignx="24" mcd:aligny="1352" 
+ style="position:absolute;top:1339;left:24;width:540">
+<layer width=540>
+<comment mcd:parprop="style:Normal"></comment>
+<span class="Normal">
+<comment mcd:chrprop="face:Arial Cyr,sans-serif;bold:1;ital:1"></comment><font face="Arial Cyr,sans-serif" ><b><i>Данная система уравнений получается для символов Кристоффеля тора, описывает  геодезическую от длины дуги<comment mcd:chrprop="face:Arial,sans-serif;bold:0;ital:0"></comment></i></b></font></span>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="469" mcd:aligny="1424" 
+ style="position:absolute;top:1412;left:440;width:45">
+<layer width=45>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>Tau</ci>
+    <cn>0</cn>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0352.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="65" mcd:aligny="1472" 
+ style="position:absolute;top:1396;left:16;width:238">
+<layer width=238>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>D</ci>
+    <lambda>
+      <bvar>
+        <ci>s</ci>
+      </bvar>
+      <bvar>
+        <ci>X</ci>
+      </bvar>
+      <vector>
+        <apply>
+          <selector/>
+          <ci>X</ci>
+          <cn>2</cn>
+        </apply>
+        <apply>
+          <selector/>
+          <ci>X</ci>
+          <cn>3</cn>
+        </apply>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <apply>
+              <minus/>
+              <apply>
+                <ci>sin</ci>
+                <apply>
+                  <selector/>
+                  <ci>X</ci>
+                  <cn>0</cn>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <ci>-PARENS</ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <ci>cos</ci>
+                  <apply>
+                    <selector/>
+                    <ci>X</ci>
+                    <cn>0</cn>
+                  </apply>
+                </apply>
+                <cn>2</cn>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-better_POWER</ci>
+            <apply>
+              <ci>-PARENS</ci>
+              <apply>
+                <selector/>
+                <ci>X</ci>
+                <cn>3</cn>
+              </apply>
+            </apply>
+            <cn>2</cn>
+          </apply>
+        </apply>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <apply>
+              <divide/>
+              <apply>
+                <ci>sin</ci>
+                <apply>
+                  <selector/>
+                  <ci>X</ci>
+                  <cn>0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <ci>cos</ci>
+                  <apply>
+                    <selector/>
+                    <ci>X</ci>
+                    <cn>0</cn>
+                  </apply>
+                </apply>
+                <cn>2</cn>
+              </apply>
+            </apply>
+            <apply>
+              <selector/>
+              <ci>X</ci>
+              <cn>2</cn>
+            </apply>
+          </apply>
+          <apply>
+            <selector/>
+            <ci>X</ci>
+            <cn>3</cn>
+          </apply>
+        </apply>
+      </vector>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0288.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="319" mcd:aligny="1488" 
+ style="position:absolute;top:1431;left:296;width:96">
+<layer width=96>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>D0</ci>
+    <vector>
+      <apply>
+        <selector/>
+        <apply>
+          <ci>P</ci>
+          <ci>Tau</ci>
+        </apply>
+        <cn>0</cn>
+      </apply>
+      <apply>
+        <selector/>
+        <apply>
+          <ci>P</ci>
+          <ci>Tau</ci>
+        </apply>
+        <cn>1</cn>
+      </apply>
+      <apply>
+        <ci>u.s</ci>
+        <ci>Tau</ci>
+      </apply>
+      <apply>
+        <ci>v.s</ci>
+        <ci>Tau</ci>
+      </apply>
+    </vector>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0289.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="455" mcd:aligny="1488" 
+ style="position:absolute;top:1475;left:440;width:164">
+<layer width=164>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>S</ci>
+    <apply>
+      <ci>Rkadapt</ci>
+      <ci>D0</ci>
+      <cn>0</cn>
+      <apply>
+        <ci>-mult-times-in</ci>
+        <cn>6</cn>
+        <ci>&amp;pgr;</ci>
+      </apply>
+      <cn>200</cn>
+      <ci>D</ci>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0291.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="26" mcd:aligny="1592" 
+ style="position:absolute;top:1573;left:8;width:115">
+<layer width=115>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>N</ci>
+    <apply>
+      <minus/>
+      <apply>
+        <ci>length</ci>
+        <apply>
+          <selector/>
+          <ci>S</ci>
+          <ci>..</ci>
+          <cn>0</cn>
+        </apply>
+      </apply>
+      <cn>1</cn>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0304.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="185" mcd:aligny="1592" 
+ style="position:absolute;top:1580;left:168;width:52">
+<layer width=52>
+<comment mcd:mmldata="<math>
+  <apply>
+    <ci>-EVAL</ci>
+    <ci>N</ci>
+    <cn>200</cn>
+  </apply>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0305.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="259" mcd:aligny="1592" 
+ style="position:absolute;top:1580;left:248;width:47">
+<layer width=47>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>i</ci>
+    <apply>
+      <ci>-NUMERIC_EVAL</ci>
+      <apply>
+        <ci>-range</ci>
+        <cn>0</cn>
+        <ci>N</ci>
+      </apply>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0306.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="29" mcd:aligny="1632" 
+ style="position:absolute;top:1613;left:8;width:146">
+<layer width=146>
+<comment mcd:mmldata="<math>
+  <declare>
+    <apply>
+      <selector/>
+      <ci>X</ci>
+      <ci>i</ci>
+    </apply>
+    <apply>
+      <selector/>
+      <apply>
+        <ci>Tor</ci>
+        <apply>
+          <selector/>
+          <apply>
+            <ci>-PARENS</ci>
+            <apply>
+              <selector/>
+              <ci>S</ci>
+              <ci>..</ci>
+              <cn>1</cn>
+            </apply>
+          </apply>
+          <ci>i</ci>
+        </apply>
+        <apply>
+          <selector/>
+          <apply>
+            <ci>-PARENS</ci>
+            <apply>
+              <selector/>
+              <ci>S</ci>
+              <ci>..</ci>
+              <cn>2</cn>
+            </apply>
+          </apply>
+          <ci>i</ci>
+        </apply>
+      </apply>
+      <cn>0</cn>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0307.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="219" mcd:aligny="1632" 
+ style="position:absolute;top:1613;left:200;width:144">
+<layer width=144>
+<comment mcd:mmldata="<math>
+  <declare>
+    <apply>
+      <selector/>
+      <ci>Y</ci>
+      <ci>i</ci>
+    </apply>
+    <apply>
+      <selector/>
+      <apply>
+        <ci>Tor</ci>
+        <apply>
+          <selector/>
+          <apply>
+            <ci>-PARENS</ci>
+            <apply>
+              <selector/>
+              <ci>S</ci>
+              <ci>..</ci>
+              <cn>1</cn>
+            </apply>
+          </apply>
+          <ci>i</ci>
+        </apply>
+        <apply>
+          <selector/>
+          <apply>
+            <ci>-PARENS</ci>
+            <apply>
+              <selector/>
+              <ci>S</ci>
+              <ci>..</ci>
+              <cn>2</cn>
+            </apply>
+          </apply>
+          <ci>i</ci>
+        </apply>
+      </apply>
+      <cn>1</cn>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0308.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="411" mcd:aligny="1632" 
+ style="position:absolute;top:1613;left:392;width:144">
+<layer width=144>
+<comment mcd:mmldata="<math>
+  <declare>
+    <apply>
+      <selector/>
+      <ci>Z</ci>
+      <ci>i</ci>
+    </apply>
+    <apply>
+      <selector/>
+      <apply>
+        <ci>Tor</ci>
+        <apply>
+          <selector/>
+          <apply>
+            <ci>-PARENS</ci>
+            <apply>
+              <selector/>
+              <ci>S</ci>
+              <ci>..</ci>
+              <cn>1</cn>
+            </apply>
+          </apply>
+          <ci>i</ci>
+        </apply>
+        <apply>
+          <selector/>
+          <apply>
+            <ci>-PARENS</ci>
+            <apply>
+              <selector/>
+              <ci>S</ci>
+              <ci>..</ci>
+              <cn>2</cn>
+            </apply>
+          </apply>
+          <ci>i</ci>
+        </apply>
+      </apply>
+      <cn>2</cn>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Villarso3-4_images/IMG0309.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+ style="position:absolute;top:1664;left:56">
+<layer >
+<img src="./Villarso3-4_images/IMG0310.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+ADgAAACABgAA4AEAAD4IAAALAQAAgAYAAAAAAAA2AQAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEBe8QAAgAUHQEAADwAAQAYAAAAIQECfwQAAgAYJQEA8AQAAQAgAAAoAAgAAAAlDVlNF
+cUl0ZW0BAAAAAAAMAAAABkVxSXRlbQEAAAAAAA0AAAAECQsAAgAAAAxDVlNDb21ib0l0ZW0AAAAAAAAQ
+AAAAB0NWU0l0ZW0AAAAAAAAPAAAAPA4AADoAAACBBgAApgEAAJ4BAAD//wAAEABDVlNPbGVDbGllbnRJ
+dGVtAAEAAAEAAAABAAAAAAABAAAAAA4AANDPEeChsRrhAAAAAAAAAAAAAAAAAAAAAD4AAwD+/wkABgAA
+AAAAAAAAAAAAAQAAAAEAAAAAAAAAABAAAAIAAAABAAAA/v///wAAAAAAAAAA////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////f//
+//7////+////BAAAAAUAAAD+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////9SAG8AbwB0ACAARQBuAHQAcgB5AAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFgAFAP//////////AgAAAKVJPifeAtERmukA
+AMAIcgsAAAAAAAAAAAAAAAAwUNRPRyTGAQMAAADABAAAAAAAAEMAbwBuAHQAZQBuAHQAcwAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAIA////////////////AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEEEAAAAAAAAAgBPAGwAZQBQAHIAZQBz
+ADAAMAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAgEBAAAA////
+//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AP///////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADQAAAP7///8OAAAADwAA
+ABAAAAARAAAAEgAAAP7/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////AQAJAJ0rAADKKgAAAAAAAAoAAAAAAAAAAAAB
+AAAAAAAAAAAAAACIIGRWLu/zP8EXvSbfieI/zFV69Rh/FkBeHt0lqLdGQD+l7RnnNtw/AAAA/////zMz
+M/8AAAIAAGQAEgAAAAAAAAAAAAEACQABAAAAAP8AAAEACQAAAQEBAQABWQUAAQAFAAoACgAAAAAAAAIA
+AAAAAAAYwAAAAAAAABhAAAAAoKf7B8AAAACgp/sHQAABAAkAAQEBAQEAAVoFAAEABQAKAAoAAQAAAAAC
+AAAAAAAAGMAAAAAAAAAYQAAAAABf/++/AAAAAF//7z8AAQAJAAEBAQEBAAFYBQABAAUACgAKAAIAAAAA
+AgAAAAAAABjAAAAAAAAAGEAAAADA7tsHwAAAAAAAAAhAAAEACQAAAAoACgAFAAUACgAKAAoACgAA/wAA
+AP8AAP//AAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAQAJAAAACgAKAAUABQAKAAoA
+CgAKAAD/AAAA/wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA////AAAAAAABAAkAAAAKAAoA
+BQAFAAoACgAKAAoAAP8AAAD/AAD//wAA//8AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAD///8AAAAAAAEA
+AAAA/wAAAAAAgD8AAIA/AAAAAAAAAAAAQAEAAQAAAAAA/wAAAACAPwAAgD8AAIA/AAAAAAFAAQABAAAA
+AAAA/wAAAIA/AAAAAAAAgD8AAAAAAkABAAAAAAADAAAAAQAJAAAA/wAA/wAAAAAA/wAA/////wAAgD8A
+AIA/AACAPwAAAQBEIyA++AEAAAAAgECn0X8/Pd0/wHbfPsCn0X+/Pd0/QAAAQEAAAAAAAAAAAAAAgD8A
+AAQAAAAAABQAAAAPAA8ADwAPAA8ADwAAARUAFQABAAAAAAAAFMAAAAAAAAAUQAAAAAAAABTAAAAAAAAA
+FEApACkAAAAHUmFpbmJvdwEACQABAAAAAAQAAAABAAAA/////wIAAABOQU5JAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAD/AAD/////AACAPwAAAEAAAIA/AgABAEQj
+ID74AQAAAACAQKuOVz9yfynAv98mwDONV78AYDhAAABAQAAAAAAAAAAAAACAPwAABAAAAAAAFAAAAA8A
+DwAPAA8ADwAPAAABFQAVAAEAAAAAAAAUwAAAAAAAABRAAAAAAAAAFMAAAAAAAAAUQBUAFQAAAAdSYWlu
+Ym93AQAJAAAAAAAA/wAAAIAA/wAA/////wAAgD8AAABAAACAPwIAAQBEIyA++AEAAAAAgED4+n8/fK/d
+v6SOf7/4+n+/fK/dPwAAQEAAAAAAAAAAAAAAgD8AAAQAAAAAABQAAAAPAA8ADwAPAA8ADwAAARUAFQAB
+AAAAAAAAFMAAAAAAAAAUQAAAAAAAABTAAAAAAAAAFEBlABUAAAAHUmFpbmJvdwAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAMQEAKwwAAgAgNQEAKwwAAQAwOQEACDwAAZA0AAAQDVG9yAA9AQI5wAACADQAQ
+QEAKwwAAgA8RQEAKwwAAQBASQEACDwAAZBEAAAIBWAATQEACDwAApBEAAAIBWQAAFEBAAg8AAKQQAAAC
+AVoAAAAAFUBAAg8AAKQMAAAEA1ZpbAAAAAACAAAAAAAAAAAA"
+ border=0>
+</layer>
+</div>
+</body>
+</html>

@@ -1,0 +1,922 @@
+<html xmlns:mcd="urn:schemas-mathsoft-com:mathcad"
+ xmlns:m="http://www.w3.org/1998/Math/MathML">
+<head>
+<meta http-equiv="Content-Type" content="text/html"></meta>
+<meta name=Generator content="Mathcad Professional"></meta>
+<meta name=ProgID content="Mathcad"></meta>
+<meta name=Version content="11.0"></meta>
+<meta name=MathML content="true"></meta>
+<title>
+Ogib4</title>
+<style type="text/css">
+body { background : #ffffff }
+.equation { margin-top: 0.5em; margin-bottom: 1em }
+.Normal { font-family:Arial,sans-serif; font-size:10pt }
+.Heading_1 { font-family:Arial,sans-serif; font-size:14pt; font-weight:bold }
+.Heading_2 { font-family:Arial,sans-serif; font-size:12pt; font-weight:bold; font-style:italic }
+.Heading_3 { font-family:Arial,sans-serif; font-size:12pt }
+.Paragraph { font-family:Arial,sans-serif; font-size:10pt; text-indent:28px }
+.List { font-family:Arial,sans-serif; font-size:10pt; margin-left:19px; text-indent:-19px }
+.Indent { font-family:Arial,sans-serif; font-size:10pt; margin-left:144px }
+.Title { font-family:Times New Roman,sans-serif; font-size:24pt; font-weight:bold; text-align:center }
+.Subtitle { font-family:Times New Roman,sans-serif; font-size:18pt; text-align:center }
+</style>
+<script id="clientEventHandlersJS" language="javascript">
+<!--
+//-->
+</script>
+</head>
+<body 
+mcd:mathfonts="id:0;name:Variables;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:1;name:Constants;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:2;name:Text;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:4;name:User 1;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:5;name:User 2;face:Courier New;size:10;bold:0;ital:0;ul:0;cid:-1
+id:6;name:User 3;face:Arial;size:10;bold:1;ital:0;ul:0;cid:-1
+id:7;name:User 4;face:Times New Roman;size:10;bold:0;ital:1;ul:0;cid:-1
+id:8;name:User 5;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:9;name:User 6;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:10;name:User 7;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1"
+mcd:numberformat=""
+mcd:displayoptions=""
+mcd:unitformat="format:true;simplify:true"
+mcd:tolerance=""
+mcd:builtinvars="origin:0"
+mcd:calcoptions="auto:true;optimize:false;strict:true"
+mcd:mathdisplay="mult:7;deriv:deriv;litsub:large;define:colon;globeq:triple;local:arrow;equal:bold"
+mcd:unitsystem="default:4"
+mcd:dimnames="display:false;mass:mass;length:length;time:time;current:charge;temp:temperature;lum:luminosity;subst:substance"
+mcd:docprops="lrtag:200;lhbtag:200;status:8201;delorig:1;deluser:1;cp:1;cc:1;cs:1"
+mcd:ruler="visible:0;units:1"
+mcd:derivopts="ip:0;sc:0;dv:1;os:1"
+mcd:doccolors="eq:#000000;bg:#ffffff;rg:#ffff80"
+>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="80" mcd:aligny="40" 
+ style="position:absolute;top:20;left:16;width:202">
+<layer width=202>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>F</ci>
+    <lambda>
+      <bvar>
+        <ci>x</ci>
+      </bvar>
+      <bvar>
+        <ci>y</ci>
+      </bvar>
+      <bvar>
+        <ci>z</ci>
+      </bvar>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <apply>
+        <ci>-PARENS</ci>
+        <apply>
+          <minus/>
+          <apply>
+            <plus/>
+            <apply>
+              <ci>-better_POWER</ci>
+              <apply>
+                <ci>-PARENS</ci>
+                <apply>
+                  <minus/>
+                  <ci>x</ci>
+                  <ci>t</ci>
+                </apply>
+              </apply>
+              <cn>2</cn>
+            </apply>
+            <apply>
+              <ci>-better_POWER</ci>
+              <apply>
+                <ci>-PARENS</ci>
+                <apply>
+                  <minus/>
+                  <ci>y</ci>
+                  <ci>t</ci>
+                </apply>
+              </apply>
+              <cn>2</cn>
+            </apply>
+          </apply>
+          <ci>z</ci>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0183.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="327" mcd:aligny="40" 
+ style="position:absolute;top:18;left:256;width:255">
+<layer width=255>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>dF</ci>
+    <lambda>
+      <bvar>
+        <ci>x</ci>
+      </bvar>
+      <bvar>
+        <ci>y</ci>
+      </bvar>
+      <bvar>
+        <ci>z</ci>
+      </bvar>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <apply>
+          <ci>-DERIVATIVE</ci>
+          <lambda>
+            <bvar>
+              <ci>t</ci>
+            </bvar>
+            <apply>
+              <ci>F</ci>
+              <ci>x</ci>
+              <ci>y</ci>
+              <ci>z</ci>
+              <ci>t</ci>
+            </apply>
+          </lambda>
+          <ci>t</ci>
+        </apply>
+        <apply>
+          <plus/>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <apply>
+              <minus/>
+              <cn>2</cn>
+            </apply>
+            <ci>x</ci>
+          </apply>
+          <apply>
+            <minus/>
+            <apply>
+              <ci>-mult-times-in</ci>
+              <cn>4</cn>
+              <ci>t</ci>
+            </apply>
+            <apply>
+              <ci>-mult-times-in</ci>
+              <cn>2</cn>
+              <ci>y</ci>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0184.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="31" mcd:aligny="80" 
+ style="position:absolute;top:68;left:16;width:32">
+<layer width=32>
+<comment mcd:mmldata="<math>
+  <ci>Given</ci>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0185.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="134" mcd:aligny="80" 
+ style="position:absolute;top:68;left:64;width:85">
+<layer width=85>
+<comment mcd:mmldata="<math>
+  <apply>
+    <ci>-EQUALS</ci>
+    <apply>
+      <ci>dF</ci>
+      <ci>x</ci>
+      <ci>y</ci>
+      <ci>z</ci>
+      <ci>t</ci>
+    </apply>
+    <cn>0</cn>
+  </apply>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0186.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="249" mcd:aligny="80" 
+ style="position:absolute;top:59;left:192;width:182">
+<layer width=182>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>A</ci>
+    <lambda>
+      <bvar>
+        <ci>x</ci>
+      </bvar>
+      <bvar>
+        <ci>y</ci>
+      </bvar>
+      <bvar>
+        <ci>z</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <apply>
+          <ci>Find</ci>
+          <ci>t</ci>
+        </apply>
+        <apply>
+          <plus/>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <apply>
+              <divide/>
+              <cn>1</cn>
+              <cn>2</cn>
+            </apply>
+            <ci>x</ci>
+          </apply>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <apply>
+              <divide/>
+              <cn>1</cn>
+              <cn>2</cn>
+            </apply>
+            <ci>y</ci>
+          </apply>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0187.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="79" mcd:aligny="136" 
+ style="position:absolute;top:107;left:24;width:377">
+<layer width=377>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>G</ci>
+    <lambda>
+      <bvar>
+        <ci>x</ci>
+      </bvar>
+      <bvar>
+        <ci>y</ci>
+      </bvar>
+      <bvar>
+        <ci>z</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <apply>
+          <ci>F</ci>
+          <ci>x</ci>
+          <ci>y</ci>
+          <ci>z</ci>
+          <apply>
+            <ci>A</ci>
+            <ci>x</ci>
+            <ci>y</ci>
+            <ci>z</ci>
+          </apply>
+        </apply>
+        <apply>
+          <plus/>
+          <apply>
+            <ci>-better_POWER</ci>
+            <apply>
+              <ci>-PARENS</ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <divide/>
+                    <cn>1</cn>
+                    <cn>2</cn>
+                  </apply>
+                  <ci>x</ci>
+                </apply>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <divide/>
+                    <cn>1</cn>
+                    <cn>2</cn>
+                  </apply>
+                  <ci>y</ci>
+                </apply>
+              </apply>
+            </apply>
+            <cn>2</cn>
+          </apply>
+          <apply>
+            <minus/>
+            <apply>
+              <ci>-better_POWER</ci>
+              <apply>
+                <ci>-PARENS</ci>
+                <apply>
+                  <minus/>
+                  <apply>
+                    <ci>-mult-times-in</ci>
+                    <apply>
+                      <divide/>
+                      <cn>1</cn>
+                      <cn>2</cn>
+                    </apply>
+                    <ci>y</ci>
+                  </apply>
+                  <apply>
+                    <ci>-mult-times-in</ci>
+                    <apply>
+                      <divide/>
+                      <cn>1</cn>
+                      <cn>2</cn>
+                    </apply>
+                    <ci>x</ci>
+                  </apply>
+                </apply>
+              </apply>
+              <cn>2</cn>
+            </apply>
+            <ci>z</ci>
+          </apply>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0188.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="68" mcd:aligny="192" 
+ style="position:absolute;top:163;left:24;width:238">
+<layer width=238>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>Z</ci>
+    <lambda>
+      <bvar>
+        <ci>x</ci>
+      </bvar>
+      <bvar>
+        <ci>y</ci>
+      </bvar>
+      <apply>
+        <ci>-PARENS</ci>
+        <apply>
+          <plus/>
+          <apply>
+            <ci>-better_POWER</ci>
+            <apply>
+              <ci>-PARENS</ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <divide/>
+                    <cn>1</cn>
+                    <cn>2</cn>
+                  </apply>
+                  <ci>x</ci>
+                </apply>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <divide/>
+                    <cn>1</cn>
+                    <cn>2</cn>
+                  </apply>
+                  <ci>y</ci>
+                </apply>
+              </apply>
+            </apply>
+            <cn>2</cn>
+          </apply>
+          <apply>
+            <ci>-better_POWER</ci>
+            <apply>
+              <ci>-PARENS</ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <divide/>
+                    <cn>1</cn>
+                    <cn>2</cn>
+                  </apply>
+                  <ci>y</ci>
+                </apply>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <divide/>
+                    <cn>1</cn>
+                    <cn>2</cn>
+                  </apply>
+                  <ci>x</ci>
+                </apply>
+              </apply>
+            </apply>
+            <cn>2</cn>
+          </apply>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0189.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="311" mcd:aligny="192" 
+ style="position:absolute;top:180;left:296;width:230">
+<layer width=230>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>P</ci>
+    <apply>
+      <ci>CreateMesh</ci>
+      <ci>Z</ci>
+      <apply>
+        <minus/>
+        <cn>20</cn>
+      </apply>
+      <cn>40</cn>
+      <apply>
+        <minus/>
+        <cn>20</cn>
+      </apply>
+      <cn>40</cn>
+      <cn>20</cn>
+      <cn>20</cn>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0190.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="86" mcd:aligny="248" 
+ style="position:absolute;top:228;left:24;width:184">
+<layer width=184>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>ZZ</ci>
+    <lambda>
+      <bvar>
+        <ci>x</ci>
+      </bvar>
+      <bvar>
+        <ci>y</ci>
+      </bvar>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <apply>
+        <ci>-PARENS</ci>
+        <apply>
+          <plus/>
+          <apply>
+            <ci>-better_POWER</ci>
+            <apply>
+              <ci>-PARENS</ci>
+              <apply>
+                <minus/>
+                <ci>x</ci>
+                <ci>t</ci>
+              </apply>
+            </apply>
+            <cn>2</cn>
+          </apply>
+          <apply>
+            <ci>-better_POWER</ci>
+            <apply>
+              <ci>-PARENS</ci>
+              <apply>
+                <minus/>
+                <ci>y</ci>
+                <ci>t</ci>
+              </apply>
+            </apply>
+            <cn>2</cn>
+          </apply>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0191.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="314" mcd:aligny="248" 
+ style="position:absolute;top:236;left:256;width:124">
+<layer width=124>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>ZZ0</ci>
+    <lambda>
+      <bvar>
+        <ci>x</ci>
+      </bvar>
+      <bvar>
+        <ci>y</ci>
+      </bvar>
+      <apply>
+        <ci>ZZ</ci>
+        <ci>x</ci>
+        <ci>y</ci>
+        <cn>0</cn>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0192.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="437" mcd:aligny="248" 
+ style="position:absolute;top:236;left:416;width:250">
+<layer width=250>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>P0</ci>
+    <apply>
+      <ci>CreateMesh</ci>
+      <ci>ZZ0</ci>
+      <apply>
+        <minus/>
+        <cn>20</cn>
+      </apply>
+      <cn>20</cn>
+      <apply>
+        <minus/>
+        <cn>20</cn>
+      </apply>
+      <cn>20</cn>
+      <cn>10</cn>
+      <cn>10</cn>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0193.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="314" mcd:aligny="272" 
+ style="position:absolute;top:260;left:256;width:124">
+<layer width=124>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>ZZ1</ci>
+    <lambda>
+      <bvar>
+        <ci>x</ci>
+      </bvar>
+      <bvar>
+        <ci>y</ci>
+      </bvar>
+      <apply>
+        <ci>ZZ</ci>
+        <ci>x</ci>
+        <ci>y</ci>
+        <cn>5</cn>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0194.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="437" mcd:aligny="272" 
+ style="position:absolute;top:260;left:416;width:338">
+<layer width=338>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>P1</ci>
+    <apply>
+      <ci>CreateMesh</ci>
+      <ci>ZZ1</ci>
+      <apply>
+        <plus/>
+        <apply>
+          <minus/>
+          <cn>20</cn>
+        </apply>
+        <cn>5</cn>
+      </apply>
+      <apply>
+        <plus/>
+        <cn>20</cn>
+        <cn>5</cn>
+      </apply>
+      <apply>
+        <plus/>
+        <apply>
+          <minus/>
+          <cn>20</cn>
+        </apply>
+        <cn>5</cn>
+      </apply>
+      <apply>
+        <plus/>
+        <cn>20</cn>
+        <cn>5</cn>
+      </apply>
+      <cn>10</cn>
+      <cn>10</cn>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0195.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="314" mcd:aligny="296" 
+ style="position:absolute;top:284;left:256;width:130">
+<layer width=130>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>ZZ2</ci>
+    <lambda>
+      <bvar>
+        <ci>x</ci>
+      </bvar>
+      <bvar>
+        <ci>y</ci>
+      </bvar>
+      <apply>
+        <ci>ZZ</ci>
+        <ci>x</ci>
+        <ci>y</ci>
+        <cn>10</cn>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0196.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="437" mcd:aligny="296" 
+ style="position:absolute;top:284;left:416;width:362">
+<layer width=362>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>P2</ci>
+    <apply>
+      <ci>CreateMesh</ci>
+      <ci>ZZ2</ci>
+      <apply>
+        <plus/>
+        <apply>
+          <minus/>
+          <cn>20</cn>
+        </apply>
+        <cn>10</cn>
+      </apply>
+      <apply>
+        <plus/>
+        <cn>20</cn>
+        <cn>10</cn>
+      </apply>
+      <apply>
+        <plus/>
+        <apply>
+          <minus/>
+          <cn>20</cn>
+        </apply>
+        <cn>10</cn>
+      </apply>
+      <apply>
+        <plus/>
+        <cn>20</cn>
+        <cn>10</cn>
+      </apply>
+      <cn>10</cn>
+      <cn>10</cn>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0197.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="314" mcd:aligny="320" 
+ style="position:absolute;top:308;left:256;width:130">
+<layer width=130>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>ZZ3</ci>
+    <lambda>
+      <bvar>
+        <ci>x</ci>
+      </bvar>
+      <bvar>
+        <ci>y</ci>
+      </bvar>
+      <apply>
+        <ci>ZZ</ci>
+        <ci>x</ci>
+        <ci>y</ci>
+        <cn>20</cn>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0198.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="437" mcd:aligny="320" 
+ style="position:absolute;top:308;left:416;width:362">
+<layer width=362>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>P3</ci>
+    <apply>
+      <ci>CreateMesh</ci>
+      <ci>ZZ3</ci>
+      <apply>
+        <plus/>
+        <apply>
+          <minus/>
+          <cn>20</cn>
+        </apply>
+        <cn>20</cn>
+      </apply>
+      <apply>
+        <plus/>
+        <cn>20</cn>
+        <cn>20</cn>
+      </apply>
+      <apply>
+        <plus/>
+        <apply>
+          <minus/>
+          <cn>20</cn>
+        </apply>
+        <cn>20</cn>
+      </apply>
+      <apply>
+        <plus/>
+        <cn>20</cn>
+        <cn>20</cn>
+      </apply>
+      <cn>10</cn>
+      <cn>10</cn>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Ogib4_images/IMG0199.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+ style="position:absolute;top:392;left:104">
+<layer >
+<img src="./Ogib4_images/IMG0200.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+AGgAAACIAQAA6gEAAAgDAAAoAQAAiAEAAAAAAADIAAAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEBe8QAAgAUHQEAADwAAQAYAAAAIQECfwQAAgAYJQEA8AQAAQAgAAAoAAgAAAAlDVlNF
+cUl0ZW0BAAAAAAAMAAAABkVxSXRlbQEAAAAAAA0AAAAECQsAAgAAAAxDVlNDb21ib0l0ZW0AAAAAAAAQ
+AAAAB0NWU0l0ZW0AAAAAAAAPAAAAPA4AAGoAAACJAQAAgAEAAGABAAD//wAAEABDVlNPbGVDbGllbnRJ
+dGVtAAEAAAEAAAABAAAAAAABAAAAAA4AANDPEeChsRrhAAAAAAAAAAAAAAAAAAAAAD4AAwD+/wkABgAA
+AAAAAAAAAAAAAQAAAAEAAAAAAAAAABAAAAIAAAABAAAA/v///wAAAAAAAAAA////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////f//
+//7////+////BAAAAAUAAAD+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////9SAG8AbwB0ACAARQBuAHQAcgB5AAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFgAFAP//////////AgAAAKVJPifeAtERmukA
+AMAIcgsAAAAAAAAAAAAAAABwXrkw/AXGAQMAAABABQAAAAAAAEMAbwBuAHQAZQBuAHQAcwAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAIA////////////////AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMkEAAAAAAAAAgBPAGwAZQBQAHIAZQBz
+ADAAMAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAgEBAAAA////
+//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AP///////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADQAAAP7///8OAAAADwAA
+ABAAAAARAAAAEgAAABMAAAAUAAAA/v//////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////AQAJALAnAABhJAAAAAAAAAoAAAAAAAAAAAAB
+AAAAAAAAAAAAAADDNeL8wDfBP3F020QfGxhA09Ey24s/EkDERs1NBo/RQGjK7JtsFPA/AQAA/////zMz
+M/8AAAIAAGQAEgAAAAAAAAAAAAEACQABAAAAAP8AAAEACQABAQABAQEABQABAAUACgAKAAAAAAAAAgAA
+AAAAAPC/AAAAAAAA8D8AAAAAAAA0wAAAAAAAAERAAAEACQABAQABAQEABQABAAUACgAKAAEAAAAAAgAA
+AAAAAPC/AAAAAAAA8D8AAAAAAAAAAAAAAAAAIJxAAAEACQABAQABAQEABQABAAUACgAKAAIAAAAAAgAA
+AAAAAPC/AAAAAAAA8D8AAAAAAAA0wAAAAAAAAERAAAEACQAAAAoACgAFAAUACgAKAAoACgAA/wAAAP8A
+AP//AAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAQAJAAAACgAKAAUABQAKAAoACgAK
+AAD/AAAA/wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA////AAAAAAABAAkAAAAKAAoABQAF
+AAoACgAKAAoAAP8AAAD/AAD//wAA//8AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAD///8AAAAAAAEAAAAA
+/wAAAAAAgD8AAIA/AAAAAAAAAAAAQAEAAQAAAAAA/wAAAACAPwAAgD8AAIA/AAAAAAFAAQABAAAAAAAA
+/wAAAIA/AAAAAAAAgD8AAAAAAkABAAAAAAAFAAAAAQAJAAAA/wAA/wAAAAAA/wAA/////5qZGUAAAIA/
+AACAPwAAAQBEIyA++AEAAAAAgEAAAOFEAACgwQAAoMEAAAAAAAAgQgAAIEIAAAAAAAAAAAAAgD8AAAQA
+AAAAABQAAAAPAA8ADwAPAA8ADwAAARUAFQABAAAAAAAAFMAAAAAAAAAUQAAAAAAAABTAAAAAAAAAFEAV
+ABUAAAAAAQAJAAAAAAAA/wAAAAAAAAAAAAQAAAABAAAA/////wIAAABOQU5JAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAP////+amRlAAACAPwAAgD8AAAEARCMgPvgBAAAAAIBA
+AABIRAAAoMEAAKDBUgYeQQAAoEEAAKBBAAAAAAAAAAAAAIA/AAAEAAAAAAAUAAAADwAPAA8ADwAPAA8A
+AAEVABUAAAABAAkAAAAAAAD/AAAAAAD/AAD/////mpkZQAAAgD8AAIA/AAABAEQjID74AQAAAACAQAAA
+SEQAAHDBAABwwVIGHkEAAMhBAADIQQAAAAAAAAAAAACAPwAABAAAAAAAFAAAAA8ADwAPAA8ADwAPAAAB
+FQAVAAAAAQAJAAAAAAAA/wAAAAAA/wAA/////5qZGUAAAIA/AACAPwAAAQBEIyA++AEAAAAAgEAAAEhE
+AAAgwQAAIMFSBh5BAADwQQAA8EEAAAAAAAAAAAAAgD8AAAQAAAAAABQAAAAPAA8ADwAPAA8ADwAAARUA
+FQAAAAEACQAAAAAAAP8AAAAAAP8AAP////+amRlAAACAPwAAgD8AAAEARCMgPvgBAAAAAIBAAABIRAAA
+AAAAAAAAUgYeQQAAIEIAACBCAAAAAAAAAAAAAIA/AAAEAAAAAAAUAAAADwAPAA8ADwAPAA8AAAEVABUA
+AAA5dw4QAAAAAAAAAMz20V4AAKBAAAAAAAAAAAAAAAAA/wXSXgAAAAAUAA4ABAAIABgCBQDgp44QpDl3
+DigAAAAAAAAAyvvRXmz50V4FIQAAP/nRXlALAACr/NFeAACAPwAAgD9f+dFevfvRXgAAAAAw19FeFAAA
+AAoACgAEAAwAyAEFAEg9OBDwOXcOJAAAAAAAAABs+dFeBSAAAD/50V5QCwAABfnRXgAAAEAF+dFeAWa2
+wF/50V4AAAAAAAAAAAAAAAAAAAAADgC7AQQBDAAAAAAARAAAAGA6dw5EAAAAAAAAAG720V4AFzA/i3Me
+vvKLNT8AAAAAAAAAAAAMQEAKwwAAgAgNQEAKwwAAQAwOQEAKwwAAQA0PQEAKwwAAQA4QQEACDwAAZA8A
+AAIBUAARQEACDwAApA8AAAMCUDAAABJAQAIPAACkDgAAAwJQMQAAE0BAAg8AAKQNAAADAlAyAAAUQEAC
+DwAApAwAAAMCUDMAAAAAAgAAAAAAAAAAAA=="
+ border=0>
+</layer>
+</div>
+</body>
+</html>

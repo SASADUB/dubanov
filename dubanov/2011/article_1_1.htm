@@ -1,0 +1,1875 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="article_1_1.files/filelist.xml">
+<link rel=Edit-Time-Data href="article_1_1.files/editdata.mso">
+<link rel=OLE-Object-Data href="article_1_1.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Во многих прикладных инженерных задачах остро встает задача
+конструирования поверхностей вращения</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>й</o:Author>
+  <o:LastAuthor>й</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>898</o:TotalTime>
+  <o:Created>2011-09-26T02:45:00Z</o:Created>
+  <o:LastSaved>2011-09-26T02:45:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>1030</o:Words>
+  <o:Characters>5877</o:Characters>
+  <o:Company>1</o:Company>
+  <o:Lines>48</o:Lines>
+  <o:Paragraphs>13</o:Paragraphs>
+  <o:CharactersWithSpaces>6894</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+table.MsoTableGrid
+	{mso-style-name:"Сетка таблицы";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+  <o:regrouptable v:ext="edit">
+   <o:entry new="1" old="0"/>
+   <o:entry new="2" old="1"/>
+   <o:entry new="3" old="2"/>
+  </o:regrouptable>
+ </o:shapelayout></xml><![endif]-->
+<!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+</head>
+
+<body lang=RU link=blue vlink=purple style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:35.4pt;
+line-height:150%'><b style='mso-bidi-font-weight:normal'>1.</b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-ansi-language:
+EN-US'>1</span><span lang=EN-US> </span>Вращение параметрической кривой вокруг <o:p></o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:35.4pt;
+line-height:150%'><b style='mso-bidi-font-weight:normal'>произвольно
+расположенной в пространстве прямой.<o:p></o:p></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.4pt;line-height:
+150%'>Рассмотрим простую задачу: получить уравнение поверхности вращения произвольной
+параметрической кривой вокруг прямой, произвольно расположенной в пространстве.
+Вращаемая параметрическая кривая задана в виде: <sub><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1264" type="#_x0000_t75" style='width:65.25pt;
+ height:56.25pt'>
+ <v:imagedata src="article_1_1.files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=87 height=75
+src="article_1_1.files/image002.gif" v:shapes="_x0000_s1264"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1378542716">
+ </o:OLEObject>
+</xml><![endif]-->. Ось вращения задана двумя точками <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1263" type="#_x0000_t75" style='width:12.75pt;height:15.75pt'>
+ <v:imagedata src="article_1_1.files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=17 height=21
+src="article_1_1.files/image004.gif" v:shapes="_x0000_s1263"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1378542717">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>и <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1262" type="#_x0000_t75" style='width:12pt;height:15.75pt'>
+ <v:imagedata src="article_1_1.files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=16 height=21
+src="article_1_1.files/image006.gif" v:shapes="_x0000_s1262"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1378542718">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>(Рис. 1.1). </p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><!--[if gte vml 1]><v:group
+ id="_x0000_s1045" editas="canvas" style='width:351pt;height:189pt;
+ mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
+ coordorigin="2770,152" coordsize="5506,2927">
+ <o:lock v:ext="edit" aspectratio="t"/>
+ <v:shape id="_x0000_s1046" type="#_x0000_t75" style='position:absolute;left:2770;
+  top:152;width:5506;height:2927' o:preferrelative="f">
+  <v:fill o:detectmouseclick="t"/>
+  <v:path o:extrusionok="t" o:connecttype="none"/>
+  <o:lock v:ext="edit" text="t"/>
+ </v:shape><v:line id="_x0000_s1050" style='position:absolute;flip:y' from="4182,291"
+  to="5876,2800" o:regroupid="3" strokeweight="1.5pt">
+  <v:stroke startarrow="oval" startarrowwidth="wide" startarrowlength="long"
+   endarrow="oval" endarrowwidth="wide" endarrowlength="long"/>
+ </v:line><v:shape id="_x0000_s1051" type="#_x0000_t75" style='position:absolute;
+  left:7147;top:2103;width:376;height:293' o:regroupid="3">
+  <v:imagedata src="article_1_1.files/image007.wmz" o:title=""/>
+ </v:shape><v:line id="_x0000_s1052" style='position:absolute;flip:x y' from="5311,1128"
+  to="6864,2243" o:regroupid="3">
+  <v:stroke startarrow="oval" startarrowwidth="wide" startarrowlength="long"
+   endarrow="oval" endarrowwidth="wide" endarrowlength="long"/>
+ </v:line><v:shape id="_x0000_s1053" style='position:absolute;left:6158;top:1267;
+  width:1177;height:1533' coordsize="1500,1980" o:regroupid="2" path="m1440,v30,180,60,360,,540c1380,720,1230,900,1080,1080,930,1260,720,1470,540,1620,360,1770,180,1875,,1980e"
+  filled="f" strokeweight="1.5pt">
+  <v:path arrowok="t"/>
+ </v:shape><v:shape id="_x0000_s1054" type="#_x0000_t75" style='position:absolute;
+  left:3899;top:2521;width:204;height:202' o:regroupid="1">
+  <v:imagedata src="article_1_1.files/image008.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1055" type="#_x0000_t75" style='position:absolute;
+  left:5876;top:431;width:188;height:202' o:regroupid="1">
+  <v:imagedata src="article_1_1.files/image009.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1056" type="#_x0000_t75" style='position:absolute;
+  left:4888;top:710;width:360;height:295'>
+  <v:imagedata src="article_1_1.files/image010.wmz" o:title=""/>
+ </v:shape><v:line id="_x0000_s1057" style='position:absolute' from="5311,1128"
+  to="5876,1546" strokeweight="4pt">
+  <v:stroke endarrow="open" endarrowwidth="narrow" endarrowlength="long"/>
+ </v:line><v:line id="_x0000_s1058" style='position:absolute;flip:y' from="5311,431"
+  to="5735,1128" strokeweight="4pt">
+  <v:stroke endarrow="open" endarrowwidth="narrow" endarrowlength="long"/>
+ </v:line><v:line id="_x0000_s1059" style='position:absolute;flip:y' from="5311,988"
+  to="6158,1128" strokeweight="4pt">
+  <v:stroke endarrow="open" endarrowwidth="narrow" endarrowlength="long"/>
+ </v:line><v:shape id="_x0000_s1060" type="#_x0000_t75" style='position:absolute;
+  left:5452;top:1546;width:424;height:294'>
+  <v:imagedata src="article_1_1.files/image011.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1061" type="#_x0000_t75" style='position:absolute;
+  left:6299;top:849;width:425;height:294'>
+  <v:imagedata src="article_1_1.files/image012.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1062" type="#_x0000_t75" style='position:absolute;
+  left:5170;top:291;width:423;height:310'>
+  <v:imagedata src="article_1_1.files/image013.wmz" o:title=""/>
+ </v:shape><v:line id="_x0000_s1065" style='position:absolute;flip:y' from="3617,291"
+  to="3617,2103">
+  <v:stroke endarrow="block"/>
+ </v:line><v:line id="_x0000_s1066" style='position:absolute;flip:x' from="2911,2103"
+  to="3617,2800">
+  <v:stroke endarrow="block"/>
+ </v:line><v:line id="_x0000_s1067" style='position:absolute' from="3617,2103"
+  to="5452,2521">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shape id="_x0000_s1068" type="#_x0000_t75" style='position:absolute;
+  left:2911;top:2243;width:204;height:201'>
+  <v:imagedata src="article_1_1.files/image014.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1069" type="#_x0000_t75" style='position:absolute;
+  left:5452;top:2382;width:204;height:201'>
+  <v:imagedata src="article_1_1.files/image015.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1070" type="#_x0000_t75" style='position:absolute;
+  left:3758;top:291;width:189;height:202'>
+  <v:imagedata src="article_1_1.files/image016.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1071" type="#_x0000_t75" style='position:absolute;
+  left:3335;top:1825;width:204;height:216'>
+  <v:imagedata src="article_1_1.files/image017.wmz" o:title=""/>
+ </v:shape><v:line id="_x0000_s1076" style='position:absolute;flip:x' from="3052,2103"
+  to="3617,2661" strokeweight="4pt">
+  <v:stroke endarrow="open" endarrowwidth="narrow" endarrowlength="long"/>
+ </v:line><v:line id="_x0000_s1077" style='position:absolute' from="3617,2103"
+  to="4323,2243" strokeweight="4pt">
+  <v:stroke endarrow="open" endarrowwidth="narrow" endarrowlength="long"/>
+ </v:line><v:line id="_x0000_s1078" style='position:absolute;flip:y' from="3617,1406"
+  to="3617,2103" strokeweight="4pt">
+  <v:stroke endarrow="open" endarrowwidth="narrow" endarrowlength="long"/>
+ </v:line><v:shape id="_x0000_s1079" type="#_x0000_t75" style='position:absolute;
+  left:3476;top:2382;width:188;height:263'>
+  <v:imagedata src="article_1_1.files/image018.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1080" type="#_x0000_t75" style='position:absolute;
+  left:3758;top:1267;width:205;height:279'>
+  <v:imagedata src="article_1_1.files/image019.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1081" type="#_x0000_t75" style='position:absolute;
+  left:4041;top:1825;width:204;height:264'>
+  <v:imagedata src="article_1_1.files/image020.wmz" o:title=""/>
+ </v:shape></v:group><![endif]--><![if !vml]><img width=468 height=252
+src="article_1_1.files/image021.gif" v:shapes="_x0000_s1045 _x0000_s1046 _x0000_s1050 _x0000_s1051 _x0000_s1052 _x0000_s1053 _x0000_s1054 _x0000_s1055 _x0000_s1056 _x0000_s1057 _x0000_s1058 _x0000_s1059 _x0000_s1060 _x0000_s1061 _x0000_s1062 _x0000_s1065 _x0000_s1066 _x0000_s1067 _x0000_s1068 _x0000_s1069 _x0000_s1070 _x0000_s1071 _x0000_s1076 _x0000_s1077 _x0000_s1078 _x0000_s1079 _x0000_s1080 _x0000_s1081"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1051"
+  DrawAspect="Content" ObjectID="_1378542719">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1054"
+  DrawAspect="Content" ObjectID="_1378542720">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1055"
+  DrawAspect="Content" ObjectID="_1378542721">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1056"
+  DrawAspect="Content" ObjectID="_1378542722">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1060"
+  DrawAspect="Content" ObjectID="_1378542723">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1061"
+  DrawAspect="Content" ObjectID="_1378542724">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1062"
+  DrawAspect="Content" ObjectID="_1378542725">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1068"
+  DrawAspect="Content" ObjectID="_1378542726">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1069"
+  DrawAspect="Content" ObjectID="_1378542727">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1070"
+  DrawAspect="Content" ObjectID="_1378542728">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1071"
+  DrawAspect="Content" ObjectID="_1378542729">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1079"
+  DrawAspect="Content" ObjectID="_1378542730">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1080"
+  DrawAspect="Content" ObjectID="_1378542731">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1081"
+  DrawAspect="Content" ObjectID="_1378542732">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><b
+style='mso-bidi-font-weight:normal'>Рис. 1.1<o:p></o:p></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.4pt;line-height:
+150%'>Основанием перпендикуляра, опущенным из точки <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1261" type="#_x0000_t75" style='width:24pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image022.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=32 height=25
+src="article_1_1.files/image023.gif" v:shapes="_x0000_s1261"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1378542734">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>на прямую <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1260" type="#_x0000_t75" style='width:38.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image024.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=51 height=25
+src="article_1_1.files/image025.gif" v:shapes="_x0000_s1260"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1378542735">
+ </o:OLEObject>
+</xml><![endif]-->, будет точка <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1259" type="#_x0000_t75" style='width:186pt;height:36pt'>
+ <v:imagedata src="article_1_1.files/image026.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=248 height=48
+src="article_1_1.files/image027.gif" v:shapes="_x0000_s1259"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1378542736">
+ </o:OLEObject>
+</xml><![endif]-->. Определим локальный базис для каждой отдельной точки <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1258" type="#_x0000_t75" style='width:24pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image028.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=32 height=25
+src="article_1_1.files/image023.gif" v:shapes="_x0000_s1258"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1378542737">
+ </o:OLEObject>
+</xml><![endif]-->. Это будет тройка векторов <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1257" type="#_x0000_t75" style='width:92.25pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=123 height=27
+src="article_1_1.files/image030.gif" v:shapes="_x0000_s1257"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1378542738">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>с центром координат в
+точке <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1256" type="#_x0000_t75" style='width:23.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image031.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=31 height=25
+src="article_1_1.files/image032.gif" v:shapes="_x0000_s1256"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1378542739">
+ </o:OLEObject>
+</xml><![endif]-->, где: <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1255" type="#_x0000_t75" style='width:96pt;height:41.25pt'>
+ <v:imagedata src="article_1_1.files/image033.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=128 height=55
+src="article_1_1.files/image034.gif" v:shapes="_x0000_s1255"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1378542740">
+ </o:OLEObject>
+</xml><![endif]-->, <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1254" type="#_x0000_t75" style='width:72.75pt;height:39.75pt'>
+ <v:imagedata src="article_1_1.files/image035.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=97 height=53
+src="article_1_1.files/image036.gif" v:shapes="_x0000_s1254"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1378542741">
+ </o:OLEObject>
+</xml><![endif]-->, <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1253" type="#_x0000_t75" style='width:93.75pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image037.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=125 height=27
+src="article_1_1.files/image038.gif" v:shapes="_x0000_s1253"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1378542742">
+ </o:OLEObject>
+</xml><![endif]-->. Если мы захотим вращать точку <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1252" type="#_x0000_t75" style='width:24pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image022.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=32 height=25
+src="article_1_1.files/image023.gif" v:shapes="_x0000_s1252"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1039"
+  DrawAspect="Content" ObjectID="_1378542743">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>вокруг точки <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1251" type="#_x0000_t75" style='width:23.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image039.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=31 height=25
+src="article_1_1.files/image032.gif" v:shapes="_x0000_s1251"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1040"
+  DrawAspect="Content" ObjectID="_1378542744">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>в системе координат <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1250" type="#_x0000_t75" style='width:92.25pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=123 height=27
+src="article_1_1.files/image030.gif" v:shapes="_x0000_s1250"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1041"
+  DrawAspect="Content" ObjectID="_1378542745">
+ </o:OLEObject>
+</xml><![endif]-->, то это будет плоская окружность <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1249" type="#_x0000_t75" style='width:150pt;height:56.25pt'>
+ <v:imagedata src="article_1_1.files/image040.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=200 height=75
+src="article_1_1.files/image041.gif" v:shapes="_x0000_s1249"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1042"
+  DrawAspect="Content" ObjectID="_1378542746">
+ </o:OLEObject>
+</xml><![endif]-->. Перенос окружности в систему координат <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1248" type="#_x0000_t75" style='width:45pt;height:15.75pt'>
+ <v:imagedata src="article_1_1.files/image042.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=60 height=21
+src="article_1_1.files/image043.gif" v:shapes="_x0000_s1248"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1043"
+  DrawAspect="Content" ObjectID="_1378542747">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>и вращение
+непосредственно вокруг точки <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1247" type="#_x0000_t75" style='width:23.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image031.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=31 height=25
+src="article_1_1.files/image032.gif" v:shapes="_x0000_s1247"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1044"
+  DrawAspect="Content" ObjectID="_1378542748">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>осуществляется
+следующим образом: <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1246" type="#_x0000_t75" style='width:150.75pt;height:56.25pt'>
+ <v:imagedata src="article_1_1.files/image044.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=201 height=75
+src="article_1_1.files/image045.gif" v:shapes="_x0000_s1246"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1045"
+  DrawAspect="Content" ObjectID="_1378542749">
+ </o:OLEObject>
+</xml><![endif]-->. Базис <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1245" type="#_x0000_t75" style='width:96.75pt;height:18pt'>
+ <v:imagedata src="article_1_1.files/image046.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=129 height=24
+src="article_1_1.files/image047.gif" v:shapes="_x0000_s1245"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1046"
+  DrawAspect="Content" ObjectID="_1378542750">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>рассчитывается по
+формулам: <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1244" type="#_x0000_t75" style='width:92.25pt;height:60pt'>
+ <v:imagedata src="article_1_1.files/image048.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=123 height=80
+src="article_1_1.files/image049.gif" v:shapes="_x0000_s1244"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1047"
+  DrawAspect="Content" ObjectID="_1378542751">
+ </o:OLEObject>
+</xml><![endif]-->, <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1243" type="#_x0000_t75" style='width:93.75pt;height:60pt'>
+ <v:imagedata src="article_1_1.files/image050.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=125 height=80
+src="article_1_1.files/image051.gif" v:shapes="_x0000_s1243"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1048"
+  DrawAspect="Content" ObjectID="_1378542752">
+ </o:OLEObject>
+</xml><![endif]-->, <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1242" type="#_x0000_t75" style='width:93pt;height:60pt'>
+ <v:imagedata src="article_1_1.files/image052.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=124 height=80
+src="article_1_1.files/image053.gif" v:shapes="_x0000_s1242"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1049"
+  DrawAspect="Content" ObjectID="_1378542753">
+ </o:OLEObject>
+</xml><![endif]-->, так векторы <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1241" type="#_x0000_t75" style='width:53.25pt;height:18pt'>
+ <v:imagedata src="article_1_1.files/image054.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=71 height=24
+src="article_1_1.files/image055.gif" v:shapes="_x0000_s1241"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1050"
+  DrawAspect="Content" ObjectID="_1378542754">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>будут выглядеть из
+системы координат <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1240" type="#_x0000_t75" style='width:92.25pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=123 height=27
+src="article_1_1.files/image030.gif" v:shapes="_x0000_s1240"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1051"
+  DrawAspect="Content" ObjectID="_1378542755">
+ </o:OLEObject>
+</xml><![endif]-->. Базисные векторы <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1239" type="#_x0000_t75" style='width:53.25pt;height:18pt'>
+ <v:imagedata src="article_1_1.files/image054.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=71 height=24
+src="article_1_1.files/image055.gif" v:shapes="_x0000_s1239"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1052"
+  DrawAspect="Content" ObjectID="_1378542756">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>системы координат <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1238" type="#_x0000_t75" style='width:45pt;height:15.75pt'>
+ <v:imagedata src="article_1_1.files/image056.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=60 height=21
+src="article_1_1.files/image043.gif" v:shapes="_x0000_s1238"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1053"
+  DrawAspect="Content" ObjectID="_1378542757">
+ </o:OLEObject>
+</xml><![endif]-->(Рис.1.1) имеют значения <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1237" type="#_x0000_t75" style='width:42.75pt;height:56.25pt'>
+ <v:imagedata src="article_1_1.files/image057.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=57 height=75
+src="article_1_1.files/image058.gif" v:shapes="_x0000_s1237"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1054"
+  DrawAspect="Content" ObjectID="_1378542758">
+ </o:OLEObject>
+</xml><![endif]-->, <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1236" type="#_x0000_t75" style='width:42.75pt;height:56.25pt'>
+ <v:imagedata src="article_1_1.files/image059.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=57 height=75
+src="article_1_1.files/image060.gif" v:shapes="_x0000_s1236"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1055"
+  DrawAspect="Content" ObjectID="_1378542759">
+ </o:OLEObject>
+</xml><![endif]-->, <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1235" type="#_x0000_t75" style='width:42.75pt;height:56.25pt'>
+ <v:imagedata src="article_1_1.files/image061.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=57 height=75
+src="article_1_1.files/image062.gif" v:shapes="_x0000_s1235"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1056"
+  DrawAspect="Content" ObjectID="_1378542760">
+ </o:OLEObject>
+</xml><![endif]-->. Более подробно вопросы преобразования базиса рассмотрены на
+Интернет-ресурсе <span lang=EN-US style='mso-ansi-language:EN-US'><a
+href="http://dubanov.exponenta.ru/russian/book_rus.htm">http<span lang=RU
+style='mso-ansi-language:RU'>://</span>dubanov<span lang=RU style='mso-ansi-language:
+RU'>.</span>exponenta<span lang=RU style='mso-ansi-language:RU'>.</span>ru<span
+lang=RU style='mso-ansi-language:RU'>/</span>russian<span lang=RU
+style='mso-ansi-language:RU'>/</span>book<span lang=RU style='mso-ansi-language:
+RU'>_</span>rus<span lang=RU style='mso-ansi-language:RU'>.</span>htm</a></span><span
+lang=EN-US> </span>во вкладке «Преобразование базиса». Ниже приведен 
+<a title="Можете скачать файл MathCAD - программы" target="_self" href="Rotation_1_1_article_comment.zip">листинг программы</a>,
+выполненной в системе <span lang=EN-US style='mso-ansi-language:EN-US'>MathCAD
+11</span>.<span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=391 valign=top style='width:293.4pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1234" type="#_x0000_t75" style='width:45.75pt;height:45.75pt'>
+ <v:imagedata src="article_1_1.files/image063.gif" o:title="IMG0003"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=61 height=61
+src="article_1_1.files/image063.gif" v:shapes="_x0000_s1234"><![endif]><span
+  style='mso-spacerun:yes'> </span><!--[if gte vml 1]><v:shape
+ id="_x0000_s1233" type="#_x0000_t75" style='width:40.5pt;height:45.75pt'>
+ <v:imagedata src="article_1_1.files/image064.gif" o:title="IMG0004"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=54 height=61
+src="article_1_1.files/image064.gif" v:shapes="_x0000_s1233"><![endif]><span
+  style='mso-spacerun:yes'> </span><!--[if gte vml 1]><v:shape
+ id="_x0000_s1232" type="#_x0000_t75" style='width:93pt;height:45.75pt'>
+ <v:imagedata src="article_1_1.files/image065.gif" o:title="IMG0005"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=124 height=61
+src="article_1_1.files/image065.gif" v:shapes="_x0000_s1232"><![endif]><o:p></o:p></span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:8.0pt'>Входные данные: ось вращения и
+  вращаемая кривая. В программном коде для получения корректного результата
+  рекомендуется производить изменения значений только этих<span
+  style='mso-spacerun:yes'>  </span>параметров<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=391 valign=top style='width:293.4pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1231" type="#_x0000_t75" style='width:160.5pt;height:27.75pt'>
+ <v:imagedata src="article_1_1.files/image066.gif" o:title="IMG0009"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=214 height=37
+src="article_1_1.files/image066.gif" v:shapes="_x0000_s1231"><![endif]></span><o:p></o:p></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt'>Рассчитывается основание перпендикуляра </span></b><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1230" type="#_x0000_t75" style='width:23.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image039.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=31 height=25
+src="article_1_1.files/image032.gif" v:shapes="_x0000_s1230"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1061"
+    DrawAspect="Content" ObjectID="_1378542761">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'> </span><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:8.0pt'>из точки <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1229" type="#_x0000_t75" style='width:24pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image022.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=32 height=25
+src="article_1_1.files/image023.gif" v:shapes="_x0000_s1229"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1062"
+    DrawAspect="Content" ObjectID="_1378542762">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'> </span>на прямую <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1228" type="#_x0000_t75" style='width:38.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image024.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=51 height=25
+src="article_1_1.files/image025.gif" v:shapes="_x0000_s1228"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1063"
+    DrawAspect="Content" ObjectID="_1378542763">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=391 valign=top style='width:293.4pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1227" type="#_x0000_t75" style='width:93.75pt;height:27.75pt'>
+ <v:imagedata src="article_1_1.files/image067.gif" o:title="IMG0010"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=125 height=37
+src="article_1_1.files/image067.gif" v:shapes="_x0000_s1227"><![endif]></span><span
+  style='mso-spacerun:yes'>  </span><span lang=EN-US style='mso-ansi-language:
+  EN-US'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1226" type="#_x0000_t75" style='width:1in;height:27.75pt'>
+ <v:imagedata src="article_1_1.files/image068.gif" o:title="IMG0011"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=96 height=37
+src="article_1_1.files/image068.gif" v:shapes="_x0000_s1226"><![endif]></span><span
+  style='mso-spacerun:yes'>  </span><span lang=EN-US style='mso-ansi-language:
+  EN-US'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1225" type="#_x0000_t75" style='width:90pt;height:16.5pt'>
+ <v:imagedata src="article_1_1.files/image069.gif" o:title="IMG0012"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=120 height=22
+src="article_1_1.files/image069.gif" v:shapes="_x0000_s1225"><![endif]></span><o:p></o:p></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt'>Локальный базис </span></b><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1224" type="#_x0000_t75" style='width:92.25pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=123 height=27
+src="article_1_1.files/image030.gif" v:shapes="_x0000_s1224"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1067"
+    DrawAspect="Content" ObjectID="_1378542764">
+   </o:OLEObject>
+  </xml><![endif]--><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt'><span style='mso-spacerun:yes'> </span>для каждой
+  отдельной точки <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1223" type="#_x0000_t75" style='width:24pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image028.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=32 height=25
+src="article_1_1.files/image023.gif" v:shapes="_x0000_s1223"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1068"
+    DrawAspect="Content" ObjectID="_1378542765">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=391 valign=top style='width:293.4pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1222" type="#_x0000_t75" style='width:43.5pt;height:45.75pt'>
+ <v:imagedata src="article_1_1.files/image070.gif" o:title="IMG0013"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=58 height=61
+src="article_1_1.files/image070.gif" v:shapes="_x0000_s1222"><![endif]></span><span
+  lang=EN-US><span style='mso-spacerun:yes'> </span></span><span lang=EN-US
+  style='mso-ansi-language:EN-US'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1221" type="#_x0000_t75" style='width:43.5pt;height:45.75pt'>
+ <v:imagedata src="article_1_1.files/image071.gif" o:title="IMG0014"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=58 height=61
+src="article_1_1.files/image071.gif" v:shapes="_x0000_s1221"><![endif]></span><span
+  lang=EN-US><span style='mso-spacerun:yes'> </span></span><span lang=EN-US
+  style='mso-ansi-language:EN-US'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1220" type="#_x0000_t75" style='width:43.5pt;height:45.75pt'>
+ <v:imagedata src="article_1_1.files/image072.gif" o:title="IMG0015"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=58 height=61
+src="article_1_1.files/image072.gif" v:shapes="_x0000_s1220"><![endif]></span><o:p></o:p></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:8.0pt'>Базисные векторы <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1219" type="#_x0000_t75" style='width:53.25pt;height:18pt'>
+ <v:imagedata src="article_1_1.files/image054.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=71 height=24
+src="article_1_1.files/image055.gif" v:shapes="_x0000_s1219"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1072"
+    DrawAspect="Content" ObjectID="_1378542766">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'> </span>системы координат <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1218" type="#_x0000_t75" style='width:45pt;height:15.75pt'>
+ <v:imagedata src="article_1_1.files/image056.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=60 height=21
+src="article_1_1.files/image043.gif" v:shapes="_x0000_s1218"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1073"
+    DrawAspect="Content" ObjectID="_1378542767">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=391 valign=top style='width:293.4pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1217" type="#_x0000_t75" style='width:89.25pt;height:57pt'>
+ <v:imagedata src="article_1_1.files/image073.gif" o:title="IMG0026"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=119 height=76
+src="article_1_1.files/image073.gif" v:shapes="_x0000_s1217"><![endif]></span><span
+  lang=EN-US><span style='mso-spacerun:yes'> </span></span><span lang=EN-US
+  style='mso-ansi-language:EN-US'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1216" type="#_x0000_t75" style='width:89.25pt;height:57pt'>
+ <v:imagedata src="article_1_1.files/image073.gif" o:title="IMG0026"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=119 height=76
+src="article_1_1.files/image073.gif" v:shapes="_x0000_s1216"><![endif]></span><span
+  lang=EN-US><span style='mso-spacerun:yes'> </span></span><span lang=EN-US
+  style='mso-ansi-language:EN-US'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1215" type="#_x0000_t75" style='width:89.25pt;height:57pt'>
+ <v:imagedata src="article_1_1.files/image074.gif" o:title="IMG0025"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=119 height=76
+src="article_1_1.files/image074.gif" v:shapes="_x0000_s1215"><![endif]></span><o:p></o:p></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt'>Базис <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1214" type="#_x0000_t75" style='width:96.75pt;height:18pt'>
+ <v:imagedata src="article_1_1.files/image046.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=129 height=24
+src="article_1_1.files/image047.gif" v:shapes="_x0000_s1214"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1077"
+    DrawAspect="Content" ObjectID="_1378542768">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'> </span>в системе координат <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1213" type="#_x0000_t75" style='width:92.25pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=123 height=27
+src="article_1_1.files/image030.gif" v:shapes="_x0000_s1213"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1078"
+    DrawAspect="Content" ObjectID="_1378542769">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=391 valign=top style='width:293.4pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1212" type="#_x0000_t75" style='width:144.75pt;height:45.75pt'>
+ <v:imagedata src="article_1_1.files/image075.gif" o:title="IMG0027"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=193 height=61
+src="article_1_1.files/image075.gif" v:shapes="_x0000_s1212"><![endif]></span><o:p></o:p></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt'>Вращаемая точка <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1211" type="#_x0000_t75" style='width:24pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image022.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=32 height=25
+src="article_1_1.files/image023.gif" v:shapes="_x0000_s1211"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1080"
+    DrawAspect="Content" ObjectID="_1378542770">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'> </span>описывает окружность
+  вокруг прямой <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1210" type="#_x0000_t75" style='width:38.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image024.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=51 height=25
+src="article_1_1.files/image025.gif" v:shapes="_x0000_s1210"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1081"
+    DrawAspect="Content" ObjectID="_1378542772">
+   </o:OLEObject>
+  </xml><![endif]-->. Ее представление в системе координат <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1209" type="#_x0000_t75" style='width:92.25pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=123 height=27
+src="article_1_1.files/image030.gif" v:shapes="_x0000_s1209"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1082"
+    DrawAspect="Content" ObjectID="_1378542773">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=391 valign=top style='width:293.4pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1208" type="#_x0000_t75" style='width:145.5pt;height:57pt'>
+ <v:imagedata src="article_1_1.files/image076.gif" o:title="IMG0040"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=194 height=76
+src="article_1_1.files/image076.gif" v:shapes="_x0000_s1208"><![endif]></span><o:p></o:p></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:8.0pt'>Та же окружность, представленная в
+  системе координат <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1207" type="#_x0000_t75" style='width:45pt;height:15.75pt'>
+ <v:imagedata src="article_1_1.files/image056.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=60 height=21
+src="article_1_1.files/image043.gif" v:shapes="_x0000_s1207"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1084"
+    DrawAspect="Content" ObjectID="_1378542774">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=391 valign=top style='width:293.4pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1206" type="#_x0000_t75" style='width:111pt;height:12.75pt'>
+ <v:imagedata src="article_1_1.files/image077.gif" o:title="IMG0029"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=148 height=17
+src="article_1_1.files/image077.gif" v:shapes="_x0000_s1206"><![endif]><o:p></o:p></span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:8.0pt'>Прямая <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1205" type="#_x0000_t75" style='width:38.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image024.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=51 height=25
+src="article_1_1.files/image025.gif" v:shapes="_x0000_s1205"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1086"
+    DrawAspect="Content" ObjectID="_1378542775">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes'>
+  <td width=391 valign=top style='width:293.4pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><span
+  lang=EN-US style='mso-ansi-language:EN-US'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1204" type="#_x0000_t75" style='width:181.5pt;height:204pt'>
+ <v:imagedata src="article_1_1.files/image078.gif" o:title="IMG0030"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=242 height=272
+src="article_1_1.files/image078.gif" v:shapes="_x0000_s1204"><![endif]></span><o:p></o:p></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:8.0pt'>Результат построения поверхности
+  вращения кривой <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1203" type="#_x0000_t75" style='width:24pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image028.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=32 height=25
+src="article_1_1.files/image023.gif" v:shapes="_x0000_s1203"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1088"
+    DrawAspect="Content" ObjectID="_1378542776">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'> </span>вокруг прямой <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1202" type="#_x0000_t75" style='width:38.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image024.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=51 height=25
+src="article_1_1.files/image025.gif" v:shapes="_x0000_s1202"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1089"
+    DrawAspect="Content" ObjectID="_1378542777">
+   </o:OLEObject>
+  </xml><![endif]-->, представлена в системе координат <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1201" type="#_x0000_t75" style='width:45pt;height:15.75pt'>
+ <v:imagedata src="article_1_1.files/image056.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=60 height=21
+src="article_1_1.files/image043.gif" v:shapes="_x0000_s1201"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1090"
+    DrawAspect="Content" ObjectID="_1378542778">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.4pt;line-height:
+150%'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.4pt;line-height:
+150%'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.4pt;line-height:
+150%'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.4pt;line-height:
+150%'><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:35.4pt;
+line-height:150%'><b style='mso-bidi-font-weight:normal'>1.2 Вращение одной
+параметрической кривой вокруг другой. <o:p></o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:35.4pt;
+line-height:150%'><b style='mso-bidi-font-weight:normal'>Вращение производится
+в плоскости перпендикуляра, опущенного <o:p></o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:35.4pt;
+line-height:150%'><b style='mso-bidi-font-weight:normal'>из точек вращаемой
+кривой на другую.<o:p></o:p></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.4pt;line-height:
+150%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.4pt;line-height:
+150%'>Пусть <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1200" type="#_x0000_t75" style='width:24pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image022.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=32 height=25
+src="article_1_1.files/image023.gif" v:shapes="_x0000_s1200"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1091"
+  DrawAspect="Content" ObjectID="_1378542779">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>является вращаемой
+кривой (Рис. 1.2). Рассмотрим кривую <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1199" type="#_x0000_t75" style='width:26.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image079.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=35 height=25
+src="article_1_1.files/image080.gif" v:shapes="_x0000_s1199"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1092"
+  DrawAspect="Content" ObjectID="_1378542780">
+ </o:OLEObject>
+</xml><![endif]-->. Из точек кривой <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1198" type="#_x0000_t75" style='width:24pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image022.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=32 height=25
+src="article_1_1.files/image023.gif" v:shapes="_x0000_s1198"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1093"
+  DrawAspect="Content" ObjectID="_1378542781">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>опустим перпендикуляр
+на кривую <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1197" type="#_x0000_t75" style='width:26.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image081.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=35 height=25
+src="article_1_1.files/image080.gif" v:shapes="_x0000_s1197"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1094"
+  DrawAspect="Content" ObjectID="_1378542782">
+ </o:OLEObject>
+</xml><![endif]-->.<o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><!--[if gte vml 1]><v:group
+ id="_x0000_s1082" editas="canvas" style='width:351pt;height:189pt;
+ mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
+ coordorigin="2770,152" coordsize="5506,2927">
+ <o:lock v:ext="edit" aspectratio="t"/>
+ <v:shape id="_x0000_s1083" type="#_x0000_t75" style='position:absolute;left:2770;
+  top:152;width:5506;height:2927' o:preferrelative="f">
+  <v:fill o:detectmouseclick="t"/>
+  <v:path o:extrusionok="t" o:connecttype="none"/>
+  <o:lock v:ext="edit" text="t"/>
+ </v:shape><v:shape id="_x0000_s1085" type="#_x0000_t75" style='position:absolute;
+  left:7147;top:2103;width:376;height:293'>
+  <v:imagedata src="article_1_1.files/image007.wmz" o:title=""/>
+ </v:shape><v:line id="_x0000_s1086" style='position:absolute;flip:x y' from="5311,1128"
+  to="6864,2243">
+  <v:stroke startarrow="oval" startarrowwidth="wide" startarrowlength="long"
+   endarrow="oval" endarrowwidth="wide" endarrowlength="long"/>
+ </v:line><v:shape id="_x0000_s1087" style='position:absolute;left:6158;top:1267;
+  width:1177;height:1533' coordsize="1500,1980" path="m1440,v30,180,60,360,,540c1380,720,1230,900,1080,1080,930,1260,720,1470,540,1620,360,1770,180,1875,,1980e"
+  filled="f" strokeweight="4pt">
+  <v:path arrowok="t"/>
+ </v:shape><v:shape id="_x0000_s1090" type="#_x0000_t75" style='position:absolute;
+  left:4888;top:710;width:407;height:295'>
+  <v:imagedata src="article_1_1.files/image082.wmz" o:title=""/>
+ </v:shape><v:line id="_x0000_s1091" style='position:absolute' from="5311,1128"
+  to="5876,1546" strokeweight="4pt">
+  <v:stroke endarrow="open" endarrowwidth="narrow" endarrowlength="long"/>
+ </v:line><v:line id="_x0000_s1092" style='position:absolute;flip:y' from="5311,431"
+  to="5735,1128" strokeweight="4pt">
+  <v:stroke endarrow="open" endarrowwidth="narrow" endarrowlength="long"/>
+ </v:line><v:line id="_x0000_s1093" style='position:absolute;flip:y' from="5311,988"
+  to="6158,1128" strokeweight="4pt">
+  <v:stroke endarrow="open" endarrowwidth="narrow" endarrowlength="long"/>
+ </v:line><v:shape id="_x0000_s1094" type="#_x0000_t75" style='position:absolute;
+  left:5452;top:1546;width:424;height:294'>
+  <v:imagedata src="article_1_1.files/image011.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1095" type="#_x0000_t75" style='position:absolute;
+  left:6299;top:849;width:425;height:294'>
+  <v:imagedata src="article_1_1.files/image012.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1096" type="#_x0000_t75" style='position:absolute;
+  left:5170;top:291;width:423;height:310'>
+  <v:imagedata src="article_1_1.files/image013.wmz" o:title=""/>
+ </v:shape><v:line id="_x0000_s1097" style='position:absolute;flip:y' from="3617,291"
+  to="3617,2103">
+  <v:stroke endarrow="block"/>
+ </v:line><v:line id="_x0000_s1098" style='position:absolute;flip:x' from="2911,2103"
+  to="3617,2800">
+  <v:stroke endarrow="block"/>
+ </v:line><v:line id="_x0000_s1099" style='position:absolute' from="3617,2103"
+  to="5452,2521">
+  <v:stroke endarrow="block"/>
+ </v:line><v:shape id="_x0000_s1100" type="#_x0000_t75" style='position:absolute;
+  left:2911;top:2243;width:204;height:201'>
+  <v:imagedata src="article_1_1.files/image014.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1101" type="#_x0000_t75" style='position:absolute;
+  left:5452;top:2382;width:204;height:201'>
+  <v:imagedata src="article_1_1.files/image015.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1102" type="#_x0000_t75" style='position:absolute;
+  left:3758;top:291;width:189;height:202'>
+  <v:imagedata src="article_1_1.files/image016.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1103" type="#_x0000_t75" style='position:absolute;
+  left:3335;top:1825;width:204;height:216'>
+  <v:imagedata src="article_1_1.files/image017.wmz" o:title=""/>
+ </v:shape><v:line id="_x0000_s1104" style='position:absolute;flip:x' from="3052,2103"
+  to="3617,2661" strokeweight="4pt">
+  <v:stroke endarrow="open" endarrowwidth="narrow" endarrowlength="long"/>
+ </v:line><v:line id="_x0000_s1105" style='position:absolute' from="3617,2103"
+  to="4323,2243" strokeweight="4pt">
+  <v:stroke endarrow="open" endarrowwidth="narrow" endarrowlength="long"/>
+ </v:line><v:line id="_x0000_s1106" style='position:absolute;flip:y' from="3617,1406"
+  to="3617,2103" strokeweight="4pt">
+  <v:stroke endarrow="open" endarrowwidth="narrow" endarrowlength="long"/>
+ </v:line><v:shape id="_x0000_s1107" type="#_x0000_t75" style='position:absolute;
+  left:3476;top:2382;width:188;height:263'>
+  <v:imagedata src="article_1_1.files/image018.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1108" type="#_x0000_t75" style='position:absolute;
+  left:3758;top:1267;width:205;height:279'>
+  <v:imagedata src="article_1_1.files/image019.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1109" type="#_x0000_t75" style='position:absolute;
+  left:4041;top:1825;width:204;height:264'>
+  <v:imagedata src="article_1_1.files/image020.wmz" o:title=""/>
+ </v:shape><v:shape id="_x0000_s1110" style='position:absolute;left:4310;top:315;
+  width:1063;height:1302' coordsize="1355,1681" path="m,1681v412,-83,825,-166,1041,-328c1257,1191,1355,918,1298,711,1241,504,825,224,699,112,573,,557,20,542,41e"
+  filled="f" strokeweight="4pt">
+  <v:path arrowok="t"/>
+ </v:shape></v:group><![endif]--><![if !vml]><img width=468 height=252
+src="article_1_1.files/image083.gif" v:shapes="_x0000_s1082 _x0000_s1083 _x0000_s1085 _x0000_s1086 _x0000_s1087 _x0000_s1090 _x0000_s1091 _x0000_s1092 _x0000_s1093 _x0000_s1094 _x0000_s1095 _x0000_s1096 _x0000_s1097 _x0000_s1098 _x0000_s1099 _x0000_s1100 _x0000_s1101 _x0000_s1102 _x0000_s1103 _x0000_s1104 _x0000_s1105 _x0000_s1106 _x0000_s1107 _x0000_s1108 _x0000_s1109 _x0000_s1110"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1085"
+  DrawAspect="Content" ObjectID="_1378542783">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_s1090"
+  DrawAspect="Content" ObjectID="_1378542784">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1094"
+  DrawAspect="Content" ObjectID="_1378542785">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1095"
+  DrawAspect="Content" ObjectID="_1378542786">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1096"
+  DrawAspect="Content" ObjectID="_1378542787">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1100"
+  DrawAspect="Content" ObjectID="_1378542788">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1101"
+  DrawAspect="Content" ObjectID="_1378542789">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1102"
+  DrawAspect="Content" ObjectID="_1378542790">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1103"
+  DrawAspect="Content" ObjectID="_1378542791">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1107"
+  DrawAspect="Content" ObjectID="_1378542792">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1108"
+  DrawAspect="Content" ObjectID="_1378542793">
+ </o:OLEObject>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_s1109"
+  DrawAspect="Content" ObjectID="_1378542794">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><b
+style='mso-bidi-font-weight:normal'>Рис. 1.2<o:p></o:p></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.4pt;line-height:
+150%'>Соответствие между параметрами <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1196" type="#_x0000_t75" style='width:8.25pt;height:12.75pt'>
+ <v:imagedata src="article_1_1.files/image084.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=11 height=17
+src="article_1_1.files/image085.gif" v:shapes="_x0000_s1196"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1095"
+  DrawAspect="Content" ObjectID="_1378542795">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>и <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1195" type="#_x0000_t75" style='width:9.75pt;height:11.25pt'>
+ <v:imagedata src="article_1_1.files/image086.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=13 height=15
+src="article_1_1.files/image087.gif" v:shapes="_x0000_s1195"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1096"
+  DrawAspect="Content" ObjectID="_1378542797">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>происходит из
+уравнения <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1194" type="#_x0000_t75" style='width:114.75pt;height:33pt'>
+ <v:imagedata src="article_1_1.files/image088.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=153 height=44
+src="article_1_1.files/image089.gif" v:shapes="_x0000_s1194"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1097"
+  DrawAspect="Content" ObjectID="_1378542798">
+ </o:OLEObject>
+</xml><![endif]-->. Следует отметить, что далеко не всегда можно получить
+аналитическую зависимость <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1193" type="#_x0000_t75" style='width:21pt;height:15.75pt'>
+ <v:imagedata src="article_1_1.files/image090.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=28 height=21
+src="article_1_1.files/image091.gif" v:shapes="_x0000_s1193"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1098"
+  DrawAspect="Content" ObjectID="_1378542799">
+ </o:OLEObject>
+</xml><![endif]-->. Решение данного уравнения в численном виде будем искать
+следующим образом. Скалярное уравнение <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1192" type="#_x0000_t75" style='width:138.75pt;height:33pt'>
+ <v:imagedata src="article_1_1.files/image092.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=185 height=44
+src="article_1_1.files/image093.gif" v:shapes="_x0000_s1192"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1099"
+  DrawAspect="Content" ObjectID="_1378542800">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>продифференцируем по
+параметру <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1191" type="#_x0000_t75" style='width:8.25pt;height:12.75pt'>
+ <v:imagedata src="article_1_1.files/image094.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=11 height=17
+src="article_1_1.files/image085.gif" v:shapes="_x0000_s1191"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1100"
+  DrawAspect="Content" ObjectID="_1378542801">
+ </o:OLEObject>
+</xml><![endif]-->, предполагая, что существует зависимость <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1190" type="#_x0000_t75" style='width:21pt;height:15.75pt'>
+ <v:imagedata src="article_1_1.files/image095.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=28 height=21
+src="article_1_1.files/image091.gif" v:shapes="_x0000_s1190"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1101"
+  DrawAspect="Content" ObjectID="_1378542802">
+ </o:OLEObject>
+</xml><![endif]-->, <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1189" type="#_x0000_t75" style='width:129.75pt;height:30.75pt'>
+ <v:imagedata src="article_1_1.files/image096.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=173 height=41
+src="article_1_1.files/image097.gif" v:shapes="_x0000_s1189"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1102"
+  DrawAspect="Content" ObjectID="_1378542803">
+ </o:OLEObject>
+</xml><![endif]-->. Откуда имеем исходные данные для постановки задачи Коши <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1188" type="#_x0000_t75" style='width:84.75pt;height:60pt'>
+ <v:imagedata src="article_1_1.files/image098.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=113 height=80
+src="article_1_1.files/image099.gif" v:shapes="_x0000_s1188"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1103"
+  DrawAspect="Content" ObjectID="_1378542804">
+ </o:OLEObject>
+</xml><![endif]-->, начальные условия <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1187" type="#_x0000_t75" style='width:12pt;height:18pt'>
+ <v:imagedata src="article_1_1.files/image100.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=16 height=24
+src="article_1_1.files/image101.gif" v:shapes="_x0000_s1187"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1104"
+  DrawAspect="Content" ObjectID="_1378542805">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>и <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1186" type="#_x0000_t75" style='width:50.25pt;height:18pt'>
+ <v:imagedata src="article_1_1.files/image102.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=67 height=24
+src="article_1_1.files/image103.gif" v:shapes="_x0000_s1186"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1105"
+  DrawAspect="Content" ObjectID="_1378542806">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>получаем из решения
+уравнения <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1185" type="#_x0000_t75" style='width:114.75pt;height:33pt'>
+ <v:imagedata src="article_1_1.files/image104.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=153 height=44
+src="article_1_1.files/image089.gif" v:shapes="_x0000_s1185"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1106"
+  DrawAspect="Content" ObjectID="_1378542807">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>любым известным
+способом.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.4pt;line-height:
+150%'>Таким образом, будем считать, что нами найдена функциональная зависимость
+параметра <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1184" type="#_x0000_t75" style='width:9.75pt;height:11.25pt'>
+ <v:imagedata src="article_1_1.files/image105.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=13 height=15
+src="article_1_1.files/image087.gif" v:shapes="_x0000_s1184"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1107"
+  DrawAspect="Content" ObjectID="_1378542808">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>от параметра <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1183" type="#_x0000_t75" style='width:8.25pt;height:12.75pt'>
+ <v:imagedata src="article_1_1.files/image094.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=11 height=17
+src="article_1_1.files/image085.gif" v:shapes="_x0000_s1183"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1108"
+  DrawAspect="Content" ObjectID="_1378542810">
+ </o:OLEObject>
+</xml><![endif]-->. В точке кривой <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1182" type="#_x0000_t75" style='width:26.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image106.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=35 height=25
+src="article_1_1.files/image080.gif" v:shapes="_x0000_s1182"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1109"
+  DrawAspect="Content" ObjectID="_1378542811">
+ </o:OLEObject>
+</xml><![endif]-->, соответственной точке кривой <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1181" type="#_x0000_t75" style='width:24pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image022.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=32 height=25
+src="article_1_1.files/image023.gif" v:shapes="_x0000_s1181"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1110"
+  DrawAspect="Content" ObjectID="_1378542812">
+ </o:OLEObject>
+</xml><![endif]-->, сформируем локальный базис <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1180" type="#_x0000_t75" style='width:92.25pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=123 height=27
+src="article_1_1.files/image030.gif" v:shapes="_x0000_s1180"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1111"
+  DrawAspect="Content" ObjectID="_1378542813">
+ </o:OLEObject>
+</xml><![endif]-->, где: <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1179" type="#_x0000_t75" style='width:107.25pt;height:39.75pt'>
+ <v:imagedata src="article_1_1.files/image107.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=143 height=53
+src="article_1_1.files/image108.gif" v:shapes="_x0000_s1179"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1112"
+  DrawAspect="Content" ObjectID="_1378542814">
+ </o:OLEObject>
+</xml><![endif]-->, <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1178" type="#_x0000_t75" style='width:95.25pt;height:63pt'>
+ <v:imagedata src="article_1_1.files/image109.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=127 height=84
+src="article_1_1.files/image110.gif" v:shapes="_x0000_s1178"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1113"
+  DrawAspect="Content" ObjectID="_1378542815">
+ </o:OLEObject>
+</xml><![endif]-->, <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1177" type="#_x0000_t75" style='width:93.75pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image111.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=125 height=27
+src="article_1_1.files/image038.gif" v:shapes="_x0000_s1177"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1114"
+  DrawAspect="Content" ObjectID="_1378542816">
+ </o:OLEObject>
+</xml><![endif]-->. Далее можно поступить так, как описано в 1.1: сформируем
+базис <b style='mso-bidi-font-weight:normal'><span style='font-size:8.0pt;
+line-height:150%'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1176" type="#_x0000_t75" style='width:53.25pt;height:18pt'>
+ <v:imagedata src="article_1_1.files/image054.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=71 height=24
+src="article_1_1.files/image055.gif" v:shapes="_x0000_s1176"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1115"
+  DrawAspect="Content" ObjectID="_1378542817">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span></span></b>в системе
+координат <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1175" type="#_x0000_t75" style='width:45pt;height:15.75pt'>
+ <v:imagedata src="article_1_1.files/image056.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=60 height=21
+src="article_1_1.files/image043.gif" v:shapes="_x0000_s1175"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1116"
+  DrawAspect="Content" ObjectID="_1378542818">
+ </o:OLEObject>
+</xml><![endif]-->, переведем его в систему координат базиса <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1174" type="#_x0000_t75" style='width:92.25pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=123 height=27
+src="article_1_1.files/image030.gif" v:shapes="_x0000_s1174"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1117"
+  DrawAspect="Content" ObjectID="_1378542819">
+ </o:OLEObject>
+</xml><![endif]-->, он будет выглядеть как <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1173" type="#_x0000_t75" style='width:96.75pt;height:18pt'>
+ <v:imagedata src="article_1_1.files/image046.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=129 height=24
+src="article_1_1.files/image047.gif" v:shapes="_x0000_s1173"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1118"
+  DrawAspect="Content" ObjectID="_1378542820">
+ </o:OLEObject>
+</xml><![endif]-->, формулы приведены выше в 1.2. Вращение точки <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1172" type="#_x0000_t75" style='width:24pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image022.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=32 height=25
+src="article_1_1.files/image023.gif" v:shapes="_x0000_s1172"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1119"
+  DrawAspect="Content" ObjectID="_1378542821">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>вокруг точки <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1171" type="#_x0000_t75" style='width:26.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image106.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=35 height=25
+src="article_1_1.files/image080.gif" v:shapes="_x0000_s1171"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1120"
+  DrawAspect="Content" ObjectID="_1378542822">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>в системе координат
+базиса <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1170" type="#_x0000_t75" style='width:92.25pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=123 height=27
+src="article_1_1.files/image030.gif" v:shapes="_x0000_s1170"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1121"
+  DrawAspect="Content" ObjectID="_1378542824">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>в плоскости векторов <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1169" type="#_x0000_t75" style='width:26.25pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image112.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=35 height=27
+src="article_1_1.files/image113.gif" v:shapes="_x0000_s1169"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1122"
+  DrawAspect="Content" ObjectID="_1378542825">
+ </o:OLEObject>
+</xml><![endif]-->, <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1168" type="#_x0000_t75" style='width:27pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image114.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=36 height=27
+src="article_1_1.files/image115.gif" v:shapes="_x0000_s1168"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1123"
+  DrawAspect="Content" ObjectID="_1378542826">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>будет описываться
+аналогичным способом, как в 1.1: <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1167" type="#_x0000_t75" style='width:159.75pt;height:56.25pt'>
+ <v:imagedata src="article_1_1.files/image116.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=213 height=75
+src="article_1_1.files/image117.gif" v:shapes="_x0000_s1167"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1124"
+  DrawAspect="Content" ObjectID="_1378542827">
+ </o:OLEObject>
+</xml><![endif]-->. А непосредственно моделируемая поверхность будет выглядеть
+так: <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1166" type="#_x0000_t75" style='width:164.25pt;height:56.25pt'>
+ <v:imagedata src="article_1_1.files/image118.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=219 height=75
+src="article_1_1.files/image119.gif" v:shapes="_x0000_s1166"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1125"
+  DrawAspect="Content" ObjectID="_1378542828">
+ </o:OLEObject>
+</xml><![endif]-->. Ниже приведен 
+<a title="Вращение параметрической кривой вокруг другой" target="_self" href="Rotation_1_2_article.zip">листинг программы</a>,
+иллюстрирующей приведенный в этом параграфе способ вращения параметрической
+кривой вокруг другой.<o:p></o:p></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width=658
+ style='width:493.75pt;border-collapse:collapse;mso-yfti-tbllook:480;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=459 style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1112" type="#_x0000_t75" style='position:absolute;margin-left:175.5pt;
+ margin-top:17.25pt;width:96pt;height:45.75pt;z-index:-1' wrapcoords="-169 0 -169 21246 21600 21246 21600 0 -169 0">
+ <v:imagedata src="article_1_1.files/image120.gif" o:title="IMG0188"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:-1;left:474px;top:3024px;width:128px;height:61px'><img
+width=128 height=61 src="article_1_1.files/image120.gif" v:shapes="_x0000_s1112"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1111" type="#_x0000_t75" style='position:absolute;margin-left:57pt;
+ margin-top:0;width:85.5pt;height:78pt;z-index:-2' wrapcoords="-189 0 -189 21392 21600 21392 21600 0 -189 0">
+ <v:imagedata src="article_1_1.files/image121.gif" o:title="IMG0187"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:-2;left:316px;top:3001px;width:114px;height:104px'><img
+width=114 height=104 src="article_1_1.files/image121.gif" v:shapes="_x0000_s1111"></span><![endif]><span
+  style='mso-spacerun:yes'>  </span></p>
+  </td>
+  <td width=200 valign=top style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:8.0pt;line-height:
+  150%'>Входные данные:</span></b><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1165" type="#_x0000_t75" style='width:26.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image106.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=35 height=25
+src="article_1_1.files/image080.gif" v:shapes="_x0000_s1165"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1126"
+    DrawAspect="Content" ObjectID="_1378542829">
+   </o:OLEObject>
+  </xml><![endif]--> <b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt;line-height:150%'>и</span></b><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1164" type="#_x0000_t75" style='width:24pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image022.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=32 height=25
+src="article_1_1.files/image023.gif" v:shapes="_x0000_s1164"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1127"
+    DrawAspect="Content" ObjectID="_1378542830">
+   </o:OLEObject>
+  </xml><![endif]--><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt;line-height:150%'>. В программном коде для получения
+  корректного результата рекомендуется производить изменения значений только
+  этих<span style='mso-spacerun:yes'>  </span>параметров</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1163" type="#_x0000_t75" style='width:176.25pt;height:97.5pt'>
+ <v:imagedata src="article_1_1.files/image122.gif" o:title="IMG0189"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=235 height=130
+src="article_1_1.files/image122.gif" v:shapes="_x0000_s1163"><![endif]></p>
+  </td>
+  <td width=200 style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:8.0pt'>Расчет
+  вектора<span style='mso-spacerun:yes'>  </span></span></b><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1162" type="#_x0000_t75" style='width:35.25pt;height:33pt'>
+ <v:imagedata src="article_1_1.files/image123.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=47 height=44
+src="article_1_1.files/image124.gif" v:shapes="_x0000_s1162"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1129"
+    DrawAspect="Content" ObjectID="_1378542831">
+   </o:OLEObject>
+  </xml><![endif]--><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1161" type="#_x0000_t75" style='width:124.5pt;height:13.5pt'>
+ <v:imagedata src="article_1_1.files/image125.gif" o:title="IMG0190"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=166 height=18
+src="article_1_1.files/image125.gif" v:shapes="_x0000_s1161"><![endif]></p>
+  </td>
+  <td width=200 valign=top style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:8.0pt'>Формирование уравнения </span></b><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1160" type="#_x0000_t75" style='width:138.75pt;height:33pt'>
+ <v:imagedata src="article_1_1.files/image092.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=185 height=44
+src="article_1_1.files/image093.gif" v:shapes="_x0000_s1160"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1131"
+    DrawAspect="Content" ObjectID="_1378542832">
+   </o:OLEObject>
+  </xml><![endif]--><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1159" type="#_x0000_t75" style='width:31.5pt;height:13.5pt'>
+ <v:imagedata src="article_1_1.files/image126.gif" o:title="IMG0191"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=42 height=18
+src="article_1_1.files/image126.gif" v:shapes="_x0000_s1159"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1158" type="#_x0000_t75" style='width:29.25pt;height:12.75pt'>
+ <v:imagedata src="article_1_1.files/image127.gif" o:title="IMG0192"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=39 height=17
+src="article_1_1.files/image127.gif" v:shapes="_x0000_s1158"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1157" type="#_x0000_t75" style='width:29.25pt;height:12.75pt'>
+ <v:imagedata src="article_1_1.files/image128.gif" o:title="IMG0193"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=39 height=17
+src="article_1_1.files/image128.gif" v:shapes="_x0000_s1157"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1156" type="#_x0000_t75" style='width:53.25pt;height:13.5pt'>
+ <v:imagedata src="article_1_1.files/image129.gif" o:title="IMG0194"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=71 height=18
+src="article_1_1.files/image129.gif" v:shapes="_x0000_s1156"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1155" type="#_x0000_t75" style='width:65.25pt;height:13.5pt'>
+ <v:imagedata src="article_1_1.files/image130.gif" o:title="IMG0141"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=87 height=18
+src="article_1_1.files/image130.gif" v:shapes="_x0000_s1155"><![endif]></p>
+  </td>
+  <td width=200 valign=top style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:8.0pt'>Нахождение начальных условий для задачи
+  Коши<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1154" type="#_x0000_t75" style='width:96.75pt;height:60.75pt'>
+ <v:imagedata src="article_1_1.files/image131.gif" o:title="IMG0195"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=129 height=81
+src="article_1_1.files/image131.gif" v:shapes="_x0000_s1154"><![endif]><o:p></o:p></p>
+  </td>
+  <td width=200 style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:8.0pt'>Задание
+  дифференциального уравнения 1 порядка для решения задачи Коши<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1153" type="#_x0000_t75" style='width:39pt;height:17.25pt'>
+ <v:imagedata src="article_1_1.files/image132.gif" o:title="IMG0198"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=52 height=23
+src="article_1_1.files/image132.gif" v:shapes="_x0000_s1153"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1152" type="#_x0000_t75" style='width:40.5pt;height:17.25pt'>
+ <v:imagedata src="article_1_1.files/image133.gif" o:title="IMG0197"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=54 height=23
+src="article_1_1.files/image133.gif" v:shapes="_x0000_s1152"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1151" type="#_x0000_t75" style='width:30.75pt;height:16.5pt'>
+ <v:imagedata src="article_1_1.files/image134.gif" o:title="IMG0196"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=41 height=22
+src="article_1_1.files/image134.gif" v:shapes="_x0000_s1151"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1150" type="#_x0000_t75" style='width:45.75pt;height:17.25pt'>
+ <v:imagedata src="article_1_1.files/image135.gif" o:title="IMG0201"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=61 height=23
+src="article_1_1.files/image135.gif" v:shapes="_x0000_s1150"><![endif]><o:p></o:p></p>
+  </td>
+  <td width=200 rowspan=3 style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:8.0pt'>Решение
+  задачи Коши<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1149" type="#_x0000_t75" style='width:29.25pt;height:12.75pt'>
+ <v:imagedata src="article_1_1.files/image128.gif" o:title="IMG0199"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=39 height=17
+src="article_1_1.files/image128.gif" v:shapes="_x0000_s1149"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1148" type="#_x0000_t75" style='width:66.75pt;height:13.5pt'>
+ <v:imagedata src="article_1_1.files/image136.gif" o:title="IMG0200"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=89 height=18
+src="article_1_1.files/image136.gif" v:shapes="_x0000_s1148"><![endif]></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1147" type="#_x0000_t75" style='width:84pt;height:17.25pt'>
+ <v:imagedata src="article_1_1.files/image137.gif" o:title="IMG0202"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=112 height=23
+src="article_1_1.files/image137.gif" v:shapes="_x0000_s1147"><![endif]></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1146" type="#_x0000_t75" style='width:333pt;height:84pt'>
+ <v:imagedata src="article_1_1.files/image138.png" o:title="IMG0150"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=444 height=112
+src="article_1_1.files/image139.jpg" v:shapes="_x0000_s1146"><![endif]><o:p></o:p></p>
+  </td>
+  <td width=200 style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:8.0pt'>График
+  зависимости параметра <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1145" type="#_x0000_t75" style='width:9.75pt;height:11.25pt'>
+ <v:imagedata src="article_1_1.files/image105.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=13 height=15
+src="article_1_1.files/image087.gif" v:shapes="_x0000_s1145"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1146"
+    DrawAspect="Content" ObjectID="_1378542834">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'> </span>от параметра <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1144" type="#_x0000_t75" style='width:8.25pt;height:12.75pt'>
+ <v:imagedata src="article_1_1.files/image094.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=11 height=17
+src="article_1_1.files/image085.gif" v:shapes="_x0000_s1144"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1147"
+    DrawAspect="Content" ObjectID="_1378542835">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'> </span><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1143" type="#_x0000_t75" style='width:29.25pt;height:12.75pt'>
+ <v:imagedata src="article_1_1.files/image140.gif" o:title="IMG0203"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=39 height=17
+src="article_1_1.files/image140.gif" v:shapes="_x0000_s1143"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1142" type="#_x0000_t75" style='width:138.75pt;height:13.5pt'>
+ <v:imagedata src="article_1_1.files/image141.gif" o:title="IMG0205"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=185 height=18
+src="article_1_1.files/image141.gif" v:shapes="_x0000_s1142"><![endif]></p>
+  </td>
+  <td width=200 valign=top style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:8.0pt'>Тестовая проверка<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1141" type="#_x0000_t75" style='width:108pt;height:29.25pt'>
+ <v:imagedata src="article_1_1.files/image142.gif" o:title="IMG0206"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=144 height=39
+src="article_1_1.files/image142.gif" v:shapes="_x0000_s1141"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1140" type="#_x0000_t75" style='width:85.5pt;height:29.25pt'>
+ <v:imagedata src="article_1_1.files/image143.gif" o:title="IMG0207"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=114 height=39
+src="article_1_1.files/image143.gif" v:shapes="_x0000_s1140"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1139" type="#_x0000_t75" style='width:90.75pt;height:16.5pt'>
+ <v:imagedata src="article_1_1.files/image144.gif" o:title="IMG0208"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=121 height=22
+src="article_1_1.files/image144.gif" v:shapes="_x0000_s1139"><![endif]></p>
+  </td>
+  <td width=200 style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:8.0pt'>Локальный
+  базис </span></b><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1138" type="#_x0000_t75" style='width:92.25pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=123 height=27
+src="article_1_1.files/image030.gif" v:shapes="_x0000_s1138"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1153"
+    DrawAspect="Content" ObjectID="_1378542836">
+   </o:OLEObject>
+  </xml><![endif]--><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt'><span style='mso-spacerun:yes'> </span>для каждой
+  отдельной точки <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1137" type="#_x0000_t75" style='width:24pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image028.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=32 height=25
+src="article_1_1.files/image023.gif" v:shapes="_x0000_s1137"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1154"
+    DrawAspect="Content" ObjectID="_1378542837">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1136" type="#_x0000_t75" style='width:46.5pt;height:45.75pt'>
+ <v:imagedata src="article_1_1.files/image145.gif" o:title="IMG0209"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=62 height=61
+src="article_1_1.files/image145.gif" v:shapes="_x0000_s1136"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1135" type="#_x0000_t75" style='width:46.5pt;height:45.75pt'>
+ <v:imagedata src="article_1_1.files/image146.gif" o:title="IMG0211"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=62 height=61
+src="article_1_1.files/image146.gif" v:shapes="_x0000_s1135"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1134" type="#_x0000_t75" style='width:46.5pt;height:45.75pt'>
+ <v:imagedata src="article_1_1.files/image146.gif" o:title="IMG0211"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=62 height=61
+src="article_1_1.files/image146.gif" v:shapes="_x0000_s1134"><![endif]></p>
+  </td>
+  <td width=200 style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:8.0pt'>Базисные
+  векторы <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1133" type="#_x0000_t75" style='width:53.25pt;height:18pt'>
+ <v:imagedata src="article_1_1.files/image054.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=71 height=24
+src="article_1_1.files/image055.gif" v:shapes="_x0000_s1133"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1158"
+    DrawAspect="Content" ObjectID="_1378542838">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'> </span>системы координат <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1132" type="#_x0000_t75" style='width:45pt;height:15.75pt'>
+ <v:imagedata src="article_1_1.files/image056.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=60 height=21
+src="article_1_1.files/image043.gif" v:shapes="_x0000_s1132"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1159"
+    DrawAspect="Content" ObjectID="_1378542839">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1131" type="#_x0000_t75" style='width:89.25pt;height:57pt'>
+ <v:imagedata src="article_1_1.files/image147.gif" o:title="IMG0213"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=119 height=76
+src="article_1_1.files/image147.gif" v:shapes="_x0000_s1131"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1130" type="#_x0000_t75" style='width:89.25pt;height:57pt'>
+ <v:imagedata src="article_1_1.files/image147.gif" o:title="IMG0213"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=119 height=76
+src="article_1_1.files/image147.gif" v:shapes="_x0000_s1130"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1129" type="#_x0000_t75" style='width:89.25pt;height:57pt'>
+ <v:imagedata src="article_1_1.files/image148.gif" o:title="IMG0214"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=119 height=76
+src="article_1_1.files/image148.gif" v:shapes="_x0000_s1129"><![endif]></p>
+  </td>
+  <td width=200 style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:8.0pt'>Базис <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1128" type="#_x0000_t75" style='width:96.75pt;height:18pt'>
+ <v:imagedata src="article_1_1.files/image046.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=129 height=24
+src="article_1_1.files/image047.gif" v:shapes="_x0000_s1128"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1163"
+    DrawAspect="Content" ObjectID="_1378542840">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'> </span>в системе координат <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1127" type="#_x0000_t75" style='width:92.25pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=123 height=27
+src="article_1_1.files/image030.gif" v:shapes="_x0000_s1127"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1164"
+    DrawAspect="Content" ObjectID="_1378542841">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1126" type="#_x0000_t75" style='width:158.25pt;height:45.75pt'>
+ <v:imagedata src="article_1_1.files/image149.gif" o:title="IMG0215"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=211 height=61
+src="article_1_1.files/image149.gif" v:shapes="_x0000_s1126"><![endif]><o:p></o:p></p>
+  </td>
+  <td width=200 valign=top style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:8.0pt'>Вращаемая точка <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1125" type="#_x0000_t75" style='width:24pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image022.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=32 height=25
+src="article_1_1.files/image023.gif" v:shapes="_x0000_s1125"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1166"
+    DrawAspect="Content" ObjectID="_1378542842">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'> </span>описывает окружность
+  вокруг <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1124" type="#_x0000_t75" style='width:38.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image150.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=51 height=25
+src="article_1_1.files/image151.gif" v:shapes="_x0000_s1124"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1167"
+    DrawAspect="Content" ObjectID="_1378542843">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'> </span>в плоскости векторов
+  </span></b><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1123" type="#_x0000_t75" style='width:26.25pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image112.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=35 height=27
+src="article_1_1.files/image113.gif" v:shapes="_x0000_s1123"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1168"
+    DrawAspect="Content" ObjectID="_1378542844">
+   </o:OLEObject>
+  </xml><![endif]-->, <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1122" type="#_x0000_t75" style='width:27pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image114.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=36 height=27
+src="article_1_1.files/image115.gif" v:shapes="_x0000_s1122"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1169"
+    DrawAspect="Content" ObjectID="_1378542846">
+   </o:OLEObject>
+  </xml><![endif]--><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:8.0pt'>. Ее представление в системе координат <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1121" type="#_x0000_t75" style='width:92.25pt;height:20.25pt'>
+ <v:imagedata src="article_1_1.files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=123 height=27
+src="article_1_1.files/image030.gif" v:shapes="_x0000_s1121"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1170"
+    DrawAspect="Content" ObjectID="_1378542847">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1120" type="#_x0000_t75" style='width:156pt;height:57pt'>
+ <v:imagedata src="article_1_1.files/image152.gif" o:title="IMG0216"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=208 height=76
+src="article_1_1.files/image152.gif" v:shapes="_x0000_s1120"><![endif]></p>
+  </td>
+  <td width=200 style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:8.0pt'>Та же
+  окружность, представленная в системе координат <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1119" type="#_x0000_t75" style='width:45pt;height:15.75pt'>
+ <v:imagedata src="article_1_1.files/image056.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=60 height=21
+src="article_1_1.files/image043.gif" v:shapes="_x0000_s1119"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1172"
+    DrawAspect="Content" ObjectID="_1378542848">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1118" type="#_x0000_t75" style='width:140.25pt;height:13.5pt'>
+ <v:imagedata src="article_1_1.files/image153.gif" o:title="IMG0204"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=187 height=18
+src="article_1_1.files/image153.gif" v:shapes="_x0000_s1118"><![endif]><o:p></o:p></p>
+  </td>
+  <td width=200 valign=top style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:8.0pt'>Перпендикуляр, опущенный из точки <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1117" type="#_x0000_t75" style='width:26.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image154.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=35 height=25
+src="article_1_1.files/image155.gif" v:shapes="_x0000_s1117"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1174"
+    DrawAspect="Content" ObjectID="_1378542849">
+   </o:OLEObject>
+  </xml><![endif]--><span style='mso-spacerun:yes'> </span>на кривую <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_s1116" type="#_x0000_t75" style='width:26.25pt;height:18.75pt'>
+ <v:imagedata src="article_1_1.files/image156.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=35 height=25
+src="article_1_1.files/image080.gif" v:shapes="_x0000_s1116"><![endif]></sub><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1175"
+    DrawAspect="Content" ObjectID="_1378542850">
+   </o:OLEObject>
+  </xml><![endif]--><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1115" type="#_x0000_t75" style='width:177pt;height:13.5pt'>
+ <v:imagedata src="article_1_1.files/image157.gif" o:title="IMG0217"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=236 height=18
+src="article_1_1.files/image157.gif" v:shapes="_x0000_s1115"><![endif]><o:p></o:p></p>
+  </td>
+  <td width=200 style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:8.0pt'>Визуализация
+  поверхности<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1114" type="#_x0000_t75" style='width:303.75pt;height:267.75pt'>
+ <v:imagedata src="article_1_1.files/image158.gif" o:title="IMG0186"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=405 height=357
+src="article_1_1.files/image158.gif" v:shapes="_x0000_s1114"><![endif]><o:p></o:p></p>
+  </td>
+  <td width=200 rowspan=2 style='width:149.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:8.0pt'>Результаты
+  работы программы, разные виды одной и той же поверхности<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18;mso-yfti-lastrow:yes'>
+  <td width=459 valign=top style='width:343.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;line-height:150%'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1113" type="#_x0000_t75" style='width:273pt;height:277.5pt'>
+ <v:imagedata src="article_1_1.files/image159.gif" o:title="IMG0219"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=364 height=370
+src="article_1_1.files/image159.gif" v:shapes="_x0000_s1113"><![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.4pt;line-height:
+150%'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

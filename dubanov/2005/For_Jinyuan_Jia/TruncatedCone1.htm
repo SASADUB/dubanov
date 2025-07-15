@@ -1,0 +1,1304 @@
+<html xmlns:mcd="urn:schemas-mathsoft-com:mathcad"
+ xmlns:m="http://www.w3.org/1998/Math/MathML">
+<head>
+<meta http-equiv="Content-Type" content="text/html"></meta>
+<meta name=Generator content="Mathcad Professional"></meta>
+<meta name=ProgID content="Mathcad"></meta>
+<meta name=Version content="11.0"></meta>
+<meta name=MathML content="true"></meta>
+<title>
+TrancatedCone</title>
+<style type="text/css">
+body { background : #ffffff }
+.equation { margin-top: 0.5em; margin-bottom: 1em }
+.Normal { font-family:Arial,sans-serif; font-size:10pt }
+.Heading_1 { font-family:Arial,sans-serif; font-size:14pt; font-weight:bold }
+.Heading_2 { font-family:Arial,sans-serif; font-size:12pt; font-weight:bold; font-style:italic }
+.Heading_3 { font-family:Arial,sans-serif; font-size:12pt }
+.Paragraph { font-family:Arial,sans-serif; font-size:10pt; text-indent:28px }
+.List { font-family:Arial,sans-serif; font-size:10pt; margin-left:19px; text-indent:-19px }
+.Indent { font-family:Arial,sans-serif; font-size:10pt; margin-left:144px }
+.Title { font-family:Times New Roman,sans-serif; font-size:24pt; font-weight:bold; text-align:center }
+.Subtitle { font-family:Times New Roman,sans-serif; font-size:18pt; text-align:center }
+</style>
+<script id="clientEventHandlersJS" language="javascript">
+<!--
+//-->
+</script>
+</head>
+<body 
+mcd:mathfonts="id:0;name:Variables;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:1;name:Constants;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:2;name:Text;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:4;name:User 1;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:5;name:User 2;face:Courier New;size:10;bold:0;ital:0;ul:0;cid:-1
+id:6;name:User 3;face:Arial;size:10;bold:1;ital:0;ul:0;cid:-1
+id:7;name:User 4;face:Times New Roman;size:10;bold:0;ital:1;ul:0;cid:-1
+id:8;name:User 5;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:9;name:User 6;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:10;name:User 7;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1"
+mcd:numberformat=""
+mcd:displayoptions=""
+mcd:unitformat="format:true;simplify:true"
+mcd:tolerance=""
+mcd:builtinvars="origin:0"
+mcd:calcoptions="auto:true;optimize:false;strict:true"
+mcd:mathdisplay="mult:7;deriv:deriv;litsub:large;define:colon;globeq:triple;local:arrow;equal:bold"
+mcd:unitsystem="default:4"
+mcd:dimnames="display:false;mass:mass;length:length;time:time;current:charge;temp:temperature;lum:luminosity;subst:substance"
+mcd:docprops="lrtag:184;lhbtag:184;status:8201;delorig:1;deluser:1;cp:1;cc:1;cs:1"
+mcd:ruler="visible:0;units:1"
+mcd:derivopts="ip:0;sc:0;dv:1;os:1"
+mcd:doccolors="eq:#000000;bg:#ffffff;rg:#ffff80"
+mcd:grfxy="0 1 1 21 15 0 0 3 0 "
+mcd:xaxisxy="0 0 1 1 1 0 0 1 1 "
+mcd:yaxisxy="0 0 1 1 1 0 0 1 1 "
+mcd:tracesxy="0 1 0 0 1 1 
+0 2 1 0 1 1 
+0 3 2 0 1 1 
+0 4 3 0 1 1 
+0 1 4 0 1 1 
+0 2 5 0 1 1 
+0 3 6 0 1 1 
+0 4 0 0 1 1 
+0 1 1 0 1 1 
+0 2 2 0 1 1 
+0 3 3 0 1 1 
+0 4 4 0 1 1 
+0 1 5 0 1 1 
+0 2 6 0 1 1 
+0 3 0 0 1 1 
+0 4 1 0 1 1 "
+>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="24" mcd:aligny="40" 
+ style="position:absolute;top:21;left:8;width:196">
+<layer width=196>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>R</ci>
+    <apply>
+      <ci>-Transpose</ci>
+      <matrix>
+        <matrixrow>
+          <cn>0</cn>
+          <cn>1</cn>
+          <cn>2</cn>
+          <cn>3</cn>
+          <cn>4</cn>
+          <cn>3</cn>
+          <cn>2</cn>
+          <cn>1.5</cn>
+          <cn>1</cn>
+          <cn>0</cn>
+        </matrixrow>
+      </matrix>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="TruncatedCone1_images/IMG0172.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="241" mcd:aligny="40" 
+ style="position:absolute;top:21;left:224;width:197">
+<layer width=197>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>H</ci>
+    <apply>
+      <ci>-Transpose</ci>
+      <matrix>
+        <matrixrow>
+          <cn>0</cn>
+          <cn>1</cn>
+          <cn>1.5</cn>
+          <cn>3</cn>
+          <cn>4</cn>
+          <cn>5</cn>
+          <cn>6</cn>
+          <cn>5</cn>
+          <cn>6</cn>
+          <cn>7</cn>
+        </matrixrow>
+      </matrix>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="TruncatedCone1_images/IMG0128.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="478" mcd:aligny="40" 
+ style="position:absolute;top:28;left:456;width:38">
+<layer width=38>
+<comment mcd:mmldata="<math>
+  <declare>
+    <apply>
+      <selector/>
+      <ci>T</ci>
+      <cn>0</cn>
+    </apply>
+    <cn>0</cn>
+  </declare>
+</math>"></comment>
+<img src="TruncatedCone1_images/IMG0158.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="531" mcd:aligny="40" 
+ style="position:absolute;top:28;left:520;width:74">
+<layer width=74>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>i</ci>
+    <apply>
+      <ci>-NUMERIC_EVAL</ci>
+      <apply>
+        <ci>-range</ci>
+        <cn>1</cn>
+        <apply>
+          <ci>last</ci>
+          <ci>R</ci>
+        </apply>
+      </apply>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="TruncatedCone1_images/IMG0159.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="627" mcd:aligny="40" 
+ style="position:absolute;top:18;left:608;width:228">
+<layer width=228>
+<comment mcd:mmldata="<math>
+  <declare>
+    <apply>
+      <selector/>
+      <ci>T</ci>
+      <ci>i</ci>
+    </apply>
+    <apply>
+      <plus/>
+      <apply>
+        <selector/>
+        <ci>T</ci>
+        <apply>
+          <minus/>
+          <ci>i</ci>
+          <cn>1</cn>
+        </apply>
+      </apply>
+      <apply>
+        <ci>-sqrt</ci>
+        <apply>
+          <plus/>
+          <apply>
+            <ci>-better_POWER</ci>
+            <apply>
+              <ci>-PARENS</ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <selector/>
+                  <ci>R</ci>
+                  <ci>i</ci>
+                </apply>
+                <apply>
+                  <selector/>
+                  <ci>R</ci>
+                  <apply>
+                    <minus/>
+                    <ci>i</ci>
+                    <cn>1</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <cn>2</cn>
+          </apply>
+          <apply>
+            <ci>-better_POWER</ci>
+            <apply>
+              <ci>-PARENS</ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <selector/>
+                  <ci>H</ci>
+                  <ci>i</ci>
+                </apply>
+                <apply>
+                  <selector/>
+                  <ci>H</ci>
+                  <apply>
+                    <minus/>
+                    <ci>i</ci>
+                    <cn>1</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <cn>2</cn>
+          </apply>
+        </apply>
+      </apply>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="TruncatedCone1_images/IMG0160.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="878" mcd:aligny="40" 
+ style="position:absolute;top:28;left:864;width:77">
+<layer width=77>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>k</ci>
+    <apply>
+      <ci>-NUMERIC_EVAL</ci>
+      <apply>
+        <ci>-range</ci>
+        <cn>0</cn>
+        <apply>
+          <ci>last</ci>
+          <ci>T</ci>
+        </apply>
+      </apply>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="TruncatedCone1_images/IMG0161.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+ style="position:absolute;top:72;left:24">
+<layer >
+<img src="TruncatedCone1_images/IMG0174.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+ABgAAABIAAAACgEAAPQAAAAYAAAASAAAAAAAAACuAAAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEAZwQAAgAUHQECfwQAAQAYIQECfwQAAQAcJQECfwQAAQAgKQEACDwAAdgkAAAIBATcA
+C0BAAg8AALYJAAACAQEwAAAMQECfwQAAgAgNQEAADwAAQAwAAAAOQEAADwAAgAwAAAAAAA9AQArDAACA
+BxBAQAIPAABkDwAAAgFIABFAQAIPAACkDwAAAgFIAAAAEkBAn8EAAIAGE0BAn8EAAEASFEBAn8EAAEAT
+FUBAAg8AAHYUAAACAQE0ABZAQAIPAAC2FAAAAgEBMAAAF0BAn8EAAIATGEBAAA8AAEAXAAAAGUBAAA8A
+AIAXAAAAAAAaQEAKwwAAgBIbQEACDwAAZBoAAAIBUgAcQEACDwAApBoAAAIBUgAAAB0AAgAAAA9kMl9n
+cmFwaF9mb3JtYXQAAAAAAAAgAAAACWdyYXBoRGF0YQAAAAAAACUAAAAAAAAAAgIAAAABAAAAFQAAAA8A
+AAAKAAAAAQABAAAACmF4aXNGb3JtYXQBAAAAAAApAAAADgEAAAABAAAACgAAAACA//8BKQ4BAAAAAQAA
+AAoAAAAAgP//AAEAAQAAAAd0cmFjZTJEAAAAAAAAJgAAAAEAHw8BASYAARMEBAIBJgMCHwMBJgQDHwQB
+JgEEHwUBJgIFHwYBJgMGHwcBJgQAHwgBJgEBHwkBJgICHwoBJgMDHwsBJgQEHwwBJgEFHw0BJgIGHw4B
+JgMAHw8BJgQBHwAAAAAAAAAAAAA="
+ border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+ style="position:absolute;top:72;left:312">
+<layer >
+<img src="TruncatedCone1_images/IMG0183.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+ADgBAABIAAAAoQIAAPQAAAA4AQAASAAAAAAAAAC3AAAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEAZwQAAgAUHQECfwQAAQAYIQECfwQAAQAcJQECfwQAAQAgKQEACDwAAdgkAAAcBBjEy
+LjIyOAALQEACDwAAtgkAAAIBATAAAAxAQJ/BAACACA1AQAAPAABADAAAAA5AQAAPAACADAAAAAAAD0BA
+CsMAAIAHEEBABP0AAEAPEUBAAg8AAGQQAAACAVQAEkBAAg8AAKQQAAACAWsAABNAQAIPAACkDwAAAgFI
+AAAAFEBAn8EAAIAGFUBAn8EAAEAUFkBAn8EAAEAVF0BAAg8AAHYWAAACAQE5ABhAQAIPAAC2FgAAAgEB
+MAAAGUBAn8EAAIAVGkBAAA8AAEAZAAAAG0BAAA8AAIAZAAAAAAAcQEAKwwAAgBQdQEACDwAAZBwAAAIB
+awAeQEACDwAApBwAAAIBUgAAAB8AAgAAAA9kMl9ncmFwaF9mb3JtYXQAAAAAAAAgAAAACWdyYXBoRGF0
+YQAAAAAAACUAAAAAAAAAAgIAAAABAAAAIwAAAA8AAAAKAAAAAQABAAAACmF4aXNGb3JtYXQBAAAAAAAp
+AAAADgEAAAABAAAACgAAAAAA/wABKQ4BAAAAAQAAAAgAAAAAAP8AAAEAAQAAAAd0cmFjZTJEAAAAAAAA
+JgAAAAEAHxAAASYAABMEBAEBJgABEwQEAgEmAwIfAwEmBAMfBAEmAQQfBQEmAgUfBgEmAwYfBwEmBAAf
+CAEmAQEfCQEmAgIfCgEmAwMfCwEmBAQfDAEmAQUfDQEmAgYfDgEmAwAfDwEmBAEfAAAAAAAAAAAAAA==
+"
+ border=0>
+</layer>
+</div>
+<div mcd:region="TXT" 
+mcd:properties=""
+mcd:textproperties=""
+mcd:alignx="696" mcd:aligny="144" 
+ style="position:absolute;top:127;left:696;width:366">
+<layer width=366>
+<comment mcd:parprop="style:Normal;spec:0;bullet:0"></comment>
+<span class="Normal">
+<comment mcd:chrprop="size:14;bold:1;ital:1"></comment><font size="4"><b><i>Parameter - length of an arch of a meridian<comment mcd:chrprop="size:10;bold:0;ital:0"></comment></i></b></font></span>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="49" mcd:aligny="304" 
+ style="position:absolute;top:270;left:8;width:737">
+<layer width=737>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>F</ci>
+    <lambda>
+      <bvar>
+        <ci>t</ci>
+      </bvar>
+      <bvar>
+        <ci>&amp;phi;</ci>
+      </bvar>
+      <apply>
+        <ci>-sequence</ci>
+        <apply>
+          <apply>
+            <ci>-localassign</ci>
+            <ci>E</ci>
+            <vector>
+              <cn>0</cn>
+              <cn>0</cn>
+              <cn>0</cn>
+            </vector>
+          </apply>
+          <apply>
+            <ci>-for</ci>
+            <ci>i</ci>
+            <apply>
+              <ci>-NUMERIC_EVAL</ci>
+              <apply>
+                <ci>-range</ci>
+                <cn>0</cn>
+                <apply>
+                  <minus/>
+                  <apply>
+                    <ci>last</ci>
+                    <ci>T</ci>
+                  </apply>
+                  <cn>1</cn>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <ci>-sequence</ci>
+              <apply>
+                <apply>
+                  <ci>-ifblock</ci>
+                  <apply>
+                    <apply>
+                      <ci>-pair</ci>
+                      <apply>
+                        <ci>-localassign</ci>
+                        <ci>E</ci>
+                        <vector>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <apply>
+                              <ci>-PARENS</ci>
+                              <apply>
+                                <plus/>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <apply>
+                                    <ci>-PARENS</ci>
+                                    <apply>
+                                      <minus/>
+                                      <ci>t</ci>
+                                      <apply>
+                                        <selector/>
+                                        <ci>T</ci>
+                                        <ci>i</ci>
+                                      </apply>
+                                    </apply>
+                                  </apply>
+                                  <apply>
+                                    <divide/>
+                                    <apply>
+                                      <minus/>
+                                      <apply>
+                                        <selector/>
+                                        <ci>R</ci>
+                                        <apply>
+                                          <plus/>
+                                          <ci>i</ci>
+                                          <cn>1</cn>
+                                        </apply>
+                                      </apply>
+                                      <apply>
+                                        <selector/>
+                                        <ci>R</ci>
+                                        <ci>i</ci>
+                                      </apply>
+                                    </apply>
+                                    <apply>
+                                      <ci>-sqrt</ci>
+                                      <apply>
+                                        <plus/>
+                                        <apply>
+                                          <ci>-better_POWER</ci>
+                                          <apply>
+                                            <ci>-PARENS</ci>
+                                            <apply>
+                                              <minus/>
+                                              <apply>
+                                                <selector/>
+                                                <ci>R</ci>
+                                                <apply>
+                                                  <plus/>
+                                                  <ci>i</ci>
+                                                  <cn>1</cn>
+                                                </apply>
+                                              </apply>
+                                              <apply>
+                                                <selector/>
+                                                <ci>R</ci>
+                                                <ci>i</ci>
+                                              </apply>
+                                            </apply>
+                                          </apply>
+                                          <cn>2</cn>
+                                        </apply>
+                                        <apply>
+                                          <ci>-better_POWER</ci>
+                                          <apply>
+                                            <ci>-PARENS</ci>
+                                            <apply>
+                                              <minus/>
+                                              <apply>
+                                                <selector/>
+                                                <ci>H</ci>
+                                                <apply>
+                                                  <plus/>
+                                                  <ci>i</ci>
+                                                  <cn>1</cn>
+                                                </apply>
+                                              </apply>
+                                              <apply>
+                                                <selector/>
+                                                <ci>H</ci>
+                                                <ci>i</ci>
+                                              </apply>
+                                            </apply>
+                                          </apply>
+                                          <cn>2</cn>
+                                        </apply>
+                                      </apply>
+                                    </apply>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <selector/>
+                                  <ci>R</ci>
+                                  <ci>i</ci>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>cos</ci>
+                              <ci>&amp;phi;</ci>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <apply>
+                              <ci>-PARENS</ci>
+                              <apply>
+                                <plus/>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <apply>
+                                    <ci>-PARENS</ci>
+                                    <apply>
+                                      <minus/>
+                                      <ci>t</ci>
+                                      <apply>
+                                        <selector/>
+                                        <ci>T</ci>
+                                        <ci>i</ci>
+                                      </apply>
+                                    </apply>
+                                  </apply>
+                                  <apply>
+                                    <divide/>
+                                    <apply>
+                                      <minus/>
+                                      <apply>
+                                        <selector/>
+                                        <ci>R</ci>
+                                        <apply>
+                                          <plus/>
+                                          <ci>i</ci>
+                                          <cn>1</cn>
+                                        </apply>
+                                      </apply>
+                                      <apply>
+                                        <selector/>
+                                        <ci>R</ci>
+                                        <ci>i</ci>
+                                      </apply>
+                                    </apply>
+                                    <apply>
+                                      <ci>-sqrt</ci>
+                                      <apply>
+                                        <plus/>
+                                        <apply>
+                                          <ci>-better_POWER</ci>
+                                          <apply>
+                                            <ci>-PARENS</ci>
+                                            <apply>
+                                              <minus/>
+                                              <apply>
+                                                <selector/>
+                                                <ci>R</ci>
+                                                <apply>
+                                                  <plus/>
+                                                  <ci>i</ci>
+                                                  <cn>1</cn>
+                                                </apply>
+                                              </apply>
+                                              <apply>
+                                                <selector/>
+                                                <ci>R</ci>
+                                                <ci>i</ci>
+                                              </apply>
+                                            </apply>
+                                          </apply>
+                                          <cn>2</cn>
+                                        </apply>
+                                        <apply>
+                                          <ci>-better_POWER</ci>
+                                          <apply>
+                                            <ci>-PARENS</ci>
+                                            <apply>
+                                              <minus/>
+                                              <apply>
+                                                <selector/>
+                                                <ci>H</ci>
+                                                <apply>
+                                                  <plus/>
+                                                  <ci>i</ci>
+                                                  <cn>1</cn>
+                                                </apply>
+                                              </apply>
+                                              <apply>
+                                                <selector/>
+                                                <ci>H</ci>
+                                                <ci>i</ci>
+                                              </apply>
+                                            </apply>
+                                          </apply>
+                                          <cn>2</cn>
+                                        </apply>
+                                      </apply>
+                                    </apply>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <selector/>
+                                  <ci>R</ci>
+                                  <ci>i</ci>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>sin</ci>
+                              <ci>&amp;phi;</ci>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <plus/>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <apply>
+                                <ci>-PARENS</ci>
+                                <apply>
+                                  <minus/>
+                                  <ci>t</ci>
+                                  <apply>
+                                    <selector/>
+                                    <ci>T</ci>
+                                    <ci>i</ci>
+                                  </apply>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-PARENS</ci>
+                                <apply>
+                                  <divide/>
+                                  <apply>
+                                    <minus/>
+                                    <apply>
+                                      <selector/>
+                                      <ci>H</ci>
+                                      <apply>
+                                        <plus/>
+                                        <ci>i</ci>
+                                        <cn>1</cn>
+                                      </apply>
+                                    </apply>
+                                    <apply>
+                                      <selector/>
+                                      <ci>H</ci>
+                                      <ci>i</ci>
+                                    </apply>
+                                  </apply>
+                                  <apply>
+                                    <ci>-sqrt</ci>
+                                    <apply>
+                                      <plus/>
+                                      <apply>
+                                        <ci>-better_POWER</ci>
+                                        <apply>
+                                          <ci>-PARENS</ci>
+                                          <apply>
+                                            <minus/>
+                                            <apply>
+                                              <selector/>
+                                              <ci>R</ci>
+                                              <apply>
+                                                <plus/>
+                                                <ci>i</ci>
+                                                <cn>1</cn>
+                                              </apply>
+                                            </apply>
+                                            <apply>
+                                              <selector/>
+                                              <ci>R</ci>
+                                              <ci>i</ci>
+                                            </apply>
+                                          </apply>
+                                        </apply>
+                                        <cn>2</cn>
+                                      </apply>
+                                      <apply>
+                                        <ci>-better_POWER</ci>
+                                        <apply>
+                                          <ci>-PARENS</ci>
+                                          <apply>
+                                            <minus/>
+                                            <apply>
+                                              <selector/>
+                                              <ci>H</ci>
+                                              <apply>
+                                                <plus/>
+                                                <ci>i</ci>
+                                                <cn>1</cn>
+                                              </apply>
+                                            </apply>
+                                            <apply>
+                                              <selector/>
+                                              <ci>H</ci>
+                                              <ci>i</ci>
+                                            </apply>
+                                          </apply>
+                                        </apply>
+                                        <cn>2</cn>
+                                      </apply>
+                                    </apply>
+                                  </apply>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <selector/>
+                              <ci>H</ci>
+                              <ci>i</ci>
+                            </apply>
+                          </apply>
+                        </vector>
+                      </apply>
+                      <apply>
+                        <ci>-lthan</ci>
+                        <apply>
+                          <ci>-LTEQ</ci>
+                          <apply>
+                            <selector/>
+                            <ci>T</ci>
+                            <ci>i</ci>
+                          </apply>
+                          <ci>t</ci>
+                        </apply>
+                        <apply>
+                          <selector/>
+                          <ci>T</ci>
+                          <apply>
+                            <plus/>
+                            <ci>i</ci>
+                            <cn>1</cn>
+                          </apply>
+                        </apply>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <ci>-pair</ci>
+                      <apply>
+                        <ci>-localassign</ci>
+                        <ci>E</ci>
+                        <vector>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <apply>
+                              <ci>-PARENS</ci>
+                              <apply>
+                                <plus/>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <apply>
+                                    <ci>-PARENS</ci>
+                                    <apply>
+                                      <minus/>
+                                      <ci>t</ci>
+                                      <apply>
+                                        <selector/>
+                                        <ci>T</ci>
+                                        <apply>
+                                          <minus/>
+                                          <apply>
+                                            <ci>last</ci>
+                                            <ci>T</ci>
+                                          </apply>
+                                          <cn>1</cn>
+                                        </apply>
+                                      </apply>
+                                    </apply>
+                                  </apply>
+                                  <apply>
+                                    <ci>-PARENS</ci>
+                                    <apply>
+                                      <divide/>
+                                      <apply>
+                                        <minus/>
+                                        <apply>
+                                          <selector/>
+                                          <ci>R</ci>
+                                          <apply>
+                                            <ci>last</ci>
+                                            <ci>T</ci>
+                                          </apply>
+                                        </apply>
+                                        <apply>
+                                          <selector/>
+                                          <ci>R</ci>
+                                          <apply>
+                                            <minus/>
+                                            <apply>
+                                              <ci>last</ci>
+                                              <ci>T</ci>
+                                            </apply>
+                                            <cn>1</cn>
+                                          </apply>
+                                        </apply>
+                                      </apply>
+                                      <apply>
+                                        <ci>-sqrt</ci>
+                                        <apply>
+                                          <plus/>
+                                          <apply>
+                                            <ci>-better_POWER</ci>
+                                            <apply>
+                                              <ci>-PARENS</ci>
+                                              <apply>
+                                                <minus/>
+                                                <apply>
+                                                  <selector/>
+                                                  <ci>R</ci>
+                                                  <apply>
+                                                    <ci>last</ci>
+                                                    <ci>T</ci>
+                                                  </apply>
+                                                </apply>
+                                                <apply>
+                                                  <selector/>
+                                                  <ci>R</ci>
+                                                  <apply>
+                                                    <minus/>
+                                                    <apply>
+                                                      <ci>last</ci>
+                                                      <ci>T</ci>
+                                                    </apply>
+                                                    <cn>1</cn>
+                                                  </apply>
+                                                </apply>
+                                              </apply>
+                                            </apply>
+                                            <cn>2</cn>
+                                          </apply>
+                                          <apply>
+                                            <ci>-better_POWER</ci>
+                                            <apply>
+                                              <ci>-PARENS</ci>
+                                              <apply>
+                                                <minus/>
+                                                <apply>
+                                                  <selector/>
+                                                  <ci>H</ci>
+                                                  <apply>
+                                                    <ci>last</ci>
+                                                    <ci>T</ci>
+                                                  </apply>
+                                                </apply>
+                                                <apply>
+                                                  <selector/>
+                                                  <ci>H</ci>
+                                                  <apply>
+                                                    <minus/>
+                                                    <apply>
+                                                      <ci>last</ci>
+                                                      <ci>T</ci>
+                                                    </apply>
+                                                    <cn>1</cn>
+                                                  </apply>
+                                                </apply>
+                                              </apply>
+                                            </apply>
+                                            <cn>2</cn>
+                                          </apply>
+                                        </apply>
+                                      </apply>
+                                    </apply>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <selector/>
+                                  <ci>R</ci>
+                                  <apply>
+                                    <minus/>
+                                    <apply>
+                                      <ci>last</ci>
+                                      <ci>T</ci>
+                                    </apply>
+                                    <cn>1</cn>
+                                  </apply>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>cos</ci>
+                              <ci>&amp;phi;</ci>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <apply>
+                              <ci>-PARENS</ci>
+                              <apply>
+                                <plus/>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <apply>
+                                    <ci>-PARENS</ci>
+                                    <apply>
+                                      <minus/>
+                                      <ci>t</ci>
+                                      <apply>
+                                        <selector/>
+                                        <ci>T</ci>
+                                        <apply>
+                                          <minus/>
+                                          <apply>
+                                            <ci>last</ci>
+                                            <ci>T</ci>
+                                          </apply>
+                                          <cn>1</cn>
+                                        </apply>
+                                      </apply>
+                                    </apply>
+                                  </apply>
+                                  <apply>
+                                    <ci>-PARENS</ci>
+                                    <apply>
+                                      <divide/>
+                                      <apply>
+                                        <minus/>
+                                        <apply>
+                                          <selector/>
+                                          <ci>R</ci>
+                                          <apply>
+                                            <ci>last</ci>
+                                            <ci>T</ci>
+                                          </apply>
+                                        </apply>
+                                        <apply>
+                                          <selector/>
+                                          <ci>R</ci>
+                                          <apply>
+                                            <minus/>
+                                            <apply>
+                                              <ci>last</ci>
+                                              <ci>T</ci>
+                                            </apply>
+                                            <cn>1</cn>
+                                          </apply>
+                                        </apply>
+                                      </apply>
+                                      <apply>
+                                        <ci>-sqrt</ci>
+                                        <apply>
+                                          <plus/>
+                                          <apply>
+                                            <ci>-better_POWER</ci>
+                                            <apply>
+                                              <ci>-PARENS</ci>
+                                              <apply>
+                                                <minus/>
+                                                <apply>
+                                                  <selector/>
+                                                  <ci>R</ci>
+                                                  <apply>
+                                                    <ci>last</ci>
+                                                    <ci>T</ci>
+                                                  </apply>
+                                                </apply>
+                                                <apply>
+                                                  <selector/>
+                                                  <ci>R</ci>
+                                                  <apply>
+                                                    <minus/>
+                                                    <apply>
+                                                      <ci>last</ci>
+                                                      <ci>T</ci>
+                                                    </apply>
+                                                    <cn>1</cn>
+                                                  </apply>
+                                                </apply>
+                                              </apply>
+                                            </apply>
+                                            <cn>2</cn>
+                                          </apply>
+                                          <apply>
+                                            <ci>-better_POWER</ci>
+                                            <apply>
+                                              <ci>-PARENS</ci>
+                                              <apply>
+                                                <minus/>
+                                                <apply>
+                                                  <selector/>
+                                                  <ci>H</ci>
+                                                  <apply>
+                                                    <ci>last</ci>
+                                                    <ci>T</ci>
+                                                  </apply>
+                                                </apply>
+                                                <apply>
+                                                  <selector/>
+                                                  <ci>H</ci>
+                                                  <apply>
+                                                    <minus/>
+                                                    <apply>
+                                                      <ci>last</ci>
+                                                      <ci>T</ci>
+                                                    </apply>
+                                                    <cn>1</cn>
+                                                  </apply>
+                                                </apply>
+                                              </apply>
+                                            </apply>
+                                            <cn>2</cn>
+                                          </apply>
+                                        </apply>
+                                      </apply>
+                                    </apply>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <selector/>
+                                  <ci>R</ci>
+                                  <apply>
+                                    <minus/>
+                                    <apply>
+                                      <ci>last</ci>
+                                      <ci>T</ci>
+                                    </apply>
+                                    <cn>1</cn>
+                                  </apply>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>sin</ci>
+                              <ci>&amp;phi;</ci>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <plus/>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <apply>
+                                <ci>-PARENS</ci>
+                                <apply>
+                                  <minus/>
+                                  <ci>t</ci>
+                                  <apply>
+                                    <selector/>
+                                    <ci>T</ci>
+                                    <apply>
+                                      <minus/>
+                                      <apply>
+                                        <ci>last</ci>
+                                        <ci>T</ci>
+                                      </apply>
+                                      <cn>1</cn>
+                                    </apply>
+                                  </apply>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-PARENS</ci>
+                                <apply>
+                                  <divide/>
+                                  <apply>
+                                    <minus/>
+                                    <apply>
+                                      <selector/>
+                                      <ci>H</ci>
+                                      <apply>
+                                        <ci>last</ci>
+                                        <ci>T</ci>
+                                      </apply>
+                                    </apply>
+                                    <apply>
+                                      <selector/>
+                                      <ci>H</ci>
+                                      <apply>
+                                        <minus/>
+                                        <apply>
+                                          <ci>last</ci>
+                                          <ci>T</ci>
+                                        </apply>
+                                        <cn>1</cn>
+                                      </apply>
+                                    </apply>
+                                  </apply>
+                                  <apply>
+                                    <ci>-sqrt</ci>
+                                    <apply>
+                                      <plus/>
+                                      <apply>
+                                        <ci>-better_POWER</ci>
+                                        <apply>
+                                          <ci>-PARENS</ci>
+                                          <apply>
+                                            <minus/>
+                                            <apply>
+                                              <selector/>
+                                              <ci>R</ci>
+                                              <apply>
+                                                <ci>last</ci>
+                                                <ci>T</ci>
+                                              </apply>
+                                            </apply>
+                                            <apply>
+                                              <selector/>
+                                              <ci>R</ci>
+                                              <apply>
+                                                <minus/>
+                                                <apply>
+                                                  <ci>last</ci>
+                                                  <ci>T</ci>
+                                                </apply>
+                                                <cn>1</cn>
+                                              </apply>
+                                            </apply>
+                                          </apply>
+                                        </apply>
+                                        <cn>2</cn>
+                                      </apply>
+                                      <apply>
+                                        <ci>-better_POWER</ci>
+                                        <apply>
+                                          <ci>-PARENS</ci>
+                                          <apply>
+                                            <minus/>
+                                            <apply>
+                                              <selector/>
+                                              <ci>H</ci>
+                                              <apply>
+                                                <ci>last</ci>
+                                                <ci>T</ci>
+                                              </apply>
+                                            </apply>
+                                            <apply>
+                                              <selector/>
+                                              <ci>H</ci>
+                                              <apply>
+                                                <minus/>
+                                                <apply>
+                                                  <ci>last</ci>
+                                                  <ci>T</ci>
+                                                </apply>
+                                                <cn>1</cn>
+                                              </apply>
+                                            </apply>
+                                          </apply>
+                                        </apply>
+                                        <cn>2</cn>
+                                      </apply>
+                                    </apply>
+                                  </apply>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <selector/>
+                              <ci>H</ci>
+                              <apply>
+                                <minus/>
+                                <apply>
+                                  <ci>last</ci>
+                                  <ci>T</ci>
+                                </apply>
+                                <cn>1</cn>
+                              </apply>
+                            </apply>
+                          </apply>
+                        </vector>
+                      </apply>
+                      <apply>
+                        <ci>-EQUALS</ci>
+                        <ci>t</ci>
+                        <apply>
+                          <selector/>
+                          <ci>T</ci>
+                          <apply>
+                            <ci>last</ci>
+                            <ci>T</ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <ci>-not_available</ci>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+          <ci>E</ci>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="TruncatedCone1_images/IMG0180.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="797" mcd:aligny="360" 
+ style="position:absolute;top:347;left:776;width:241">
+<layer width=241>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>P1</ci>
+    <apply>
+      <ci>CreateMesh</ci>
+      <ci>F</ci>
+      <cn>0</cn>
+      <apply>
+        <selector/>
+        <ci>T</ci>
+        <apply>
+          <ci>last</ci>
+          <ci>T</ci>
+        </apply>
+      </apply>
+      <cn>0</cn>
+      <apply>
+        <ci>-mult-times-in</ci>
+        <cn>2</cn>
+        <ci>&amp;pgr;</ci>
+      </apply>
+      <cn>50</cn>
+      <cn>20</cn>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="TruncatedCone1_images/IMG0177.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+ style="position:absolute;top:432;left:776">
+<layer >
+<img src="TruncatedCone1_images/IMG0179.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+AAgDAACwAQAA+gMAAMACAACAAwAAsAEAAAAAAACzAAAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEBe8QAAgAUHQEAADwAAQAYAAAAIQECfwQAAgAYJQEA8AQAAQAgAAAoAAgAAAAlDVlNF
+cUl0ZW0BAAAAAAAMAAAABkVxSXRlbQEAAAAAAA0AAAAECQsAAgAAAAxDVlNDb21ib0l0ZW0AAAAAAAAQ
+AAAAB0NWU0l0ZW0AAAAAAAAPAAAAPAwAAAoDAACxAQAA8AAAAPAAAAD//wAAEABDVlNPbGVDbGllbnRJ
+dGVtAAEAAAIAAAABAAAAAAABAAAAAAwAANDPEeChsRrhAAAAAAAAAAAAAAAAAAAAAD4AAwD+/wkABgAA
+AAAAAAAAAAAAAQAAAAEAAAAAAAAAABAAAAIAAAABAAAA/v///wAAAAAAAAAA////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////f//
+//7////+////BAAAAP7/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////9SAG8AbwB0ACAARQBuAHQAcgB5AAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFgAFAP//////////AgAAAKVJPifeAtERmukA
+AMAIcgsAAAAAAAAAAAAAAABQhHOmcAbGAQMAAABAAwAAAAAAAEMAbwBuAHQAZQBuAHQAcwAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAIA////////////////AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgCAAAAAAAAAgBPAGwAZQBQAHIAZQBz
+ADAAMAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAgEBAAAA////
+//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AP///////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAA/v////7/////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////AQAJAM4YAADOGAAAAAAAAAoAAAAAAAAAAAAB
+AAAAAAAAAAAAAABM5sI9SYTlPz5NM7jlZRhA59I/6mk5CUAfk7MEAwFWQL0vpdudAuk/AQAA/////zMz
+M/8AAAIAAGQAEgAAAAAAAAAAAAEACQABAAAAAP8AAAEACQABAQABAQEABQABAAUACgAKAAAAAAAAAgAA
+AAAAAAAAAAAAAAAAGEAAAABgLtYPwAAAAGAu1g9AAAEACQABAQABAQEABQABAAUACgAKAAEAAAAAAgAA
+AAAAAAAAAAAAAAAALkAAAAAAAAAAAAAAAAAAABxAAAEACQABAQABAQEABQABAAUACgAKAAIAAAAAAgAA
+AAAAAAAAAAAAAAAAGEAAAABAk4IPwAAAACAd8g9AAAEACQAAAAoACgAFAAUACgAKAAoACgAA/wAAAP8A
+AP//AAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAQAJAAAACgAKAAUABQAKAAoACgAK
+AAD/AAAA/wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA////AAAAAAABAAkAAAAKAAoABQAF
+AAoACgAKAAoAAP8AAAD/AAD//wAA//8AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAD///8AAAAAAAEAAAAA
+/wAAAAAAgD8AAIA/AAAAAAAAAAAAQAEAAQAAAAAA/wAAAACAPwAAgD8AAIA/AAAAAAFAAQABAAAAAAAA
+/wAAAIA/AAAAAAAAgD8AAAAAAkABAAAAAAABAAAAAQAJAAEAAAAA/wAAAAAA/wAA/////wAAgD8AAIA/
+AACAPwAAAQBEIyA++AEAAAAAgEAAAOBAc7F+wJoUfMAAAAAAc7F+QOmQf0AAAAAAAAAAAAAAgD8AAAQA
+AAAAABQAAAAPAA8ADwAPAA8ADwAAARUAFQABAAAAAAAAFMAAAAAAAAAUQAAAAAAAABTAAAAAAAAAFEAV
+ABUAAAAHUmFpbmJvd0z/LBFwAAAAAAAAAAQAAAABAAAA/////wIAAABOQU5JAAAAAAAAAABQAAAAAAAA
+AAAAAAAAAAAAAAAAADwAAABiAAAAwwAAAMMAAABGAAAAPAAAADgAAABmAAAAwwAAAMMAAABiAAAAPAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAWKyBM5XoJT8TAHEBBQEIAAAAAABwAAAA5P8sEXAAAAAAAAAA/wXS
+XiAAAAAUAAAAAAAAAAAAgEAAABBBAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAA4AAAABgAAAAMAAAABgAA
+AD4AAABjAAAAwwAAAMMAAADDAAAAwwAAAGYAAAA8AAAAAAAAAAAAAAAADEBAAg8AAKQIAAADAlAxAAAA
+AgAAAAAAAAAAAA=="
+ border=0>
+</layer>
+</div>
+</body>
+</html>

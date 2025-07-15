@@ -1,0 +1,3186 @@
+<html xmlns:mcd="urn:schemas-mathsoft-com:mathcad"
+ xmlns:m="http://www.w3.org/1998/Math/MathML">
+<head>
+<meta http-equiv="Content-Type" content="text/html"></meta>
+<meta name=Generator content="Mathcad Professional"></meta>
+<meta name=ProgID content="Mathcad"></meta>
+<meta name=Version content="11.0"></meta>
+<meta name=MathML content="true"></meta>
+<title>
+Surf3-2com_3</title>
+<style type="text/css">
+body { background : #ffffff }
+.equation { margin-top: 0.5em; margin-bottom: 1em }
+.Normal { font-family:Arial,sans-serif; font-size:10pt }
+.Heading_1 { font-family:Arial,sans-serif; font-size:14pt; font-weight:bold }
+.Heading_2 { font-family:Arial,sans-serif; font-size:12pt; font-weight:bold; font-style:italic }
+.Heading_3 { font-family:Arial,sans-serif; font-size:12pt }
+.Paragraph { font-family:Arial,sans-serif; font-size:10pt; text-indent:28px }
+.List { font-family:Arial,sans-serif; font-size:10pt; margin-left:19px; text-indent:-19px }
+.Indent { font-family:Arial,sans-serif; font-size:10pt; margin-left:144px }
+.Title { font-family:Times New Roman,sans-serif; font-size:24pt; font-weight:bold; text-align:center }
+.Subtitle { font-family:Times New Roman,sans-serif; font-size:18pt; text-align:center }
+</style>
+<script id="clientEventHandlersJS" language="javascript">
+<!--
+//-->
+</script>
+</head>
+<body 
+mcd:mathfonts="id:0;name:Variables;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:1;name:Constants;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:2;name:Text;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:4;name:User 1;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:5;name:User 2;face:Courier New;size:10;bold:0;ital:0;ul:0;cid:-1
+id:6;name:User 3;face:Arial;size:10;bold:1;ital:0;ul:0;cid:-1
+id:7;name:User 4;face:Times New Roman;size:10;bold:0;ital:1;ul:0;cid:-1
+id:8;name:User 5;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:9;name:User 6;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:10;name:User 7;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1"
+mcd:numberformat=""
+mcd:displayoptions=""
+mcd:unitformat="format:true;simplify:true"
+mcd:tolerance=""
+mcd:builtinvars="origin:0"
+mcd:calcoptions="auto:true;optimize:false;strict:true"
+mcd:mathdisplay="mult:7;deriv:deriv;litsub:large;define:colon;globeq:triple;local:arrow;equal:bold"
+mcd:unitsystem="default:4"
+mcd:dimnames="display:false;mass:mass;length:length;time:time;current:charge;temp:temperature;lum:luminosity;subst:substance"
+mcd:docprops="lrtag:1220;lhbtag:1220;status:8201;delorig:1;deluser:1;cp:1;cc:1;cs:1"
+mcd:ruler="visible:0;units:1"
+mcd:derivopts="ip:0;sc:0;dv:1;os:1"
+mcd:doccolors="eq:#000000;bg:#ffffff;rg:#ffff80"
+mcd:grfxy="0 1 1 21 15 0 0 3 0 "
+mcd:xaxisxy="0 0 1 1 1 0 0 1 1 "
+mcd:yaxisxy="0 0 1 1 1 0 0 1 1 "
+mcd:tracesxy="0 1 0 0 1 1 
+0 2 1 0 1 1 
+0 3 2 0 1 1 
+0 4 3 0 1 1 
+0 1 4 0 1 1 
+0 2 5 0 1 1 
+0 3 6 0 1 1 
+0 4 0 0 1 1 
+0 1 1 0 1 1 
+0 2 2 0 1 1 
+0 3 3 0 1 1 
+0 4 4 0 1 1 
+0 1 5 0 1 1 
+0 2 6 0 1 1 
+0 3 0 0 1 1 
+0 4 1 0 1 1 "
+>
+<div mcd:region="EQN" 
+mcd:properties="hilight:true"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="40" mcd:aligny="48" 
+ style="position:absolute;top:36;left:8;width:80">
+<layer width=80>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>start</ci>
+    <apply>
+      <ci>time</ci>
+      <cn>0</cn>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1219.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="hilight:true;color:#00ff40;tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="158" mcd:aligny="48" 
+ style="position:absolute;top:28;left:104;width:155">
+<layer width=155>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>F</ci>
+    <lambda>
+      <bvar>
+        <ci>x</ci>
+      </bvar>
+      <bvar>
+        <ci>y</ci>
+      </bvar>
+      <bvar>
+        <ci>z</ci>
+      </bvar>
+      <apply>
+        <minus/>
+        <apply>
+          <plus/>
+          <apply>
+            <ci>-better_POWER</ci>
+            <apply>
+              <ci>-PARENS</ci>
+              <apply>
+                <minus/>
+                <ci>x</ci>
+                <cn>1</cn>
+              </apply>
+            </apply>
+            <cn>2</cn>
+          </apply>
+          <apply>
+            <ci>-better_POWER</ci>
+            <ci>y</ci>
+            <cn>2</cn>
+          </apply>
+        </apply>
+        <ci>z</ci>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1220.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+ style="position:absolute;top:60;left:8">
+<layer >
+<img src="./Surf3-2com_3_images/IMG1001.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+AAgAAAA8AAAATAAAAE0AAAAUAAAASAAAAAAAAADpAwAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEATQAAAgAUAB0BAC8EAAIAGCEBAAg8AAGQHAAACAWYACUBAEs4AAIAHCkBAAg8AAGQJ
+AAACAUYAC0BAjnAAAIAJAAxAQArDAACACw1AQArDAABADA5AQAIPAABkDQAAAgF4AA9AQAIPAACkDQAA
+AgF5AAAQQEACDwAApAwAAAIBegAAAAAAAAAAAAAAAAAAAA=="
+ border=0>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="139" mcd:aligny="72" 
+ style="position:absolute;top:60;left:96;width:129">
+<layer width=129>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>x</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>-mult-times-in</ci>
+        <apply>
+          <ci>cos</ci>
+          <ci>u</ci>
+        </apply>
+        <apply>
+          <ci>cos</ci>
+          <ci>v</ci>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1002.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="285" mcd:aligny="72" 
+ style="position:absolute;top:60;left:240;width:128">
+<layer width=128>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>y</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>-mult-times-in</ci>
+        <apply>
+          <ci>cos</ci>
+          <ci>u</ci>
+        </apply>
+        <apply>
+          <ci>sin</ci>
+          <ci>v</ci>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1003.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="427" mcd:aligny="72" 
+ style="position:absolute;top:60;left:384;width:86">
+<layer width=86>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>z</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>sin</ci>
+        <ci>u</ci>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1004.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+ style="position:absolute;top:77;left:8">
+<layer >
+<img src="./Surf3-2com_3_images/IMG0468.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+AAgAAABNAAAAWAAAAGUAAAAdAAAAYAAAAAAAAADUAQAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEATQAAAgAUAB0BAC8EAAIAGCEBAAg8AAGQHAAADAmVxAAlAQLOMAACABwpAQI5wAABA
+CQALQEAwwQAAgQoMQEAwwQAAQQsNQEAADwAAQAwAAAAOQEACDwAApAwAAAMCdDIAAgAAAAECAA9AQAIP
+AACkCwAAAwJ0MQACAAAAAQIAAAAAAAAAAAAAAAAAAAA="
+ border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+ style="position:absolute;top:84;left:104">
+<layer >
+<img src="./Surf3-2com_3_images/IMG0893.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+AGgAAABUAAAAogAAAGUAAAB1AAAAYAAAAAAAAAB9AwAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEATQAAAgAUAB0BAC8EAAIAGCEBAAg8AAGQHAAACAXgACUBAEs4AAIAHCkBAAg8AAGQJ
+AAACAXgAC0BAjnAAAIAJAAxAQArDAACACw1AQAIPAABkDAAAAgF1AA5AQAIPAACkDAAAAgF2AAAAAAAA
+AAAAAAAAAAAA"
+ border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+ style="position:absolute;top:84;left:176">
+<layer >
+<img src="./Surf3-2com_3_images/IMG0896.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+ALAAAABUAAAA7gAAAGUAAAC/AAAAYAAAAAAAAACAAwAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEATQAAAgAUAB0BAC8EAAIAGCEBAAg8AAGQHAAACAXkACUBAEs4AAIAHCkBAAg8AAGQJ
+AAACAXkAC0BAjnAAAIAJAAxAQArDAACACw1AQAIPAABkDAAAAgF1AA5AQAIPAACkDAAAAgF2AAAAAAAA
+AAAAAAAAAAAA"
+ border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+ style="position:absolute;top:84;left:256">
+<layer >
+<img src="./Surf3-2com_3_images/IMG0898.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+AAABAABUAAAAOgEAAGUAAAANAQAAYAAAAAAAAACCAwAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEATQAAAgAUAB0BAC8EAAIAGCEBAAg8AAGQHAAACAXoACUBAEs4AAIAHCkBAAg8AAGQJ
+AAACAXoAC0BAjnAAAIAJAAxAQArDAACACw1AQAIPAABkDAAAAgF1AA5AQAIPAACkDAAAAgF2AAAAAAAA
+AAAAAAAAAAAA"
+ border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties="hilight:true;color:#00ff40"
+class="equation"
+;mcd:eqproperties=""
+ style="position:absolute;top:106;left:8">
+<layer >
+<img src="./Surf3-2com_3_images/IMG0899.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+AAgAAABqAAAAxgEAAJEAAAAvAAAAgAAAAAAAAACDAwAACAEAAAAAAwD/QAUAAQAAAAR0cmVlEAAAAAAA
+QAAAAA1wAAAAAAAGQEATQAAAgAUAB0BAC8EAAIAGCEBAEs4AAEAHCUBAAg8AAGQIAAADAmRGAApAQI5w
+AACACAALQEACDwAApAoAAAIBRgAAAAxAQAbKAACABw1AQI5wAABADAAOQEAwwQAAgQ0PQEAwwQAAQQ4Q
+QEAwwQAAQQ8RQEAADwAAQBAAAAASQEAkyQAAgBATQEACDwAAZBIAAAIBegAUQEACDwAApBIAAAIBRgAA
+AwAAAAEDABVAQCTJAACADxZAQAIPAABkFQAAAgF5ABdAQAIPAACkFQAAAgFGAAADAAAAAQMAGEBAJMkA
+AIAOGUBAAg8AAGQYAAACAXgAGkBAAg8AAKQYAAACAUYAAAMAAAABAwAAG0BAs4wAAIAMHEBAEs4AAEAb
+HUBAAg8AAGQcAAAGBXN0YWNrAB5AQI5wAACAHAAfQEAKwwAAgB4gQEASzgAAQB8hQEACDwAAZCAAAAQD
+bWFwACJAQI5wAACAIAAjQEAKwwAAgCIkQEAKwwAAQCMlQEACDwAAZCQAAAUEZGlmZgAmQECOcAAAgCQA
+J0BAMMEAAIEmKEBAMMEAAEEnKUBAMMEAAEEoKkBAAA8AAEApAAAAK0BAAg8AAKQpAAACAXoAAwAAAAED
+ACxAQAIPAACkKAAAAgF5AAMAAAABAwAtQEACDwAApCcAAAIBeAADAAAAAQMAAAAuQEACDwAApCMAAAIB
+dQAAAAAvQEASzgAAgB8wQEACDwAAZC8AAAQDbWFwADFAQI5wAACALwAyQEAKwwAAgDEzQEAKwwAAQDI0
+QEACDwAAZDMAAAUEZGlmZgA1QECOcAAAgDMANkBAMMEAAIE1N0BAMMEAAEE2OEBAMMEAAEE3OUBAAA8A
+AEA4AAAAOkBAAg8AAKQ4AAACAXoAAwAAAAEDADtAQAIPAACkNwAAAgF5AAMAAAABAwA8QEACDwAApDYA
+AAIBeAADAAAAAQMAAAA9QEACDwAApDIAAAIBdgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+ border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties="hilight:true;color:#00ff40"
+class="equation"
+;mcd:eqproperties=""
+ style="position:absolute;top:148;left:8">
+<layer >
+<img src="./Surf3-2com_3_images/IMG0900.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+AAgAAACUAAAAEAIAAK0AAAAjAAAAqAAAAAAAAACEAwAACAEAAAAAAwD/QAUAAQAAAAR0cmVlEAAAAAAA
+QAAAAA1wAAAAAAAGQEATQAAAgAUAB0BAC8EAAIAGCEBAAg8AAGQHAAAEA2VxMgAJQECJxwAAgAcKQECJ
+xwAAQAkLQEAF/AAAQAoMQECOcAAAQAsADUBABsoAAIAMDkBAjnAAAEANAA9AQDDBAACBDhBAQDDBAABB
+DxFAQAAPAABAEAAAABJAQBLOAACAEBNAQAIPAABkEgAABQRkaWZmABRAQI5wAACAEgAVQEAKwwAAgBQW
+QEACDwAAZBUAAAIBeAAXQEACDwAApBUAAAIBdgAAAAACAAAAAQIAGEBAEs4AAIAPGUBAAg8AAGQYAAAF
+BGRpZmYAGkBAjnAAAIAYABtAQArDAACAGhxAQAIPAABkGwAAAgF4AB1AQAIPAACkGwAAAgF1AAAAAAIA
+AAABAgAAHkBAAg8AAKQNAAADAmVxAAAAH0BAAg8AALQLAAACAQEyAAAgQEAF/AAAgAohQECOcAAAQCAA
+IkBABsoAAIAhI0BAjnAAAEAiACRAQDDBAACBIyVAQDDBAABBJCZAQAAPAABAJQAAACdAQBLOAACAJShA
+QAIPAABkJwAABQRkaWZmAClAQI5wAACAJwAqQEAKwwAAgCkrQEACDwAAZCoAAAIBeQAsQEACDwAApCoA
+AAIBdgAAAAACAAAAAQIALUBAEs4AAIAkLkBAAg8AAGQtAAAFBGRpZmYAL0BAjnAAAIAtADBAQArDAACA
+LzFAQAIPAABkMAAAAgF5ADJAQAIPAACkMAAAAgF1AAAAAAIAAAABAgAAM0BAAg8AAKQiAAADAmVxAAAA
+NEBAAg8AALQgAAACAQEyAAAANUBABfwAAIAJNkBAjnAAAEA1ADdAQAbKAACANjhAQI5wAABANwA5QEAw
+wQAAgTg6QEAwwQAAQTk7QEAADwAAQDoAAAA8QEASzgAAgDo9QEACDwAAZDwAAAUEZGlmZgA+QECOcAAA
+gDwAP0BACsMAAIA+QEBAQAIPAABkPwAAAgF6AEBBQEACDwAApD8AAAIBdgAAAAACAAAAAQIAQEJAQBLO
+AACAOUBDQEACDwAAZEBCAAAFBGRpZmYAQERAQI5wAACAQEIAQEVAQArDAACAQERARkBAAg8AAGRARQAA
+AgF6AEBHQEACDwAApEBFAAACAXUAAAAAAgAAAAECAABASEBAAg8AAKQ3AAADAmVxAAAAQElAQAIPAAC0
+NQAAAgEBMgAAAAAAAAAAAAAAAAAA"
+ border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+ style="position:absolute;top:180;left:8">
+<layer >
+<img src="./Surf3-2com_3_images/IMG1213.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+AAgAAAC0AAAAWgAAAMUAAAAjAAAAwAAAAAAAAAC9BAAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEATQAAAgAUAB0BAC8EAAIAGCEBAAg8AAGQHAAAEA2VxMQAJQEAGygAAgAcKQEASzgAA
+QAkLQEACDwAAZAoAAAMCZEYADEBAjnAAAIAKAA1AQAIPAACkDAAAAgFmAAAADkBAAg8AAKQJAAADAmVx
+AAAAAAAAAAAAAAAAAA=="
+ border=0>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="hilight:true;color:#00ffff"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="119" mcd:aligny="192" 
+ style="position:absolute;top:180;left:104;width:32">
+<layer width=32>
+<comment mcd:mmldata="<math>
+  <ci>Given</ci>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1214.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="186" mcd:aligny="192" 
+ style="position:absolute;top:180;left:160;width:41">
+<layer width=41>
+<comment mcd:mmldata="<math>
+  <apply>
+    <ci>-EQUALS</ci>
+    <ci>eq1</ci>
+    <cn>0</cn>
+  </apply>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1215.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="250" mcd:aligny="192" 
+ style="position:absolute;top:180;left:224;width:41">
+<layer width=41>
+<comment mcd:mmldata="<math>
+  <apply>
+    <ci>-EQUALS</ci>
+    <ci>eq2</ci>
+    <cn>1</cn>
+  </apply>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1216.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties="hilight:true;color:#00ffff"
+class="equation"
+;mcd:eqproperties=""
+ style="position:absolute;top:181;left:288">
+<layer >
+<img src="./Surf3-2com_3_images/IMG0905.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+ACABAAC1AAAApwEAAM0AAABaAQAAyAAAAAAAAACJAwAACAEAAAAAAwD//wUAAQAAAAR0cmVlEAAAAAAA
+QAAAAA1wAAAAAAAGQEATQAAAgAUAB0BAC8EAAIAGCEBAjnAAAEAHAAlAQDDBAACBCApAQDDBAABBCQtA
+QAAPAABACgAAAAxAQAIPAACkCgAAAwJkdgACAAAAAQIADUBAAg8AAKQJAAADAmR1AAIAAAABAgAADkBA
+s4wAAIAHD0BAEs4AAEAOEEBAAg8AAGQPAAAFBEZpbmQEEAAAAAAAAAARQECOcAAAgA8AEkBACsMAAIAR
+E0BAAg8AAGQSAAADAnQxABRAQAIPAACkEgAAAwJ0MgAAAAAAAAAAAAAAAAAAAAAA"
+ border=0>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="596" mcd:aligny="208" 
+ style="position:absolute;top:160;left:544;width:3866">
+<layer width=3866>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>du</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <ci>du</ci>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <apply>
+              <divide/>
+              <cn>2</cn>
+              <apply>
+                <plus/>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <plus/>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <plus/>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <plus/>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <plus/>
+                                <apply>
+                                  <plus/>
+                                  <cn>1</cn>
+                                  <apply>
+                                    <ci>-mult-times-in</ci>
+                                    <cn>8</cn>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>u</ci>
+                                    </apply>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>14</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>u</ci>
+                                    </apply>
+                                    <cn>2</cn>
+                                  </apply>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>32</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>v</ci>
+                                    </apply>
+                                    <cn>2</cn>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <cn>64</cn>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>v</ci>
+                                  </apply>
+                                  <cn>2</cn>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>2</cn>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <minus/>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <cn>24</cn>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>6</cn>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <cn>24</cn>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>5</cn>
+                              </apply>
+                            </apply>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <ci>-mult-times-in</ci>
+                          <cn>16</cn>
+                          <apply>
+                            <ci>-better_POWER</ci>
+                            <apply>
+                              <ci>sin</ci>
+                              <ci>v</ci>
+                            </apply>
+                            <cn>4</cn>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <ci>-mult-times-in</ci>
+                        <cn>16</cn>
+                        <apply>
+                          <ci>-better_POWER</ci>
+                          <apply>
+                            <ci>sin</ci>
+                            <ci>u</ci>
+                          </apply>
+                          <cn>8</cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <minus/>
+                      <apply>
+                        <minus/>
+                        <apply>
+                          <minus/>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <cn>32</cn>
+                            <apply>
+                              <ci>-better_POWER</ci>
+                              <apply>
+                                <ci>sin</ci>
+                                <ci>u</ci>
+                              </apply>
+                              <cn>7</cn>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <cn>40</cn>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>4</cn>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>-better_POWER</ci>
+                              <apply>
+                                <ci>sin</ci>
+                                <ci>v</ci>
+                              </apply>
+                              <cn>2</cn>
+                            </apply>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <ci>-mult-times-in</ci>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <cn>32</cn>
+                            <apply>
+                              <ci>-better_POWER</ci>
+                              <apply>
+                                <ci>sin</ci>
+                                <ci>u</ci>
+                              </apply>
+                              <cn>6</cn>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>-better_POWER</ci>
+                            <apply>
+                              <ci>sin</ci>
+                              <ci>v</ci>
+                            </apply>
+                            <cn>2</cn>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <ci>-mult-times-in</ci>
+                        <apply>
+                          <ci>-mult-times-in</ci>
+                          <cn>32</cn>
+                          <apply>
+                            <ci>-better_POWER</ci>
+                            <apply>
+                              <ci>sin</ci>
+                              <ci>v</ci>
+                            </apply>
+                            <cn>4</cn>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <ci>-better_POWER</ci>
+                          <apply>
+                            <ci>sin</ci>
+                            <ci>u</ci>
+                          </apply>
+                          <cn>2</cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <minus/>
+                      <apply>
+                        <minus/>
+                        <apply>
+                          <ci>-mult-times-in</ci>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <cn>16</cn>
+                            <apply>
+                              <ci>-better_POWER</ci>
+                              <apply>
+                                <ci>sin</ci>
+                                <ci>v</ci>
+                              </apply>
+                              <cn>4</cn>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>-better_POWER</ci>
+                            <apply>
+                              <ci>sin</ci>
+                              <ci>u</ci>
+                            </apply>
+                            <cn>4</cn>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <ci>-mult-times-in</ci>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <cn>32</cn>
+                            <apply>
+                              <ci>-better_POWER</ci>
+                              <apply>
+                                <ci>sin</ci>
+                                <ci>v</ci>
+                              </apply>
+                              <cn>2</cn>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>-better_POWER</ci>
+                            <apply>
+                              <ci>sin</ci>
+                              <ci>u</ci>
+                            </apply>
+                            <cn>5</cn>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <ci>-mult-times-in</ci>
+                        <cn>39</cn>
+                        <apply>
+                          <ci>-better_POWER</ci>
+                          <apply>
+                            <ci>sin</ci>
+                            <ci>u</ci>
+                          </apply>
+                          <cn>4</cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <ci>-mult-times-in</ci>
+                      <cn>16</cn>
+                      <apply>
+                        <ci>-better_POWER</ci>
+                        <apply>
+                          <ci>sin</ci>
+                          <ci>u</ci>
+                        </apply>
+                        <cn>3</cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <cn>8</cn>
+                  <apply>
+                    <ci>-better_POWER</ci>
+                    <apply>
+                      <ci>sin</ci>
+                      <ci>v</ci>
+                    </apply>
+                    <cn>2</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <ci>-better_POWER</ci>
+              <apply>
+                <ci>-PARENS</ci>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <ci>-PARENS</ci>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <plus/>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <plus/>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <plus/>
+                                <apply>
+                                  <plus/>
+                                  <apply>
+                                    <plus/>
+                                    <apply>
+                                      <plus/>
+                                      <apply>
+                                        <plus/>
+                                        <cn>1</cn>
+                                        <apply>
+                                          <ci>-mult-times-in</ci>
+                                          <cn>8</cn>
+                                          <apply>
+                                            <ci>sin</ci>
+                                            <ci>u</ci>
+                                          </apply>
+                                        </apply>
+                                      </apply>
+                                      <apply>
+                                        <ci>-mult-times-in</ci>
+                                        <cn>14</cn>
+                                        <apply>
+                                          <ci>-better_POWER</ci>
+                                          <apply>
+                                            <ci>sin</ci>
+                                            <ci>u</ci>
+                                          </apply>
+                                          <cn>2</cn>
+                                        </apply>
+                                      </apply>
+                                    </apply>
+                                    <apply>
+                                      <ci>-mult-times-in</ci>
+                                      <apply>
+                                        <ci>-mult-times-in</ci>
+                                        <cn>32</cn>
+                                        <apply>
+                                          <ci>-better_POWER</ci>
+                                          <apply>
+                                            <ci>sin</ci>
+                                            <ci>v</ci>
+                                          </apply>
+                                          <cn>2</cn>
+                                        </apply>
+                                      </apply>
+                                      <apply>
+                                        <ci>sin</ci>
+                                        <ci>u</ci>
+                                      </apply>
+                                    </apply>
+                                  </apply>
+                                  <apply>
+                                    <ci>-mult-times-in</ci>
+                                    <apply>
+                                      <ci>-mult-times-in</ci>
+                                      <cn>64</cn>
+                                      <apply>
+                                        <ci>-better_POWER</ci>
+                                        <apply>
+                                          <ci>sin</ci>
+                                          <ci>v</ci>
+                                        </apply>
+                                        <cn>2</cn>
+                                      </apply>
+                                    </apply>
+                                    <apply>
+                                      <ci>-better_POWER</ci>
+                                      <apply>
+                                        <ci>sin</ci>
+                                        <ci>u</ci>
+                                      </apply>
+                                      <cn>2</cn>
+                                    </apply>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <minus/>
+                                  <apply>
+                                    <ci>-mult-times-in</ci>
+                                    <cn>24</cn>
+                                    <apply>
+                                      <ci>-better_POWER</ci>
+                                      <apply>
+                                        <ci>sin</ci>
+                                        <ci>u</ci>
+                                      </apply>
+                                      <cn>6</cn>
+                                    </apply>
+                                  </apply>
+                                  <apply>
+                                    <ci>-mult-times-in</ci>
+                                    <cn>24</cn>
+                                    <apply>
+                                      <ci>-better_POWER</ci>
+                                      <apply>
+                                        <ci>sin</ci>
+                                        <ci>u</ci>
+                                      </apply>
+                                      <cn>5</cn>
+                                    </apply>
+                                  </apply>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <cn>16</cn>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>v</ci>
+                                  </apply>
+                                  <cn>4</cn>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <cn>16</cn>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>8</cn>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <minus/>
+                            <apply>
+                              <minus/>
+                              <apply>
+                                <minus/>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>32</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>u</ci>
+                                    </apply>
+                                    <cn>7</cn>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <apply>
+                                    <ci>-mult-times-in</ci>
+                                    <cn>40</cn>
+                                    <apply>
+                                      <ci>-better_POWER</ci>
+                                      <apply>
+                                        <ci>sin</ci>
+                                        <ci>u</ci>
+                                      </apply>
+                                      <cn>4</cn>
+                                    </apply>
+                                  </apply>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>v</ci>
+                                    </apply>
+                                    <cn>2</cn>
+                                  </apply>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>32</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>u</ci>
+                                    </apply>
+                                    <cn>6</cn>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>v</ci>
+                                  </apply>
+                                  <cn>2</cn>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <cn>32</cn>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>v</ci>
+                                  </apply>
+                                  <cn>4</cn>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>2</cn>
+                              </apply>
+                            </apply>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <minus/>
+                          <apply>
+                            <minus/>
+                            <apply>
+                              <minus/>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>16</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>v</ci>
+                                    </apply>
+                                    <cn>4</cn>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>u</ci>
+                                  </apply>
+                                  <cn>4</cn>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>32</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>v</ci>
+                                    </apply>
+                                    <cn>2</cn>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>u</ci>
+                                  </apply>
+                                  <cn>5</cn>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <cn>39</cn>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>4</cn>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <cn>16</cn>
+                            <apply>
+                              <ci>-better_POWER</ci>
+                              <apply>
+                                <ci>sin</ci>
+                                <ci>u</ci>
+                              </apply>
+                              <cn>3</cn>
+                            </apply>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <ci>-mult-times-in</ci>
+                        <cn>8</cn>
+                        <apply>
+                          <ci>-better_POWER</ci>
+                          <apply>
+                            <ci>sin</ci>
+                            <ci>v</ci>
+                          </apply>
+                          <cn>2</cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <ci>-PARENS</ci>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <plus/>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <plus/>
+                            <apply>
+                              <plus/>
+                              <cn>1</cn>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <cn>4</cn>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>v</ci>
+                                  </apply>
+                                  <cn>2</cn>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <minus/>
+                              <apply>
+                                <minus/>
+                                <apply>
+                                  <minus/>
+                                  <apply>
+                                    <ci>-mult-times-in</ci>
+                                    <cn>4</cn>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>u</ci>
+                                    </apply>
+                                  </apply>
+                                  <apply>
+                                    <ci>-mult-times-in</ci>
+                                    <cn>4</cn>
+                                    <apply>
+                                      <ci>-better_POWER</ci>
+                                      <apply>
+                                        <ci>sin</ci>
+                                        <ci>u</ci>
+                                      </apply>
+                                      <cn>4</cn>
+                                    </apply>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>4</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>u</ci>
+                                    </apply>
+                                    <cn>3</cn>
+                                  </apply>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>4</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>v</ci>
+                                    </apply>
+                                    <cn>2</cn>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>u</ci>
+                                  </apply>
+                                  <cn>2</cn>
+                                </apply>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <cn>4</cn>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>cos</ci>
+                                <ci>v</ci>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>cos</ci>
+                              <ci>u</ci>
+                            </apply>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <ci>-mult-times-in</ci>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <cn>8</cn>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>2</cn>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>cos</ci>
+                              <ci>u</ci>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>cos</ci>
+                            <ci>v</ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <ci>-mult-times-in</ci>
+                        <cn>7</cn>
+                        <apply>
+                          <ci>-better_POWER</ci>
+                          <apply>
+                            <ci>sin</ci>
+                            <ci>u</ci>
+                          </apply>
+                          <cn>2</cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <divide/>
+                <cn>1</cn>
+                <cn>2</cn>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <ci>sin</ci>
+            <ci>v</ci>
+          </apply>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1148.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="hilight:true;color:#00ff40;tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="84" mcd:aligny="224" 
+ style="position:absolute;top:204;left:8;width:190">
+<layer width=190>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>F1</ci>
+    <lambda>
+      <bvar>
+        <ci>x1</ci>
+      </bvar>
+      <bvar>
+        <ci>x2</ci>
+      </bvar>
+      <bvar>
+        <ci>x3</ci>
+      </bvar>
+      <apply>
+        <minus/>
+        <apply>
+          <plus/>
+          <apply>
+            <plus/>
+            <apply>
+              <ci>-better_POWER</ci>
+              <ci>x1</ci>
+              <cn>2</cn>
+            </apply>
+            <apply>
+              <ci>-better_POWER</ci>
+              <ci>x2</ci>
+              <cn>2</cn>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-better_POWER</ci>
+            <ci>x3</ci>
+            <cn>2</cn>
+          </apply>
+        </apply>
+        <cn>1</cn>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1122.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="268" mcd:aligny="224" 
+ style="position:absolute;top:212;left:224;width:97">
+<layer width=97>
+<comment mcd:mmldata="<math>
+  <declare>
+    <matrix>
+      <matrixrow>
+        <ci>u</ci>
+        <ci>v</ci>
+      </matrixrow>
+    </matrix>
+    <matrix>
+      <matrixrow>
+        <cn>1</cn>
+        <cn>0.5</cn>
+      </matrixrow>
+    </matrix>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1123.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="359" mcd:aligny="224" 
+ style="position:absolute;top:212;left:336;width:39">
+<layer width=39>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>U0</ci>
+    <cn>0</cn>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1124.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="415" mcd:aligny="224" 
+ style="position:absolute;top:212;left:392;width:39">
+<layer width=39>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>U1</ci>
+    <cn>6</cn>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1125.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="466" mcd:aligny="224" 
+ style="position:absolute;top:212;left:448;width:46">
+<layer width=46>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>N</ci>
+    <cn>100</cn>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1126.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="51" mcd:aligny="248" 
+ style="position:absolute;top:236;left:8;width:129">
+<layer width=129>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>x</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>-mult-times-in</ci>
+        <apply>
+          <ci>cos</ci>
+          <ci>u</ci>
+        </apply>
+        <apply>
+          <ci>cos</ci>
+          <ci>v</ci>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1127.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="197" mcd:aligny="248" 
+ style="position:absolute;top:236;left:152;width:128">
+<layer width=128>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>y</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>-mult-times-in</ci>
+        <apply>
+          <ci>cos</ci>
+          <ci>u</ci>
+        </apply>
+        <apply>
+          <ci>sin</ci>
+          <ci>v</ci>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1128.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="339" mcd:aligny="248" 
+ style="position:absolute;top:236;left:296;width:86">
+<layer width=86>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>z</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>sin</ci>
+        <ci>u</ci>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1129.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="hilight:true;color:#00ffff;tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="23" mcd:aligny="272" 
+ style="position:absolute;top:260;left:8;width:32">
+<layer width=32>
+<comment mcd:mmldata="<math>
+  <ci>Given</ci>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1130.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="205" mcd:aligny="272" 
+ style="position:absolute;top:260;left:56;width:164">
+<layer width=164>
+<comment mcd:mmldata="<math>
+  <apply>
+    <ci>-EQUALS</ci>
+    <apply>
+      <ci>F1</ci>
+      <apply>
+        <ci>x</ci>
+        <ci>u</ci>
+        <ci>v</ci>
+      </apply>
+      <apply>
+        <ci>y</ci>
+        <ci>u</ci>
+        <ci>v</ci>
+      </apply>
+      <apply>
+        <ci>z</ci>
+        <ci>u</ci>
+        <ci>v</ci>
+      </apply>
+    </apply>
+    <cn>0</cn>
+  </apply>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1131.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="375" mcd:aligny="272" 
+ style="position:absolute;top:260;left:232;width:158">
+<layer width=158>
+<comment mcd:mmldata="<math>
+  <apply>
+    <ci>-EQUALS</ci>
+    <apply>
+      <ci>F</ci>
+      <apply>
+        <ci>x</ci>
+        <ci>u</ci>
+        <ci>v</ci>
+      </apply>
+      <apply>
+        <ci>y</ci>
+        <ci>u</ci>
+        <ci>v</ci>
+      </apply>
+      <apply>
+        <ci>z</ci>
+        <ci>u</ci>
+        <ci>v</ci>
+      </apply>
+    </apply>
+    <cn>0</cn>
+  </apply>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1132.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="hilight:true;color:#00ffff;tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="430" mcd:aligny="272" 
+ style="position:absolute;top:260;left:408;width:86">
+<layer width=86>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>Y0</ci>
+    <apply>
+      <ci>Find</ci>
+      <ci>u</ci>
+      <ci>v</ci>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1133.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="596" mcd:aligny="280" 
+ style="position:absolute;top:232;left:544;width:4167">
+<layer width=4167>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>dv</ci>
+    <lambda>
+      <bvar>
+        <ci>u</ci>
+      </bvar>
+      <bvar>
+        <ci>v</ci>
+      </bvar>
+      <apply>
+        <ci>-SOLVE</ci>
+        <ci>dv</ci>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <apply>
+              <divide/>
+              <cn>1</cn>
+              <apply>
+                <plus/>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <plus/>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <plus/>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <plus/>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <plus/>
+                                <apply>
+                                  <plus/>
+                                  <cn>1</cn>
+                                  <apply>
+                                    <ci>-mult-times-in</ci>
+                                    <cn>8</cn>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>u</ci>
+                                    </apply>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>14</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>u</ci>
+                                    </apply>
+                                    <cn>2</cn>
+                                  </apply>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>32</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>v</ci>
+                                    </apply>
+                                    <cn>2</cn>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <cn>64</cn>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>v</ci>
+                                  </apply>
+                                  <cn>2</cn>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>2</cn>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <minus/>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <cn>24</cn>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>6</cn>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <cn>24</cn>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>5</cn>
+                              </apply>
+                            </apply>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <ci>-mult-times-in</ci>
+                          <cn>16</cn>
+                          <apply>
+                            <ci>-better_POWER</ci>
+                            <apply>
+                              <ci>sin</ci>
+                              <ci>v</ci>
+                            </apply>
+                            <cn>4</cn>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <ci>-mult-times-in</ci>
+                        <cn>16</cn>
+                        <apply>
+                          <ci>-better_POWER</ci>
+                          <apply>
+                            <ci>sin</ci>
+                            <ci>u</ci>
+                          </apply>
+                          <cn>8</cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <minus/>
+                      <apply>
+                        <minus/>
+                        <apply>
+                          <minus/>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <cn>32</cn>
+                            <apply>
+                              <ci>-better_POWER</ci>
+                              <apply>
+                                <ci>sin</ci>
+                                <ci>u</ci>
+                              </apply>
+                              <cn>7</cn>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <cn>40</cn>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>4</cn>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>-better_POWER</ci>
+                              <apply>
+                                <ci>sin</ci>
+                                <ci>v</ci>
+                              </apply>
+                              <cn>2</cn>
+                            </apply>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <ci>-mult-times-in</ci>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <cn>32</cn>
+                            <apply>
+                              <ci>-better_POWER</ci>
+                              <apply>
+                                <ci>sin</ci>
+                                <ci>u</ci>
+                              </apply>
+                              <cn>6</cn>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>-better_POWER</ci>
+                            <apply>
+                              <ci>sin</ci>
+                              <ci>v</ci>
+                            </apply>
+                            <cn>2</cn>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <ci>-mult-times-in</ci>
+                        <apply>
+                          <ci>-mult-times-in</ci>
+                          <cn>32</cn>
+                          <apply>
+                            <ci>-better_POWER</ci>
+                            <apply>
+                              <ci>sin</ci>
+                              <ci>v</ci>
+                            </apply>
+                            <cn>4</cn>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <ci>-better_POWER</ci>
+                          <apply>
+                            <ci>sin</ci>
+                            <ci>u</ci>
+                          </apply>
+                          <cn>2</cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <minus/>
+                      <apply>
+                        <minus/>
+                        <apply>
+                          <ci>-mult-times-in</ci>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <cn>16</cn>
+                            <apply>
+                              <ci>-better_POWER</ci>
+                              <apply>
+                                <ci>sin</ci>
+                                <ci>v</ci>
+                              </apply>
+                              <cn>4</cn>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>-better_POWER</ci>
+                            <apply>
+                              <ci>sin</ci>
+                              <ci>u</ci>
+                            </apply>
+                            <cn>4</cn>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <ci>-mult-times-in</ci>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <cn>32</cn>
+                            <apply>
+                              <ci>-better_POWER</ci>
+                              <apply>
+                                <ci>sin</ci>
+                                <ci>v</ci>
+                              </apply>
+                              <cn>2</cn>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>-better_POWER</ci>
+                            <apply>
+                              <ci>sin</ci>
+                              <ci>u</ci>
+                            </apply>
+                            <cn>5</cn>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <ci>-mult-times-in</ci>
+                        <cn>39</cn>
+                        <apply>
+                          <ci>-better_POWER</ci>
+                          <apply>
+                            <ci>sin</ci>
+                            <ci>u</ci>
+                          </apply>
+                          <cn>4</cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <ci>-mult-times-in</ci>
+                      <cn>16</cn>
+                      <apply>
+                        <ci>-better_POWER</ci>
+                        <apply>
+                          <ci>sin</ci>
+                          <ci>u</ci>
+                        </apply>
+                        <cn>3</cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <cn>8</cn>
+                  <apply>
+                    <ci>-better_POWER</ci>
+                    <apply>
+                      <ci>sin</ci>
+                      <ci>v</ci>
+                    </apply>
+                    <cn>2</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <ci>-better_POWER</ci>
+              <apply>
+                <ci>-PARENS</ci>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <ci>-PARENS</ci>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <plus/>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <plus/>
+                            <apply>
+                              <plus/>
+                              <apply>
+                                <plus/>
+                                <apply>
+                                  <plus/>
+                                  <apply>
+                                    <plus/>
+                                    <apply>
+                                      <plus/>
+                                      <apply>
+                                        <plus/>
+                                        <cn>1</cn>
+                                        <apply>
+                                          <ci>-mult-times-in</ci>
+                                          <cn>8</cn>
+                                          <apply>
+                                            <ci>sin</ci>
+                                            <ci>u</ci>
+                                          </apply>
+                                        </apply>
+                                      </apply>
+                                      <apply>
+                                        <ci>-mult-times-in</ci>
+                                        <cn>14</cn>
+                                        <apply>
+                                          <ci>-better_POWER</ci>
+                                          <apply>
+                                            <ci>sin</ci>
+                                            <ci>u</ci>
+                                          </apply>
+                                          <cn>2</cn>
+                                        </apply>
+                                      </apply>
+                                    </apply>
+                                    <apply>
+                                      <ci>-mult-times-in</ci>
+                                      <apply>
+                                        <ci>-mult-times-in</ci>
+                                        <cn>32</cn>
+                                        <apply>
+                                          <ci>-better_POWER</ci>
+                                          <apply>
+                                            <ci>sin</ci>
+                                            <ci>v</ci>
+                                          </apply>
+                                          <cn>2</cn>
+                                        </apply>
+                                      </apply>
+                                      <apply>
+                                        <ci>sin</ci>
+                                        <ci>u</ci>
+                                      </apply>
+                                    </apply>
+                                  </apply>
+                                  <apply>
+                                    <ci>-mult-times-in</ci>
+                                    <apply>
+                                      <ci>-mult-times-in</ci>
+                                      <cn>64</cn>
+                                      <apply>
+                                        <ci>-better_POWER</ci>
+                                        <apply>
+                                          <ci>sin</ci>
+                                          <ci>v</ci>
+                                        </apply>
+                                        <cn>2</cn>
+                                      </apply>
+                                    </apply>
+                                    <apply>
+                                      <ci>-better_POWER</ci>
+                                      <apply>
+                                        <ci>sin</ci>
+                                        <ci>u</ci>
+                                      </apply>
+                                      <cn>2</cn>
+                                    </apply>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <minus/>
+                                  <apply>
+                                    <ci>-mult-times-in</ci>
+                                    <cn>24</cn>
+                                    <apply>
+                                      <ci>-better_POWER</ci>
+                                      <apply>
+                                        <ci>sin</ci>
+                                        <ci>u</ci>
+                                      </apply>
+                                      <cn>6</cn>
+                                    </apply>
+                                  </apply>
+                                  <apply>
+                                    <ci>-mult-times-in</ci>
+                                    <cn>24</cn>
+                                    <apply>
+                                      <ci>-better_POWER</ci>
+                                      <apply>
+                                        <ci>sin</ci>
+                                        <ci>u</ci>
+                                      </apply>
+                                      <cn>5</cn>
+                                    </apply>
+                                  </apply>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <cn>16</cn>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>v</ci>
+                                  </apply>
+                                  <cn>4</cn>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <cn>16</cn>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>8</cn>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <minus/>
+                            <apply>
+                              <minus/>
+                              <apply>
+                                <minus/>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>32</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>u</ci>
+                                    </apply>
+                                    <cn>7</cn>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <apply>
+                                    <ci>-mult-times-in</ci>
+                                    <cn>40</cn>
+                                    <apply>
+                                      <ci>-better_POWER</ci>
+                                      <apply>
+                                        <ci>sin</ci>
+                                        <ci>u</ci>
+                                      </apply>
+                                      <cn>4</cn>
+                                    </apply>
+                                  </apply>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>v</ci>
+                                    </apply>
+                                    <cn>2</cn>
+                                  </apply>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>32</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>u</ci>
+                                    </apply>
+                                    <cn>6</cn>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>v</ci>
+                                  </apply>
+                                  <cn>2</cn>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <cn>32</cn>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>v</ci>
+                                  </apply>
+                                  <cn>4</cn>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>2</cn>
+                              </apply>
+                            </apply>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <minus/>
+                          <apply>
+                            <minus/>
+                            <apply>
+                              <minus/>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>16</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>v</ci>
+                                    </apply>
+                                    <cn>4</cn>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>u</ci>
+                                  </apply>
+                                  <cn>4</cn>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>32</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>v</ci>
+                                    </apply>
+                                    <cn>2</cn>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>u</ci>
+                                  </apply>
+                                  <cn>5</cn>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <cn>39</cn>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>4</cn>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <cn>16</cn>
+                            <apply>
+                              <ci>-better_POWER</ci>
+                              <apply>
+                                <ci>sin</ci>
+                                <ci>u</ci>
+                              </apply>
+                              <cn>3</cn>
+                            </apply>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <ci>-mult-times-in</ci>
+                        <cn>8</cn>
+                        <apply>
+                          <ci>-better_POWER</ci>
+                          <apply>
+                            <ci>sin</ci>
+                            <ci>v</ci>
+                          </apply>
+                          <cn>2</cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <ci>-PARENS</ci>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <plus/>
+                        <apply>
+                          <plus/>
+                          <apply>
+                            <plus/>
+                            <apply>
+                              <plus/>
+                              <cn>1</cn>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <cn>4</cn>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>v</ci>
+                                  </apply>
+                                  <cn>2</cn>
+                                </apply>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <minus/>
+                              <apply>
+                                <minus/>
+                                <apply>
+                                  <minus/>
+                                  <apply>
+                                    <ci>-mult-times-in</ci>
+                                    <cn>4</cn>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>u</ci>
+                                    </apply>
+                                  </apply>
+                                  <apply>
+                                    <ci>-mult-times-in</ci>
+                                    <cn>4</cn>
+                                    <apply>
+                                      <ci>-better_POWER</ci>
+                                      <apply>
+                                        <ci>sin</ci>
+                                        <ci>u</ci>
+                                      </apply>
+                                      <cn>4</cn>
+                                    </apply>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>4</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>u</ci>
+                                    </apply>
+                                    <cn>3</cn>
+                                  </apply>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <apply>
+                                  <ci>-mult-times-in</ci>
+                                  <cn>4</cn>
+                                  <apply>
+                                    <ci>-better_POWER</ci>
+                                    <apply>
+                                      <ci>sin</ci>
+                                      <ci>v</ci>
+                                    </apply>
+                                    <cn>2</cn>
+                                  </apply>
+                                </apply>
+                                <apply>
+                                  <ci>-better_POWER</ci>
+                                  <apply>
+                                    <ci>sin</ci>
+                                    <ci>u</ci>
+                                  </apply>
+                                  <cn>2</cn>
+                                </apply>
+                              </apply>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <apply>
+                                <ci>-mult-times-in</ci>
+                                <cn>4</cn>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                              </apply>
+                              <apply>
+                                <ci>cos</ci>
+                                <ci>v</ci>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>cos</ci>
+                              <ci>u</ci>
+                            </apply>
+                          </apply>
+                        </apply>
+                        <apply>
+                          <ci>-mult-times-in</ci>
+                          <apply>
+                            <ci>-mult-times-in</ci>
+                            <apply>
+                              <ci>-mult-times-in</ci>
+                              <cn>8</cn>
+                              <apply>
+                                <ci>-better_POWER</ci>
+                                <apply>
+                                  <ci>sin</ci>
+                                  <ci>u</ci>
+                                </apply>
+                                <cn>2</cn>
+                              </apply>
+                            </apply>
+                            <apply>
+                              <ci>cos</ci>
+                              <ci>u</ci>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <ci>cos</ci>
+                            <ci>v</ci>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <ci>-mult-times-in</ci>
+                        <cn>7</cn>
+                        <apply>
+                          <ci>-better_POWER</ci>
+                          <apply>
+                            <ci>sin</ci>
+                            <ci>u</ci>
+                          </apply>
+                          <cn>2</cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <divide/>
+                <cn>1</cn>
+                <cn>2</cn>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <divide/>
+            <apply>
+              <plus/>
+              <apply>
+                <plus/>
+                <apply>
+                  <plus/>
+                  <apply>
+                    <ci>-mult-times-in</ci>
+                    <apply>
+                      <minus/>
+                      <cn>2</cn>
+                    </apply>
+                    <apply>
+                      <ci>sin</ci>
+                      <ci>u</ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <ci>-mult-times-in</ci>
+                      <cn>2</cn>
+                      <apply>
+                        <ci>-better_POWER</ci>
+                        <apply>
+                          <ci>sin</ci>
+                          <ci>u</ci>
+                        </apply>
+                        <cn>3</cn>
+                      </apply>
+                    </apply>
+                    <cn>1</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <ci>-better_POWER</ci>
+                  <apply>
+                    <ci>sin</ci>
+                    <ci>u</ci>
+                  </apply>
+                  <cn>2</cn>
+                </apply>
+              </apply>
+              <apply>
+                <ci>-mult-times-in</ci>
+                <apply>
+                  <ci>-mult-times-in</ci>
+                  <apply>
+                    <ci>-mult-times-in</ci>
+                    <cn>2</cn>
+                    <apply>
+                      <ci>sin</ci>
+                      <ci>u</ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <ci>cos</ci>
+                    <ci>v</ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <ci>cos</ci>
+                  <ci>u</ci>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <apply>
+                <minus/>
+                <cn>1</cn>
+              </apply>
+              <apply>
+                <ci>-better_POWER</ci>
+                <apply>
+                  <ci>sin</ci>
+                  <ci>u</ci>
+                </apply>
+                <cn>2</cn>
+              </apply>
+            </apply>
+          </apply>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1149.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="395" mcd:aligny="304" 
+ style="position:absolute;top:282;left:336;width:194">
+<layer width=194>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>Sph</ci>
+    <lambda>
+      <bvar>
+        <ci>&amp;thgr;</ci>
+      </bvar>
+      <bvar>
+        <ci>&amp;phi;</ci>
+      </bvar>
+      <apply>
+        <ci>sph2xyz</ci>
+        <cn>1</cn>
+        <apply>
+          <ci>-mult-times-in</ci>
+          <ci>&amp;thgr;</ci>
+          <apply>
+            <divide/>
+            <ci>&amp;pgr;</ci>
+            <cn>10</cn>
+          </apply>
+        </apply>
+        <apply>
+          <divide/>
+          <apply>
+            <ci>-mult-times-in</ci>
+            <ci>&amp;phi;</ci>
+            <cn>2</cn>
+          </apply>
+          <cn>3</cn>
+        </apply>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1184.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="58" mcd:aligny="312" 
+ style="position:absolute;top:282;left:8;width:137">
+<layer width=137>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>D</ci>
+    <lambda>
+      <bvar>
+        <ci>U</ci>
+      </bvar>
+      <bvar>
+        <ci>Y</ci>
+      </bvar>
+      <vector>
+        <apply>
+          <ci>du</ci>
+          <apply>
+            <selector/>
+            <ci>Y</ci>
+            <cn>0</cn>
+          </apply>
+          <apply>
+            <selector/>
+            <ci>Y</ci>
+            <cn>1</cn>
+          </apply>
+        </apply>
+        <apply>
+          <ci>dv</ci>
+          <apply>
+            <selector/>
+            <ci>Y</ci>
+            <cn>0</cn>
+          </apply>
+          <apply>
+            <selector/>
+            <ci>Y</ci>
+            <cn>1</cn>
+          </apply>
+        </apply>
+      </vector>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1135.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="hilight:true;color:#00ffff;tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="175" mcd:aligny="312" 
+ style="position:absolute;top:300;left:160;width:166">
+<layer width=166>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>S</ci>
+    <apply>
+      <ci>Rkadapt</ci>
+      <ci>Y0</ci>
+      <ci>U0</ci>
+      <ci>U1</ci>
+      <ci>N</ci>
+      <ci>D</ci>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1136.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="hilight:true"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="376" mcd:aligny="328" 
+ style="position:absolute;top:316;left:344;width:80">
+<layer width=80>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>stop</ci>
+    <apply>
+      <ci>time</ci>
+      <cn>0</cn>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1187.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="hilight:true;color:#00ff40"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="464" mcd:aligny="328" 
+ style="position:absolute;top:316;left:432;width:105">
+<layer width=105>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>total</ci>
+    <apply>
+      <minus/>
+      <ci>stop</ci>
+      <ci>start</ci>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1188.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="400" mcd:aligny="360" 
+ style="position:absolute;top:341;left:352;width:153">
+<layer width=153>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>S2</ci>
+    <lambda>
+      <bvar>
+        <ci>h</ci>
+      </bvar>
+      <bvar>
+        <ci>r</ci>
+      </bvar>
+      <apply>
+        <ci>-Transpose</ci>
+        <matrix>
+          <matrixrow>
+            <ci>h</ci>
+            <ci>r</ci>
+            <apply>
+              <ci>F</ci>
+              <ci>h</ci>
+              <ci>r</ci>
+              <cn>0</cn>
+            </apply>
+          </matrixrow>
+        </matrix>
+      </apply>
+    </lambda>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1179.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+mcd:alignx="29" mcd:aligny="376" 
+ style="position:absolute;top:335;left:8;width:341">
+<layer width=341>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>S1</ci>
+    <apply>
+      <ci>-Transpose</ci>
+      <matrix>
+        <matrixrow>
+          <apply>
+            <ci>-Transpose</ci>
+            <apply>
+              <ci>-PARENS</ci>
+              <apply>
+                <ci>-vectorize</ci>
+                <apply>
+                  <ci>x</ci>
+                  <apply>
+                    <selector/>
+                    <ci>S</ci>
+                    <ci>..</ci>
+                    <cn>1</cn>
+                  </apply>
+                  <apply>
+                    <selector/>
+                    <ci>S</ci>
+                    <ci>..</ci>
+                    <cn>2</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-Transpose</ci>
+            <apply>
+              <ci>-PARENS</ci>
+              <apply>
+                <ci>-vectorize</ci>
+                <apply>
+                  <ci>y</ci>
+                  <apply>
+                    <selector/>
+                    <ci>S</ci>
+                    <ci>..</ci>
+                    <cn>1</cn>
+                  </apply>
+                  <apply>
+                    <selector/>
+                    <ci>S</ci>
+                    <ci>..</ci>
+                    <cn>2</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+          <apply>
+            <ci>-Transpose</ci>
+            <apply>
+              <ci>-PARENS</ci>
+              <apply>
+                <ci>-vectorize</ci>
+                <apply>
+                  <ci>z</ci>
+                  <apply>
+                    <selector/>
+                    <ci>S</ci>
+                    <ci>..</ci>
+                    <cn>1</cn>
+                  </apply>
+                  <apply>
+                    <selector/>
+                    <ci>S</ci>
+                    <ci>..</ci>
+                    <cn>2</cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </matrixrow>
+      </matrix>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1172.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="tag:"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="374" mcd:aligny="384" 
+ style="position:absolute;top:372;left:352;width:156">
+<layer width=156>
+<comment mcd:mmldata="<math>
+  <declare>
+    <ci>G2</ci>
+    <apply>
+      <ci>CreateMesh</ci>
+      <ci>S2</ci>
+      <cn>50</cn>
+      <cn>50</cn>
+    </apply>
+  </declare>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1180.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" 
+mcd:properties="hilight:true;color:#ff80ff"
+class="equation"
+;mcd:eqproperties=""
+mcd:alignx="551" mcd:aligny="384" 
+ style="position:absolute;top:372;left:520;width:75">
+<layer width=75>
+<comment mcd:mmldata="<math>
+  <apply>
+    <ci>-EVAL</ci>
+    <ci>total</ci>
+    <cn>2.824</cn>
+  </apply>
+</math>"></comment>
+<img src="./Surf3-2com_3_images/IMG1182.PNG" align=absmiddle>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+ style="position:absolute;top:392;left:16">
+<layer >
+<img src="./Surf3-2com_3_images/IMG1206.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+ABAAAACIAQAAAgEAAJgCAACIAAAAiAEAAAAAAAC2BAAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEBe8QAAgAUHQEAADwAAQAYAAAAIQECfwQAAgAYJQEA8AQAAQAgAAAoAAgAAAAlDVlNF
+cUl0ZW0BAAAAAAAMAAAABkVxSXRlbQEAAAAAAA0AAAAECQsAAgAAAAxDVlNDb21ib0l0ZW0AAAAAAAAQ
+AAAAB0NWU0l0ZW0AAAAAAAAPAAAAPA4AABIAAACJAQAA8AAAAPAAAAD//wAAEABDVlNPbGVDbGllbnRJ
+dGVtAAEAAAEAAAABAAAAAAABAAAAAA4AANDPEeChsRrhAAAAAAAAAAAAAAAAAAAAAD4AAwD+/wkABgAA
+AAAAAAAAAAAAAQAAAAEAAAAAAAAAABAAAAIAAAABAAAA/v///wAAAAAAAAAA////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////f//
+//7////+////BAAAAAUAAAD+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////9SAG8AbwB0ACAARQBuAHQAcgB5AAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFgAFAP//////////AgAAAKVJPifeAtERmukA
+AMAIcgsAAAAAAAAAAAAAAACgTy0EcAbGAQMAAABABAAAAAAAAEMAbwBuAHQAZQBuAHQAcwAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAIA////////////////AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPIDAAAAAAAAAgBPAGwAZQBQAHIAZQBz
+ADAAMAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAgEBAAAA////
+//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AP///////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADQAAAP7///8OAAAADwAA
+ABAAAAD+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////AQAJAM4YAADOGAAAAAAAAAoAAAAAAAAAAAAB
+AAAAAAAAAAAAAAAUm2r+/OiRP9vTVVOd6RVAmcqN214VFkA0VnbsPCk/QODR4bfjfec/AQAA/////zMz
+M/8AAAIAAGQAEgAAAAAAAAAAAAEACQABAAAAAP8AAAEACQABAQABAQAABQABAAUACgAKAAAAAAAAAgAA
+AAAAAPi/AAAAAAAA+D8AAAAAAAAUwAAAAAAAABRAAAEACQABAQABAQAABQABAAUACgAKAAEAAAAAAgAA
+AAAAAPi/AAAAAAAA+D8AAADABK7vvwAAAAAAgE5AAAEACQABAQABAQAABQABAAUACgAKAAIAAAAAAgAA
+AAAAAPi/AAAAAAAA+D8AAAAAAAAUwAAAAAAAABRAAAEACQAAAAoACgAFAAUACgAKAAoACgAA/wAAAP8A
+AP//AAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAQAJAAAACgAKAAUABQAKAAoACgAK
+AAD/AAAA/wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA////AAAAAAABAAkAAAAKAAoABQAF
+AAoACgAKAAoAAP8AAAD/AAD//wAA//8AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAD///8AAAAAAAEAAAAA
+/wAAAAAAgD8AAIA/AAAAAAAAAAAAQAEAAQAAAAAA/wAAAACAPwAAgD8AAIA/AAAAAAFAAQABAAAAAAAA
+/wAAAIA/AAAAAAAAgD8AAAAAAkABAAAAAAADAAAAAQAJAAAAAAAA/wAAAAAA/wAA/////wAAAEAAAIA/
+AACAPwAAAQBEIyA++AEAAAAAgED6/38/OLsbv3py3jRxoBU6p7obP0jtfz8AAAAAAAAAAAAAgD8AAAQA
+AAAAABQAAAAPAA8ADwAPAA8ADwAAARUAFQAAB1JhaW5ib3cBAAkAAAAAAAAzAAAAAAAzAAAAAP8zAACA
+PwAAgD8AAIA/AAABAEUjID74AQAAAAAAAAQAAAABAAAA/////wIAAABOQU5JAAAAAHMANwAAAAAAqEzb
+PwAAAABQm80/AAAAAAAAAADgvP8KQgBkAAAAgEAAAIA/DtN+vw7Tfr8mcH2/DtN+Pw7Tfj8AAAAAAAAA
+AAAAgD8AAAQAAAAAABQAAAAPAA8ADwAPAA8ADwAAARUAFQABAAAAAAAAFMAAAAAAAAAUQAAAAAAAABTA
+AAAAAAAAFEAVABUAAAAHUmFpbmJvdwEACQAAAIAAAGYAAAAAAGYAAP8AAGYAAIA/AACAPwAAgD8AAAEA
+RSMgPvgBAAAAAIBAAAB0QgAAoMAAAKDAbeOLPAAAoEAAAKBAAAAAAAAAAAAAAIA/AAAEAAAAAAAUAAAA
+DwAPAA8ADwAPAA8AAAEVABUAAAdSYWluYm93////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////AAAAAAAMQEAKwwAAgAgNQEAKwwAAQAwOQEACDwAAZA0AAAMCUzEAD0BAAg8AAKQNAAAE
+A1NwaAAAEEBAAg8AAKQMAAADAkcyAAAAAAIAAAAAAAAAAAA="
+ border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+ style="position:absolute;top:392;left:272">
+<layer >
+<img src="./Surf3-2com_3_images/IMG1207.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+ABABAACIAQAAAgIAAJgCAACIAQAAiAEAAAAAAAC3BAAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEBe8QAAgAUHQEAADwAAQAYAAAAIQECfwQAAgAYJQEA8AQAAQAgAAAoAAgAAAAlDVlNF
+cUl0ZW0BAAAAAAAMAAAABkVxSXRlbQEAAAAAAA0AAAAECQsAAgAAAAxDVlNDb21ib0l0ZW0AAAAAAAAQ
+AAAAB0NWU0l0ZW0AAAAAAAAPAAAAPA4AABIBAACJAQAA8AAAAPAAAAD//wAAEABDVlNPbGVDbGllbnRJ
+dGVtAAEAAAEAAAABAAAAAAABAAAAAA4AANDPEeChsRrhAAAAAAAAAAAAAAAAAAAAAD4AAwD+/wkABgAA
+AAAAAAAAAAAAAQAAAAEAAAAAAAAAABAAAAIAAAABAAAA/v///wAAAAAAAAAA////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////f//
+//7////+////BAAAAAUAAAD+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////9SAG8AbwB0ACAARQBuAHQAcgB5AAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFgAFAP//////////AgAAAKVJPifeAtERmukA
+AMAIcgsAAAAAAAAAAAAAAACgWGoEcAbGAQMAAABABAAAAAAAAEMAbwBuAHQAZQBuAHQAcwAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAIA////////////////AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPIDAAAAAAAAAgBPAGwAZQBQAHIAZQBz
+ADAAMAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAgEBAAAA////
+//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AP///////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADQAAAP7///8OAAAADwAA
+ABAAAAD+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////AQAJAM4YAADOGAAAAAAAAAoAAAAAAAAAAAAB
+AAAAAAAAAAAAAAAq6xwvJ5+MP5ZZ8rJkyxhAtx8UtIn9tz80VnbsPCk/QODR4bfjfec/AQAA/////zMz
+M/8AAAIAAGQAEgAAAAAAAAAAAAEACQABAAAAAP8AAAEACQABAQABAQAABQABAAUACgAKAAAAAAAAAgAA
+AAAAAPi/AAAAAAAA+D8AAAAAAAAUwAAAAAAAABRAAAEACQABAQABAQAABQABAAUACgAKAAEAAAAAAgAA
+AAAAAPi/AAAAAAAA+D8AAADABK7vvwAAAAAAgE5AAAEACQABAQABAQAABQABAAUACgAKAAIAAAAAAgAA
+AAAAAPi/AAAAAAAA+D8AAAAAAAAUwAAAAAAAABRAAAEACQAAAAoACgAFAAUACgAKAAoACgAA/wAAAP8A
+AP//AAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAQAJAAAACgAKAAUABQAKAAoACgAK
+AAD/AAAA/wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA////AAAAAAABAAkAAAAKAAoABQAF
+AAoACgAKAAoAAP8AAAD/AAD//wAA//8AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAD///8AAAAAAAEAAAAA
+/wAAAAAAgD8AAIA/AAAAAAAAAAAAQAEAAQAAAAAA/wAAAACAPwAAgD8AAIA/AAAAAAFAAQABAAAAAAAA
+/wAAAIA/AAAAAAAAgD8AAAAAAkABAAAAAAADAAAAAQAJAAAAAAAA/wAAAAAA/wAA/////wAAAEAAAIA/
+AACAPwAAAQBEIyA++AEAAAAAgED6/38/OLsbv3py3jRxoBU6p7obP0jtfz8AAAAAAAAAAAAAgD8AAAQA
+AAAAABQAAAAPAA8ADwAPAA8ADwAAARUAFQAAB1JhaW5ib3cBAAkAAAAAAAAzAAAAAAAzAAAAAP8zAACA
+PwAAgD8AAIA/AAABAEUjID74AQAAAAAAAAQAAAABAAAA/////wIAAABOQU5JAAAAAHMANwAAAAAAqEzb
+PwAAAABQm80/AAAAAAAAAADgvP8KQgBkAAAAgEAAAIA/DtN+vw7Tfr8mcH2/DtN+Pw7Tfj8AAAAAAAAA
+AAAAgD8AAAQAAAAAABQAAAAPAA8ADwAPAA8ADwAAARUAFQABAAAAAAAAFMAAAAAAAAAUQAAAAAAAABTA
+AAAAAAAAFEAVABUAAAAHUmFpbmJvdwEACQAAAIAAAGYAAAAAAGYAAP8AAGYAAIA/AACAPwAAgD8AAAEA
+RSMgPvgBAAAAAIBAAAB0QgAAoMAAAKDAbeOLPAAAoEAAAKBAAAAAAAAAAAAAAIA/AAAEAAAAAAAUAAAA
+DwAPAA8ADwAPAA8AAAEVABUAAAdSYWluYm93////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////AAAAAAAMQEAKwwAAgAgNQEAKwwAAQAwOQEACDwAAZA0AAAMCUzEAD0BAAg8AAKQNAAAE
+A1NwaAAAEEBAAg8AAKQMAAADAkcyAAAAAAIAAAAAAAAAAAA="
+ border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+ style="position:absolute;top:392;left:528">
+<layer >
+<img src="./Surf3-2com_3_images/IMG1208.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+ABACAACIAQAAAgMAAJgCAACIAgAAiAEAAAAAAAC4BAAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEBe8QAAgAUHQEAADwAAQAYAAAAIQECfwQAAgAYJQEA8AQAAQAgAAAoAAgAAAAlDVlNF
+cUl0ZW0BAAAAAAAMAAAABkVxSXRlbQEAAAAAAA0AAAAECQsAAgAAAAxDVlNDb21ib0l0ZW0AAAAAAAAQ
+AAAAB0NWU0l0ZW0AAAAAAAAPAAAAPA4AABICAACJAQAA8AAAAPAAAAD//wAAEABDVlNPbGVDbGllbnRJ
+dGVtAAEAAAEAAAABAAAAAAABAAAAAA4AANDPEeChsRrhAAAAAAAAAAAAAAAAAAAAAD4AAwD+/wkABgAA
+AAAAAAAAAAAAAQAAAAEAAAAAAAAAABAAAAIAAAABAAAA/v///wAAAAAAAAAA////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////f//
+//7////+////BAAAAAUAAAD+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////9SAG8AbwB0ACAARQBuAHQAcgB5AAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFgAFAP//////////AgAAAKVJPifeAtERmukA
+AMAIcgsAAAAAAAAAAAAAAACwiKcEcAbGAQMAAABABAAAAAAAAEMAbwBuAHQAZQBuAHQAcwAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAIA////////////////AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPIDAAAAAAAAAgBPAGwAZQBQAHIAZQBz
+ADAAMAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAgEBAAAA////
+//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AP///////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADQAAAP7///8OAAAADwAA
+ABAAAAD+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////AQAJAM4YAADOGAAAAAAAAAoAAAAAAAAAAAAB
+AAAAAAAAAAAAAAB7wM72N8/4P9hMymSrGBlAIx6Y9JYE+T80VnbsPCk/QODR4bfjfec/AQAA/////zMz
+M/8AAAIAAGQAEgAAAAAAAAAAAAEACQABAAAAAP8AAAEACQABAQABAQAABQABAAUACgAKAAAAAAAAAgAA
+AAAAAPi/AAAAAAAA+D8AAAAAAAAUwAAAAAAAABRAAAEACQABAQABAQAABQABAAUACgAKAAEAAAAAAgAA
+AAAAAPi/AAAAAAAA+D8AAADABK7vvwAAAAAAgE5AAAEACQABAQABAQAABQABAAUACgAKAAIAAAAAAgAA
+AAAAAPi/AAAAAAAA+D8AAAAAAAAUwAAAAAAAABRAAAEACQAAAAoACgAFAAUACgAKAAoACgAA/wAAAP8A
+AP//AAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAQAJAAAACgAKAAUABQAKAAoACgAK
+AAD/AAAA/wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA////AAAAAAABAAkAAAAKAAoABQAF
+AAoACgAKAAoAAP8AAAD/AAD//wAA//8AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAD///8AAAAAAAEAAAAA
+/wAAAAAAgD8AAIA/AAAAAAAAAAAAQAEAAQAAAAAA/wAAAACAPwAAgD8AAIA/AAAAAAFAAQABAAAAAAAA
+/wAAAIA/AAAAAAAAgD8AAAAAAkABAAAAAAADAAAAAQAJAAAAAAAA/wAAAAAA/wAA/////wAAAEAAAIA/
+AACAPwAAAQBEIyA++AEAAAAAgED6/38/OLsbv3py3jRxoBU6p7obP0jtfz8AAAAAAAAAAAAAgD8AAAQA
+AAAAABQAAAAPAA8ADwAPAA8ADwAAARUAFQAAB1JhaW5ib3cBAAkAAAAAAAAzAAAAAAAzAAAAAP8zAACA
+PwAAgD8AAIA/AAABAEUjID74AQAAAAAAAAQAAAABAAAA/////wIAAABOQU5JAAAAAHMANwAAAAAAqEzb
+PwAAAABQm80/AAAAAAAAAADgvP8KQgBkAAAAgEAAAIA/DtN+vw7Tfr8mcH2/DtN+Pw7Tfj8AAAAAAAAA
+AAAAgD8AAAQAAAAAABQAAAAPAA8ADwAPAA8ADwAAARUAFQABAAAAAAAAFMAAAAAAAAAUQAAAAAAAABTA
+AAAAAAAAFEAVABUAAAAHUmFpbmJvdwEACQAAAIAAAGYAAAAAAGYAAP8AAGYAAIA/AACAPwAAgD8AAAEA
+RSMgPvgBAAAAAIBAAAB0QgAAoMAAAKDAbeOLPAAAoEAAAKBAAAAAAAAAAAAAAIA/AAAEAAAAAAAUAAAA
+DwAPAA8ADwAPAA8AAAEVABUAAAdSYWluYm93////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////AAAAAAAMQEAKwwAAgAgNQEAKwwAAQAwOQEACDwAAZA0AAAMCUzEAD0BAAg8AAKQNAAAE
+A1NwaAAAEEBAAg8AAKQMAAADAkcyAAAAAAIAAAAAAAAAAAA="
+ border=0>
+</layer>
+</div>
+<div mcd:region="TXT" 
+mcd:properties=""
+mcd:textproperties=""
+mcd:alignx="384" mcd:aligny="656" 
+ style="position:absolute;top:643;left:384;width:23">
+<layer width=23>
+<comment mcd:parprop="style:Normal"></comment>
+<span class="Normal">
+<comment mcd:chrprop="bold:1"></comment><b>ZoY<comment mcd:chrprop="bold:0"></comment></b></span>
+</layer>
+</div>
+<div mcd:region="TXT" 
+mcd:properties=""
+mcd:textproperties=""
+mcd:alignx="640" mcd:aligny="656" 
+ style="position:absolute;top:643;left:640;width:25">
+<layer width=25>
+<comment mcd:parprop="style:Normal"></comment>
+<span class="Normal">
+<comment mcd:chrprop="bold:1"></comment><b>XoY<comment mcd:chrprop="bold:0"></comment></b></span>
+</layer>
+</div>
+<div mcd:region="TXT" 
+mcd:properties=""
+mcd:textproperties=""
+mcd:alignx="114" mcd:aligny="664" 
+ style="position:absolute;top:651;left:112;width:24">
+<layer width=24>
+<comment mcd:parprop="style:Normal"></comment>
+<span class="Normal">
+<comment mcd:chrprop="bold:1"></comment><b>ZoX<comment mcd:chrprop="bold:0"></comment></b></span>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+class="equation"
+mcd:eqproperties=""
+ style="position:absolute;top:736;left:8">
+<layer >
+<img src="./Surf3-2com_3_images/IMG1191.PNG" mcd:base64encoded=
+"DAAAAAEAAABcAAAACgAAAAQAAwAAAAhlcVJlZ2lvbgIAAAAAAEIAAAAJZG9jUmVnaW9uAgAAAAAARwAA
+AAhtY09iamVjdAAAAAAAAFsAAAABAAIAAAAGc2hwQm94AAAAAAAAVQAAAAdzaHBSZWN0AAAAAAAAVgAA
+AAgAAADgAgAAkwEAANEDAAAIAAAA4AIAAAAAAACnBAAAAAEAAAAAAgUAAQAAAAR0cmVlEAAAAAAAQAAA
+AA1wAAAAAAAGQEAZwQAAgAUHQECfwQAAQAYIQECfwQAAQAcJQECfwQAAQAgKQEACDwAAdgkAAAYBBTUu
+NjAzAAtAQAIPAAC2CQAABgEFMC40MjYAAAxAQJ/BAACACA1AQAAPAABADAAAAA5AQAAPAACADAAAAAAA
+D0BACsMAAIAHEEBANP0AAEAPEUBAAg8AAGQQAAACAVMAEkBAAg8AALQQAAACAQExAAATQEA0/QAAgA8U
+QEACDwAAZBMAAAIBUwAVQEACDwAAtBMAAAIBATIAAAAAFkBAn8EAAIAGF0BAn8EAAEAWGEBAn8EAAEAX
+GUBAAg8AAHYYAAACAQE2ABpAQAIPAAC2GAAAAgEBMAAAG0BAn8EAAIAXHEBAAA8AAEAbAAAAHUBAAA8A
+AIAbAAAAAAAeQEA0/QAAgBYfQEACDwAAZB4AAAIBUwAgQEACDwAAtB4AAAIBATAAAAAhAAIAAAAPZDJf
+Z3JhcGhfZm9ybWF0AAAAAAAAIAAAAAlncmFwaERhdGEAAAAAAAAlAAAAAAAAAAIDAAAAAQAAACgAAAAX
+AAAACgAAAAEAAQAAAApheGlzRm9ybWF0AQAAAAAAKQAAAEwBAAAAAQAAAAAAAAAAAP8AASlMAQAAAAEA
+AAAAAAAAAAD/AAABAAEAAAAHdHJhY2UyRAAAAAAAACYAAAABAB8PAQEmAgEfAgEmAwIfAwEmBAMfBAEm
+AQQfBQEmAgUfBgEmAwYfBwEmBAAfCAEmAQEfCQEmAgIfCgEmAwMfCwEmBAQfDAEmAQUfDQEmAgYfDgEm
+AwAfDwEmBAEfAAAAAAAAAAAAAA=="
+ border=0>
+</layer>
+</div>
+</body>
+</html>

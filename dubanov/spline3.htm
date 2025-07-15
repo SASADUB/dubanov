@@ -1,0 +1,459 @@
+<html xmlns:mcd="urn:schemas-mathsoft-com:mathcad">
+<head>
+<meta http-equiv="Content-Type" content="text/html"></meta>
+<meta name=Generator content="Mathcad Professional"></meta>
+<meta name=ProgID content="Mathcad"></meta>
+<title>spline3</title>
+<style type="text/css">
+body { background : #ffffff }
+.Normal { font-family:Arial,sans-serif; font-size:10pt }
+</style>
+<script id="clientEventHandlersJS" language="javascript">
+<!--
+//-->
+</script>
+</head>
+<body 
+mcd:mathfonts="id:0;name:Variables;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:1;name:Constants;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:2;name:Text;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:4;name:User 1;face:Arial;size:10;bold:0;ital:0;ul:0;cid:-1
+id:5;name:User 2;face:Courier New;size:10;bold:0;ital:0;ul:0;cid:-1
+id:6;name:User 3;face:System;size:10;bold:0;ital:0;ul:0;cid:-1
+id:7;name:User 4;face:Script;size:10;bold:0;ital:0;ul:0;cid:-1
+id:8;name:User 5;face:Roman;size:10;bold:0;ital:0;ul:0;cid:-1
+id:9;name:User 6;face:Modern;size:10;bold:0;ital:0;ul:0;cid:-1
+id:10;name:User 7;face:Times New Roman;size:10;bold:0;ital:0;ul:0;cid:-1"
+mcd:numberformat=""
+mcd:displayoptions=""
+mcd:unitformat=""
+mcd:tolerance=""
+mcd:builtinvars=""
+mcd:calcoptions="auto:false;optimize:false;strict:true"
+mcd:mathdisplay="mult:4;deriv:deriv;litsub:large;define:colon;globeq:triple;local:arrow;equal:bold"
+mcd:unitsystem="default:4"
+mcd:dimnames="display:false;mass:mass;length:length;time:time;current:charge;temp:temperature;lum:luminosity;subst:substance"
+mcd:docprops="lrtag:301;lhbtag:301;status:8205;delorig:1;deluser:1;cp:1;cc:1;cs:1"
+mcd:ruler="visible:0;units:0"
+mcd:derivopts="ip:0;sc:0;dv:1;os:1"
+mcd:doccolors="eq:#000000;bg:#ffffff;rg:#ffff80"
+mcd:grfxy="0 1 1 21 15 0 0 3 0 "
+mcd:xaxisxy="0 0 1 1 1 0 0 1 1 "
+mcd:yaxisxy="0 0 1 1 1 0 0 1 1 "
+mcd:tracesxy="0 1 0 0 1 1 
+0 2 1 0 1 1 
+0 3 2 0 1 1 
+0 4 3 0 1 1 
+0 1 4 0 1 1 
+0 2 5 0 1 1 
+0 3 6 0 1 1 
+0 4 0 0 1 1 
+0 1 1 0 1 1 
+0 2 2 0 1 1 
+0 3 3 0 1 1 
+0 4 4 0 1 1 
+0 1 5 0 1 1 
+0 2 6 0 1 1 
+0 3 0 0 1 1 
+0 4 1 0 1 1 "
+>
+<div mcd:region="TXT" 
+mcd:properties=""
+mcd:textproperties=""
+mcd:alignx="24" mcd:aligny="24" 
+ style ="position:absolute;top:11;left:24;width:471">
+<layer width=471>
+<comment mcd:parprop="style:Normal"></comment>
+<font face="Arial,sans-serif" size="2">
+<comment mcd:chrprop="face:Arial Cyr,sans-serif;bold:1"></comment><font face="Arial Cyr,sans-serif" ><b>О<comment mcd:chrprop="face:Arial,sans-serif;bold:0"></comment></b></font><comment mcd:chrprop="face:Arial Cyr,sans-serif;bold:1"></comment><font face="Arial Cyr,sans-serif" ><b>пределение массива производных при построении замкнутых линий<comment mcd:chrprop="face:Arial,sans-serif;bold:0"></comment></b></font></font>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:44;left:32">
+<layer >
+<img src=".\spline3_images\IMG0004.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:44;left:120">
+<layer >
+<img src=".\spline3_images\IMG0005.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:76;left:16">
+<layer >
+<img src=".\spline3_images\IMG0055.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:76;left:160">
+<layer >
+<img src=".\spline3_images\IMG0056.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:76;left:280">
+<layer >
+<img src=".\spline3_images\IMG0057.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:76;left:416">
+<layer >
+<img src=".\spline3_images\IMG0058.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:124;left:24">
+<layer >
+<img src=".\spline3_images\IMG0065.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:114;left:112">
+<layer >
+<img src=".\spline3_images\IMG0218.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:124;left:200">
+<layer >
+<img src=".\spline3_images\IMG0219.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:124;left:320">
+<layer >
+<img src=".\spline3_images\IMG0294.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:124;left:432">
+<layer >
+<img src=".\spline3_images\IMG0296.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:172;left:16">
+<layer >
+<img src=".\spline3_images\IMG0209.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:172;left:104">
+<layer >
+<img src=".\spline3_images\IMG0210.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:204;left:24">
+<layer >
+<img src=".\spline3_images\IMG0211.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:188;left:112">
+<layer >
+<img src=".\spline3_images\IMG0212.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:203;left:216">
+<layer >
+<img src=".\spline3_images\IMG0213.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:244;left:8">
+<layer >
+<img src=".\spline3_images\IMG0152.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:244;left:72">
+<layer >
+<img src=".\spline3_images\IMG0153.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:244;left:144">
+<layer >
+<img src=".\spline3_images\IMG0154.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:244;left:280">
+<layer >
+<img src=".\spline3_images\IMG0160.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:243;left:376">
+<layer >
+<img src=".\spline3_images\IMG0161.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:244;left:472">
+<layer >
+<img src=".\spline3_images\IMG0186.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:243;left:544">
+<layer >
+<img src=".\spline3_images\IMG0184.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:268;left:56">
+<layer >
+<img src=".\spline3_images\IMG0228.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:324;left:16">
+<layer >
+<img src=".\spline3_images\IMG0189.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:324;left:80">
+<layer >
+<img src=".\spline3_images\IMG0190.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:324;left:168">
+<layer >
+<img src=".\spline3_images\IMG0192.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:355;left:8">
+<layer >
+<img src=".\spline3_images\IMG0199.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:355;left:80">
+<layer >
+<img src=".\spline3_images\IMG0200.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:355;left:168">
+<layer >
+<img src=".\spline3_images\IMG0203.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:355;left:280">
+<layer >
+<img src=".\spline3_images\IMG0207.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:348;left:400">
+<layer >
+<img src=".\spline3_images\IMG0208.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:420;left:16">
+<layer >
+<img src=".\spline3_images\IMG0264.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:420;left:80">
+<layer >
+<img src=".\spline3_images\IMG0265.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:420;left:152">
+<layer >
+<img src=".\spline3_images\IMG0266.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:420;left:224">
+<layer >
+<img src=".\spline3_images\IMG0297.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:419;left:320">
+<layer >
+<img src=".\spline3_images\IMG0298.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:420;left:392">
+<layer >
+<img src=".\spline3_images\IMG0299.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:419;left:456">
+<layer >
+<img src=".\spline3_images\IMG0300.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:444;left:64">
+<layer >
+<img src=".\spline3_images\IMG0271.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:500;left:24">
+<layer >
+<img src=".\spline3_images\IMG0272.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:500;left:88">
+<layer >
+<img src=".\spline3_images\IMG0273.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:500;left:176">
+<layer >
+<img src=".\spline3_images\IMG0274.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:531;left:16">
+<layer >
+<img src=".\spline3_images\IMG0275.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:531;left:88">
+<layer >
+<img src=".\spline3_images\IMG0276.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:531;left:176">
+<layer >
+<img src=".\spline3_images\IMG0277.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:531;left:288">
+<layer >
+<img src=".\spline3_images\IMG0278.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:524;left:408">
+<layer >
+<img src=".\spline3_images\IMG0279.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:612;left:24">
+<layer >
+<img src=".\spline3_images\IMG0280.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:612;left:152">
+<layer >
+<img src=".\spline3_images\IMG0281.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:668;left:24">
+<layer >
+<img src=".\spline3_images\IMG0246.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:876;left:24">
+<layer >
+<img src=".\spline3_images\IMG0292.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:1064;left:72">
+<layer >
+<img src=".\spline3_images\IMG0283.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:1344;left:96">
+<layer >
+<img src=".\spline3_images\IMG0289.JPG" border=0>
+</layer>
+</div>
+<div mcd:region="EQN" mcd:properties=""
+mcd:eqproperties=""
+ style ="position:absolute;top:1344;left:376">
+<layer >
+<img src=".\spline3_images\IMG0291.JPG" border=0>
+</layer>
+</div>
+
+<!-- copyright (t3) --><div align="center">Хостинг от <a href="http://www.ucoz.ru/" title="Создать сайт бесплатно">uCoz</a><br /></div><!-- /copyright -->
+</body>
+</html>

@@ -1,0 +1,356 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link rel="File-List" href="rus_head_1_4.files/filelist.xml">
+
+<title>Новая страница 1</title>
+<!--[if !mso]>
+<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+</style>
+<![endif]--><!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<p align="center"><b><font size="4">1.4</font><span lang="ru"><font size="4"> Построение линейчатой поверхности</font></span></b></p>
+<p align="left"><span lang="ru">&nbsp;&nbsp;&nbsp; Как известно из курса 
+начертательной геометрии, линейчатую поверхность можно задать при помощи трех 
+пространственных направляющих. В частном случае, если направляющие являются 
+непересекающимися попарно прямыми, то линейчатая поверхность является 
+гиперболическим параболоидом. В данном параграфе мы построим поверхность 
+гиперболического параболоида, используя средства работы с матрицами системы
+</span>MATLAB<span lang="ru">.<br>
+&nbsp;&nbsp;&nbsp; Пусть в пространстве заданы три скрещивающиеся прямые (рис. 
+1-4-1) (точка <img border="0" src="rus_he1.gif" align="texttop"> и вектор
+<img border="0" src="rus_he4.gif" width="19" height="22" align="texttop">, точка
+</span><img border="0" src="rus_he2.gif" width="19" height="20" align="texttop"><span lang="ru"> 
+и вектор </span>
+<img border="0" src="rus_he5.gif" width="14" height="26" align="texttop"><span lang="ru">, 
+точка </span>
+<img border="0" src="rus_he3.gif" width="20" height="22" align="texttop"><span lang="ru"> 
+и вектор </span>
+<img border="0" src="rus_he6.gif" width="17" height="26" align="texttop"><span lang="ru">). 
+Наша задача состоит в построении однопараметрического семейства прямолинейных 
+образующих, каждая из которых пересекает все три прямолинейные направляющие. 
+Среди способов описания такого семейства прямых мы выберем следующий. На одной 
+из прямой (допустим, заданной точкой
+<img border="0" src="rus_he1.gif" width="20" height="20" align="texttop"> и 
+вектором
+<img border="0" src="rus_he4.gif" width="19" height="22" align="texttop">) 
+выберем точку </span><img border="0" src="rus_he8.gif" align="absbottom"><span lang="ru">. 
+Построим плоскость </span>
+<img border="0" src="rus_he10.gif" width="17" height="19" align="texttop"><span lang="ru">, 
+используя точку </span>
+<img border="0" src="rus_he2.gif" width="19" height="20" align="texttop"><span lang="ru">, 
+вектор </span>
+<img border="0" src="rus_he5.gif" width="14" height="26" align="texttop"><span lang="ru">, 
+задав вектор <img border="0" src="rus_he11.gif" align="absbottom">. После этого 
+следует найти точку
+<img border="0" src="rus_he9.gif" width="42" height="31" align="absbottom">пересечения 
+с плоскостью </span>
+<img border="0" src="rus_he10.gif" width="17" height="19" align="texttop"> 
+прямой, заданной точкой
+<img border="0" src="rus_he3.gif" width="20" height="22" align="texttop"> и 
+вектором
+<img border="0" src="rus_he6.gif" width="17" height="26" align="texttop">(рис. 
+1-4-1). Каждой точке <img border="0" src="rus_he8.gif" align="absbottom"> можно 
+поставить в соответствие точку <span lang="ru">
+<img border="0" src="rus_he9.gif" width="42" height="31" align="absbottom"> по 
+формуле: <img border="0" src="rus_he12.gif" align="center">. Точку линейчатой 
+поверхности можно описать следующим способом:
+<img border="0" src="rus_he13.gif" align="center">.</span></p>
+<div align="left">
+	<table border="0">
+		<!-- MSTableType="nolayout" -->
+		<tr>
+			<td width="404"><span lang="ru"><!--[if gte vml 1]><v:group id="_x0000_s1055"
+ editas="canvas" alt="" style='width:303pt;height:182.25pt' coordorigin="354,286"
+ coordsize="404,243">
+ <o:lock v:ext="edit" aspectratio="t"/>
+ <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+  o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn="sum @0 1 0"/>
+   <v:f eqn="sum 0 0 @1"/>
+   <v:f eqn="prod @2 1 2"/>
+   <v:f eqn="prod @3 21600 pixelWidth"/>
+   <v:f eqn="prod @3 21600 pixelHeight"/>
+   <v:f eqn="sum @0 0 1"/>
+   <v:f eqn="prod @6 1 2"/>
+   <v:f eqn="prod @7 21600 pixelWidth"/>
+   <v:f eqn="sum @8 21600 0"/>
+   <v:f eqn="prod @7 21600 pixelHeight"/>
+   <v:f eqn="sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+  <o:lock v:ext="edit" aspectratio="t"/>
+ </v:shapetype><v:shape id="_x0000_s1056" type="#_x0000_t75" style='position:absolute;
+  left:354;top:286;width:404;height:243' o:preferrelative="f" filled="t">
+  <v:fill o:detectmouseclick="t"/>
+  <v:path o:extrusionok="t" o:connecttype="none"/>
+  <o:lock v:ext="edit" text="t"/>
+ </v:shape><v:line id="_x0000_s1057" alt="" style='position:absolute;flip:x'
+  from="665,318" to="726,401" strokeweight="1.5pt"/>
+ <v:line id="_x0000_s1058" alt="" style='position:absolute;flip:y' from="394,312"
+  to="498,519" strokeweight="1.5pt"/>
+ <v:line id="_x0000_s1059" alt="" style='position:absolute;flip:y' from="394,469"
+  to="419,518" strokecolor="red" strokeweight="1.5pt">
+  <v:stroke endarrow="block" endarrowlength="long"/>
+ </v:line><v:oval id="_x0000_s1060" alt="" style='position:absolute;left:389;
+  top:513;width:11;height:10' fillcolor="black"/>
+ <v:line id="_x0000_s1061" alt="" style='position:absolute' from="576,306"
+  to="576,501" strokecolor="lime" strokeweight="1.5pt"/>
+ <v:line id="_x0000_s1062" alt="" style='position:absolute;flip:y' from="576,444"
+  to="577,500" strokecolor="lime" strokeweight="2.25pt">
+  <v:stroke endarrow="classic" endarrowwidth="wide" endarrowlength="long"/>
+ </v:line><v:line id="_x0000_s1063" alt="" style='position:absolute;flip:x'
+  from="699,319" to="725,353" strokecolor="red" strokeweight="1.5pt">
+  <v:stroke endarrow="block" endarrowlength="long"/>
+ </v:line><v:oval id="_x0000_s1064" alt="" style='position:absolute;left:721;
+  top:313;width:11;height:10' fillcolor="black"/>
+ <v:line id="_x0000_s1065" alt="" style='position:absolute;flip:x y' from="451,407"
+  to="576,497" strokecolor="lime" strokeweight="2.25pt">
+  <v:stroke endarrow="classic" endarrowwidth="wide" endarrowlength="long"/>
+ </v:line><v:oval id="_x0000_s1066" alt="" style='position:absolute;left:571;
+  top:491;width:11;height:10' fillcolor="black"/>
+ <v:line id="_x0000_s1067" alt="" style='position:absolute;flip:y' from="450,402"
+  to="715,407" strokecolor="lime" strokeweight="1.5pt"/>
+ <v:oval id="_x0000_s1068" alt="" style='position:absolute;left:658;top:398;
+  width:11;height:10' fillcolor="lime" strokecolor="lime"/>
+ <v:oval id="_x0000_s1069" alt="" style='position:absolute;left:445;top:403;
+  width:11;height:10' fillcolor="lime" strokecolor="lime"/>
+ <v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s1070" type="#_x0000_t202" alt="" style='position:absolute;
+  left:354;top:479;width:33;height:27' filled="f" stroked="f">
+  <v:textbox inset=".75pt,.75pt,.75pt,.75pt">
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+	<tr>
+		<td align="center"><img border="0" src="rus_he1.gif"></td>
+	</tr>
+</table>
+  </v:textbox>
+ </v:shape><v:shape id="_x0000_s1071" type="#_x0000_t202" alt="" style='position:absolute;
+  left:583;top:506;width:40;height:23' filled="f" stroked="f">
+  <v:textbox inset=".75pt,.75pt,.75pt,.75pt">
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+	<tr>
+		<td align="center"><img border="0" src="rus_he2.gif"></td>
+	</tr>
+</table>
+  </v:textbox>
+ </v:shape><v:shape id="_x0000_s1072" type="#_x0000_t202" alt="" style='position:absolute;
+  left:732;top:286;width:26;height:28' filled="f" stroked="f">
+  <v:textbox inset=".75pt,.75pt,.75pt,.75pt">
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+	<tr>
+		<td align="center"><img border="0" src="rus_he3.gif"></td>
+	</tr>
+</table>
+  </v:textbox>
+ </v:shape><v:shape id="_x0000_s1073" type="#_x0000_t202" alt="" style='position:absolute;
+  left:419;top:484;width:20;height:26' filled="f" stroked="f">
+  <v:textbox inset=".75pt,.75pt,.75pt,.75pt">
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+	<tr>
+		<td align="center"><img border="0" src="rus_he4.gif"></td>
+	</tr>
+</table>
+  </v:textbox>
+ </v:shape><v:shape id="_x0000_s1074" type="#_x0000_t202" alt="" style='position:absolute;
+  left:584;top:440;width:25;height:31' filled="f" stroked="f">
+  <v:textbox inset=".75pt,.75pt,.75pt,.75pt">
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+	<tr>
+		<td align="center"><img border="0" src="rus_he5.gif"></td>
+	</tr>
+</table>
+  </v:textbox>
+ </v:shape><v:shape id="_x0000_s1075" type="#_x0000_t202" alt="" style='position:absolute;
+  left:679;top:310;width:24;height:28' filled="f" stroked="f">
+  <v:textbox inset=".75pt,.75pt,.75pt,.75pt">
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+	<tr>
+		<td align="center"><img border="0" src="rus_he6.gif"></td>
+	</tr>
+</table>
+  </v:textbox>
+ </v:shape><v:shape id="_x0000_s1076" type="#_x0000_t202" alt="" style='position:absolute;
+  left:520;top:429;width:41;height:26' filled="f" stroked="f">
+  <v:textbox inset=".75pt,.75pt,.75pt,.75pt">
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+	<tr>
+		<td align="center"><img border="0" src="rus_he7.gif"></td>
+	</tr>
+</table>
+  </v:textbox>
+ </v:shape><v:shape id="_x0000_s1077" type="#_x0000_t202" alt="" style='position:absolute;
+  left:400;top:358;width:51;height:31' filled="f" stroked="f">
+  <v:textbox inset=".75pt,.75pt,.75pt,.75pt">
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+	<tr>
+		<td align="center"><img border="0" src="rus_he8.gif"></td>
+	</tr>
+</table>
+  </v:textbox>
+ </v:shape><v:shape id="_x0000_s1078" type="#_x0000_t202" alt="" style='position:absolute;
+  left:612;top:361;width:55;height:30' filled="f" stroked="f">
+  <v:textbox inset=".75pt,.75pt,.75pt,.75pt">
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+	<tr>
+		<td align="center"><img border="0" src="rus_he9.gif"></td>
+	</tr>
+</table>
+  </v:textbox>
+ </v:shape><v:shape id="_x0000_s1079" type="#_x0000_t202" alt="" style='position:absolute;
+  left:522;top:321;width:40;height:33' filled="f" stroked="f">
+  <v:textbox inset=".75pt,.75pt,.75pt,.75pt">
+<table cellspacing="0" cellpadding="0" width="100%" height="100%">
+	<tr>
+		<td align="center"><img border="0" src="rus_he10.gif"></td>
+	</tr>
+</table>
+  </v:textbox>
+ </v:shape><v:shape id="_x0000_s1080" alt="" style='position:absolute;left:480;
+  top:359;width:90;height:63' coordsize="90,63" path="m,63hdc2,60,6,54,6,54,7,46,6,36,15,33v8,-3,4,-1,12,-6c28,26,30,25,30,25,34,19,39,13,46,11,56,14,59,7,67,3,70,2,76,,76,v2,,14,,14,4e"
+  filled="f" strokecolor="lime" strokeweight="1.5pt">
+  <v:path arrowok="t"/>
+ </v:shape><v:line id="_x0000_s1081" alt="" style='position:absolute;flip:y'
+  from="610,407" to="661,473">
+  <v:stroke dashstyle="longDash"/>
+ </v:line></v:group><![endif]--><![if !vml]><img width=408 height=247
+src="rus_head_1_4.files/image001.gif" v:shapes="_x0000_s1055 _x0000_s1056 _x0000_s1057 _x0000_s1058 _x0000_s1059 _x0000_s1060 _x0000_s1061 _x0000_s1062 _x0000_s1063 _x0000_s1064 _x0000_s1065 _x0000_s1066 _x0000_s1067 _x0000_s1068 _x0000_s1069 _x0000_s1070 _x0000_s1071 _x0000_s1072 _x0000_s1073 _x0000_s1074 _x0000_s1075 _x0000_s1076 _x0000_s1077 _x0000_s1078 _x0000_s1079 _x0000_s1080 _x0000_s1081"><![endif]></span></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="404">
+			<p align="center">Рис. 1-4-1</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+</div>
+<p align="left"><span lang="ru">Ниже приведен программный код, позволяющий 
+решить данную задачу и получить рис. 1-4-2.<br>
+&nbsp;</span></p>
+<div align="left">
+	<table border="0" width="846">
+		<!-- MSTableType="nolayout" -->
+		<tr>
+			<td>1</td>
+			<td><font color="#00CC66"><b>function LinearSurface()<br>
+			clc<br>
+			clear<br>
+			f=[-8 -5 -4]; w=[0.5 1 1]; p=[0 0 1]; l=[0 1 0]; g=[4 4 5]; d=[0 0 
+			-1];</b></font></td>
+			<td width="296"><b><font size="2">Задание параметров прямых, точек и 
+			векторов</font></b></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td><font color="#00CC66"><b>t=0:0.5:10;</b></font></td>
+			<td width="296"><b><font size="2">Задание области определения для 
+			получения массива точек <img border="0" src="rus_he8.gif" align="absbottom"></font></b></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td><font color="#00CC66"><b>[F,T]=meshgrid(f,t); [W,T]=meshgrid(w,t);
+			<br>
+			[P,T]=meshgrid(p,t); [L,T]=meshgrid(l,t);<br>
+			[G,T]=meshgrid(g,t); [D,T]=meshgrid(d,t);</b></font></td>
+			<td width="296"><b><font size="2">Приведение массивов к одной 
+			размерности.</font></b></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td><font color="#00CC66"><b>R=F+T.*W;</b></font></td>
+			<td width="296"><b><font size="2">Массив точек <img border="0" src="rus_he8.gif" align="absbottom">прямой, 
+			заданной точкой </font><span lang="ru"><font size="2">
+<img border="0" src="rus_he1.gif" width="20" height="20" align="texttop"> и 
+			вектором
+<img border="0" src="rus_he4.gif" width="19" height="22" align="texttop"></font></span></b></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td><font color="#00CC66"><b>ScalBuf=dot((P-G),cross(L,(P-R),2),2)./dot(D,cross(L,(P-R),2),2);<br>
+			Scal=cat(2,ScalBuf,ScalBuf,ScalBuf);<br>
+			Q=G+Scal.*D;</b></font></td>
+			<td width="296"><b><font size="2">Вычисление координат точек </font> <span lang="ru">
+			<font size="2">
+<img border="0" src="rus_he9.gif" width="42" height="31" align="absbottom"> по 
+			формуле <img border="0" src="rus_he12.gif" align="center"></font></span></b></td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td><font color="#00CC66"><b>u=t; v=-0.2:0.04:1.2;<br>
+			[U,V]=meshgrid(u,v);<br>
+			[R1,V]=meshgrid(R(:,1)',v);[R2,V]=meshgrid(R(:,2)',v);<br>
+			[R3,V]=meshgrid(R(:,3)',v);<br>
+			[Q1,V]=meshgrid(Q(:,1)',v);[Q2,V]=meshgrid(Q(:,2)',v);<br>
+			[Q3,V]=meshgrid(Q(:,3)',v);<br>
+			RR=cat(3,R1,R2,R3);QQ=cat(3,Q1,Q2,Q3);<br>
+			VV=cat(3,V,V,V);<br>
+			LinearSurf=(1-VV).*RR+VV.*QQ;</b></font></td>
+			<td width="296"><b><font size="2">Сетка узлов линейчатой 
+			поверхности, рассчитанных по формуле </font> <span lang="ru">
+			<font size="2">
+<img border="0" src="rus_he13.gif" align="center"></font></span></b></td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td><font color="#00CC66"><b>t1=-3:0.1:12;t2=-1:0.1:7;t3=-1:0.1:12;<br>
+			[F1,T1]=meshgrid(f,t1); [W1,T1]=meshgrid(w,t1);Line1=F1+T1.*W1;<br>
+			[P2,T2]=meshgrid(p,t2); [L2,T2]=meshgrid(l,t2);Line2=P2+T2.*L2;<br>
+			[G3,T3]=meshgrid(g,t3); [D3,T3]=meshgrid(d,t3);Line3=G3+T3.*D3;</b></font></td>
+			<td width="296"><font size="2"><b>Массивы точек прямолинейных 
+			направляющих для их использования в процедуре </b><font color="#00CC66"><b>
+			plot3</b></font></font></td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td><font color="#00CC66"><b>mesh(LinearSurf(:,:,1),LinearSurf(:,:,2),LinearSurf(:,:,3))<br>
+			hold on<br>
+			plot3(Line1(:,1),Line1(:,2),Line1(:,3),...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			Line2(:,1),Line2(:,2),Line2(:,3),...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			Line3(:,1),Line3(:,2),Line3(:,3))</b></font></td>
+			<td width="296"><b><font size="2">Визуализация прямолинейных 
+			направляющих и линейчатой поверхности</font></b></td>
+		</tr>
+	</table>
+</div>
+<div align="left">
+&nbsp;&nbsp;&nbsp; На рис. 1-4-2 изображены результаты построения линейчатой 
+поверхности через три попарно непересекающиеся прямые. Задачу можно было считать 
+решенной после выполнения пятого блока операторов, когда получен массив точек <span lang="ru">
+<font size="2"><b>
+<img border="0" src="rus_he9.gif" width="42" height="31" align="absbottom">, </b>
+</font>соответственных точкам </span><font size="2"><b> <img border="0" src="rus_he8.gif" align="absbottom"></b></font>.<br>
+&nbsp;<div align="left">
+	<table border="0">
+		<!-- MSTableType="nolayout" -->
+		<tr>
+			<td><a href="LinearSurf.jpg">
+<img border="0" src="LinearSurf.jpg" width="578" height="431"></a></td>
+		</tr>
+		<tr>
+			<td>
+			<p align="center">Рис. 1-4-2</td>
+		</tr>
+	</table>
+</div>
+</div>
+<p align="left">&nbsp;</p>
+
+</body>
+
+</html>
